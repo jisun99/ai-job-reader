@@ -7,13 +7,13 @@
       name="description"
       content="AI 분야 취업 준비생을 위한 채용 공고 자동 수집 보드"
     />
-    <title>AI Job Radar</title>
+    <title>AI Job Rader</title>
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
     <header class="topbar">
       <div class="container nav">
-        <a class="brand" href="#top">AI Job Radar</a>
+        <a class="brand" href="#top">AI Job Rader</a>
         <nav class="nav-links" aria-label="주요 메뉴">
           <a href="#jobs">채용공고</a>
           <a href="#sources">수집출처</a>
@@ -27,10 +27,10 @@
       <section class="hero">
         <div class="container hero-grid">
           <div class="hero-copy">
-            <p class="eyebrow">AI careers, collected daily</p>
-            <h1>AI 커리어를 고르는 더 선명한 기준</h1>
+            <p class="eyebrow">AI careers, live signal</p>
+            <h1>AI Job Rader</h1>
             <p class="hero-subtitle">
-              흩어진 AI 채용을 분야와 기업 규모로 정리했습니다.
+              지금 열려 있는 AI 포지션을 더 빠르게, 더 선명하게.
             </p>
             <div class="hero-actions">
               <a class="primary-btn" href="#jobs">공고 보기</a>
@@ -60,8 +60,24 @@
                 <dd id="channelCount">-</dd>
               </div>
             </dl>
+            <div class="radar-visual" aria-hidden="true">
+              <div class="radar-grid"></div>
+              <div class="radar-sweep"></div>
+              <span class="radar-pin pin-one"></span>
+              <span class="radar-pin pin-two"></span>
+              <span class="radar-pin pin-three"></span>
+            </div>
+            <div id="liveSignalList" class="live-signal-list"></div>
             <p id="updatedAt" class="updated-at">데이터를 불러오는 중입니다.</p>
           </aside>
+        </div>
+        <div class="container">
+          <div class="job-ticker" aria-label="실시간 AI 채용 신호">
+            <span class="ticker-label">Live scan</span>
+            <div class="ticker-window">
+              <div id="jobTicker" class="ticker-track"></div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -172,7 +188,7 @@
 
     <footer>
       <div class="container">
-        <span>AI Job Radar</span>
+        <span>AI Job Rader</span>
         <span>공고 데이터는 각 채용 플랫폼의 공개 페이지를 기준으로 매일 갱신됩니다.</span>
       </div>
     </footer>

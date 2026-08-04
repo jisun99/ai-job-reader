@@ -12,6 +12,8 @@ const state = {
   sort: "deadline",
 };
 
+document.body.classList.add("enhanced");
+
 const els = {
   totalJobs: document.querySelector("#totalJobs"),
   juniorJobs: document.querySelector("#juniorJobs"),
@@ -32,6 +34,8 @@ const els = {
   discoveryList: document.querySelector("#discoveryList"),
   careerPortalList: document.querySelector("#careerPortalList"),
   portalCount: document.querySelector("#portalCount"),
+  jobTicker: document.querySelector("#jobTicker"),
+  liveSignalList: document.querySelector("#liveSignalList"),
 };
 
 const formatDate = new Intl.DateTimeFormat("ko-KR", {
@@ -123,6 +127,9 @@ function render(generatedAt) {
   els.emptyState.hidden = filtered.length > 0;
   refreshFilterOptions();
   refreshCareerCounts();
+  renderTicker(filtered);
+  renderLiveSignals(filtered);
+  revealJobCards();
   renderSources();
   renderCareerPortals();
 }
@@ -285,6 +292,44 @@ function renderCareerPortals() {
       </a>
     `)
     .join("");
+}
+
+function renderTicker(jobs) {
+  const tickerJobs = jobs.length ? jobs.slice(0, 14) : state.jobs.slice(0, 14);
+  const items = tickerJobs.map((job) => `
+    <span class="ticker-item">
+      <strong>${escapeHtml(job.company)}</strong>
+      <span>${escapeHtml(job.title)}</span>
+    </span>
+  `);
+
+  els.jobTicker.innerHTML = [...items, ...items].join("");
+}
+
+function renderLiveSignals(jobs) {
+  const signalJobs = jobs.length ? jobs.slice(0, 4) : state.jobs.slice(0, 4);
+
+  els.liveSignalList.innerHTML = signalJobs
+    .map((job) => {
+      const keyword = (job.focusKeywords || job.fields || ["AI"])[0] || "AI";
+      return `
+        <a class="signal-row" href="${escapeAttribute(job.url)}" target="_blank" rel="noreferrer">
+          <span>${escapeHtml(keyword)}</span>
+          <strong>${escapeHtml(job.company)}</strong>
+          <small>${escapeHtml(deadlineLabel(job.deadline))}</small>
+        </a>
+      `;
+    })
+    .join("");
+}
+
+function revealJobCards() {
+  window.requestAnimationFrame(() => {
+    document.querySelectorAll(".job-card").forEach((card, index) => {
+      card.style.setProperty("--reveal-delay", `${Math.min(index, 14) * 28}ms`);
+      card.classList.add("is-visible");
+    });
+  });
 }
 
 function sourceDescription(name) {
