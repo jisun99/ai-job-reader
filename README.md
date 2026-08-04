@@ -28,6 +28,15 @@ python -m http.server 4173
 
 브라우저에서 `http://localhost:4173`을 열면 됩니다.
 
+## 배포
+
+압축본은 사이트 소스 전달용입니다. 다른 사람이 주소로 접속하게 하려면 GitHub 저장소에 올리고 GitHub Pages를 켜야 합니다.
+
+1. GitHub에 새 저장소를 만들고 이 프로젝트를 push합니다.
+2. 저장소 Settings > Pages에서 Source를 GitHub Actions로 설정합니다.
+3. Actions 탭에서 `Deploy static site`를 한 번 실행하거나 `main` 브랜치에 push합니다.
+4. 배포가 끝나면 GitHub Pages URL이 생성됩니다.
+
 ## 데이터 갱신
 
 ```bash
@@ -35,6 +44,8 @@ npm run collect
 ```
 
 수집기는 각 사이트의 공개 HTML 구조에 의존합니다. 사이트 구조가 바뀌거나 접근이 제한되면 해당 출처는 검색 페이지 링크로 대체되고, 다른 출처의 수집은 계속 진행됩니다.
+
+GitHub에 배포한 뒤에는 `.github/workflows/refresh-jobs.yml`이 매일 06:00 KST에 실행되어 `public/jobs.json`을 갱신하고, 같은 workflow에서 GitHub Pages까지 다시 배포합니다.
 
 ## 디자인
 
