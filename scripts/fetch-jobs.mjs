@@ -1,7 +1,24 @@
 import { writeFile } from "node:fs/promises";
 
 const OUT_FILE = new URL("../public/jobs.json", import.meta.url);
-const KEYWORDS = [
+const collectedAt = new Date().toISOString();
+
+const SEARCH_KEYWORDS = [
+  "AI 머신러닝",
+  "LLM",
+  "딥러닝",
+  "컴퓨터비전",
+  "MLOps",
+  "Data Scientist",
+  "Data Engineer",
+  "AI Research",
+  "NLP",
+  "추천시스템",
+  "생성형 AI",
+  "Foundation Model",
+];
+
+const AI_KEYWORDS = [
   "AI",
   "인공지능",
   "머신러닝",
@@ -17,9 +34,13 @@ const KEYWORDS = [
   "데이터 사이언스",
   "Data Scientist",
   "Data Engineer",
+  "추천시스템",
+  "생성형",
+  "Foundation Model",
+  "RAG",
 ];
 
-const NEGATIVE_KEYWORDS = [
+const NON_AI_WORDS = [
   "마케팅",
   "영업",
   "회계",
@@ -30,48 +51,178 @@ const NEGATIVE_KEYWORDS = [
   "강사",
   "기계설비",
   "이벤트",
+  "상품기획",
 ];
 
-const SOURCES = [
+const NON_JOB_TITLE_WORDS = [
+  "교육생",
+  "교육 과정",
+  "국비지원",
+  "부트캠프",
+  "수강생",
+  "훈련생",
+];
+
+const PLATFORM_SOURCES = [
   {
     name: "잡코리아",
-    url: "https://www.jobkorea.co.kr/Search/?stext=AI%20%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D",
+    homepage: "https://www.jobkorea.co.kr",
+    urls: SEARCH_KEYWORDS.map((keyword) =>
+      `https://www.jobkorea.co.kr/Search/?stext=${encodeURIComponent(keyword)}`,
+    ),
     parse: parseJobKorea,
+    maxJobs: 140,
   },
   {
     name: "사람인",
-    url: "https://www.saramin.co.kr/zf_user/search/recruit?searchword=AI%20%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D",
+    homepage: "https://www.saramin.co.kr",
+    urls: SEARCH_KEYWORDS.map((keyword) =>
+      `https://www.saramin.co.kr/zf_user/search/recruit?searchword=${encodeURIComponent(keyword)}`,
+    ),
     parse: parseSaramin,
+    maxJobs: 160,
+  },
+];
+
+const OFFICIAL_API_SOURCES = [
+  {
+    name: "Moloco Careers",
+    company: "Moloco",
+    url: "https://boards-api.greenhouse.io/v1/boards/moloco/jobs?content=true",
+    homepage: "https://www.moloco.com/careers",
+    parse: parseGreenhouse,
+    maxJobs: 40,
+  },
+  {
+    name: "Sendbird Careers",
+    company: "Sendbird",
+    url: "https://boards-api.greenhouse.io/v1/boards/sendbird/jobs?content=true",
+    homepage: "https://sendbird.com/careers",
+    parse: parseGreenhouse,
+    maxJobs: 40,
+  },
+];
+
+const DISCOVERY_SOURCES = [
+  {
+    name: "원티드",
+    url: "https://www.wanted.co.kr/search?query=AI&tab=position",
+    description: "스타트업과 테크 기업의 AI, 데이터, ML 직무를 검색합니다.",
+  },
+  {
+    name: "점핏",
+    url: "https://www.jumpit.co.kr/search?keyword=AI",
+    description: "개발자 채용 중심 플랫폼에서 AI 관련 공고를 확인합니다.",
+  },
+  {
+    name: "프로그래머스 커리어",
+    url: "https://career.programmers.co.kr/job?keywords=AI",
+    description: "개발자 채용 공고와 코딩 테스트 기반 채용을 확인합니다.",
+  },
+  {
+    name: "랠릿",
+    url: "https://www.rallit.com/positions?keyword=AI",
+    description: "IT 직군 채용 페이지에서 AI 키워드 공고를 탐색합니다.",
+  },
+  {
+    name: "로켓펀치",
+    url: "https://www.rocketpunch.com/jobs?keywords=AI",
+    description: "스타트업 채용 공고 중 AI, 데이터 직군을 확인합니다.",
   },
   {
     name: "직행",
     url: "https://zighang.com/ai",
-    parse: parseZighang,
+    description: "AI·데이터 전용 채용공고 페이지를 바로 엽니다.",
   },
   {
     name: "자소설닷컴",
     url: "https://jasoseol.com/recruit",
-    parse: parseJasoseol,
+    description: "대기업, 공채, 인턴 채용 캘린더를 함께 확인합니다.",
+  },
+  {
+    name: "LinkedIn",
+    url: "https://www.linkedin.com/jobs/search/?keywords=AI%20Machine%20Learning&location=South%20Korea",
+    description: "국내외 기업의 한국 AI 직무를 함께 탐색합니다.",
+  },
+  {
+    name: "Worknet",
+    url: "https://www.work.go.kr/empInfo/empInfoSrch/list/dtlEmpSrchList.do?keyword=AI",
+    description: "공공 고용정보 채널의 AI 관련 공고를 확인합니다.",
+  },
+  {
+    name: "인크루트",
+    url: "https://search.incruit.com/list/search.asp?col=job&kw=AI",
+    description: "전통 채용 포털의 AI, 데이터 검색 결과를 보조로 확인합니다.",
   },
 ];
 
-const collectedAt = new Date().toISOString();
+const CAREER_PORTALS = [
+  ["NAVER Careers", "https://recruit.navercorp.com/"],
+  ["Kakao Careers", "https://careers.kakao.com/"],
+  ["LINE Careers", "https://careers.linecorp.com/ko/"],
+  ["Coupang Careers", "https://www.coupang.jobs/kr/"],
+  ["Toss Careers", "https://toss.im/career"],
+  ["Upstage Careers", "https://www.upstage.ai/careers"],
+  ["Rebellions Careers", "https://rebellions.ai/careers"],
+  ["Lunit Careers", "https://www.lunit.io/careers"],
+  ["Moloco Careers", "https://www.moloco.com/careers"],
+  ["Sendbird Careers", "https://sendbird.com/careers"],
+  ["Wrtn Careers", "https://wrtn.career.greetinghr.com/"],
+  ["Scatter Lab Careers", "https://scatterlab.co.kr/careers/"],
+  ["LG AI Research Careers", "https://www.lgresearch.ai/careers"],
+  ["Samsung Research Careers", "https://research.samsung.com/careers"],
+  ["Hyundai Motor Careers", "https://talent.hyundai.com/"],
+  ["SK telecom Careers", "https://careers.sktelecom.com/"],
+  ["KT Careers", "https://recruit.kt.com/"],
+  ["NCSOFT Careers", "https://careers.ncsoft.com/"],
+  ["Nexon Careers", "https://career.nexon.com/"],
+  ["KakaoBank Careers", "https://recruit.kakaobank.com/"],
+  ["DeepSearch Careers", "https://deepsearch.com/career"],
+  ["ScatterLab / Pingpong", "https://scatterlab.co.kr/careers/"],
+  ["OpenAI Careers", "https://openai.com/careers/search/"],
+  ["Google Careers", "https://www.google.com/about/careers/applications/jobs/results/?q=AI&location=South%20Korea"],
+].map(([name, url]) => ({ name, url }));
+
 const sourceHealth = [];
 const jobs = [];
 
-for (const source of SOURCES) {
-  try {
-    const html = await fetchText(source.url);
-    const parsed = await source.parse(html, source);
-    const aiJobs = parsed.filter(isAiRole).slice(0, 30);
+for (const source of PLATFORM_SOURCES) {
+  const sourceJobs = [];
+  const errors = [];
 
+  for (const url of source.urls) {
+    try {
+      const html = await fetchText(url);
+      sourceJobs.push(...source.parse(html, source, url));
+    } catch (error) {
+      errors.push(`${url}: ${error.message}`);
+    }
+  }
+
+  const aiJobs = dedupe(sourceJobs.filter(isAiRole)).slice(0, source.maxJobs);
+  jobs.push(...aiJobs);
+  sourceHealth.push({
+    name: source.name,
+    ok: aiJobs.length > 0,
+    count: aiJobs.length,
+    message: aiJobs.length
+      ? `${source.urls.length}개 키워드 검색 완료`
+      : errors[0] || "AI 공고를 찾지 못했습니다.",
+    url: source.homepage,
+  });
+}
+
+for (const source of OFFICIAL_API_SOURCES) {
+  try {
+    const json = await fetchJson(source.url);
+    const aiJobs = source.parse(json, source).filter(isAiRole).slice(0, source.maxJobs);
     jobs.push(...aiJobs);
     sourceHealth.push({
       name: source.name,
       ok: aiJobs.length > 0,
       count: aiJobs.length,
-      message: aiJobs.length ? "수집 완료" : "AI 공고를 찾지 못했습니다.",
-      url: source.url,
+      message: aiJobs.length ? "회사 공식 채용 API 수집 완료" : "현재 AI 공고를 찾지 못했습니다.",
+      url: source.homepage,
     });
   } catch (error) {
     sourceHealth.push({
@@ -79,7 +230,7 @@ for (const source of SOURCES) {
       ok: false,
       count: 0,
       message: error.message,
-      url: source.url,
+      url: source.homepage,
     });
   }
 }
@@ -87,6 +238,8 @@ for (const source of SOURCES) {
 const payload = {
   generatedAt: collectedAt,
   sourceHealth,
+  discoverySources: DISCOVERY_SOURCES,
+  careerPortals: CAREER_PORTALS,
   jobs: dedupe(jobs).sort((a, b) => safeDeadline(a.deadline) - safeDeadline(b.deadline)),
 };
 
@@ -95,53 +248,73 @@ console.log(`Wrote ${payload.jobs.length} jobs to public/jobs.json`);
 
 async function fetchText(url) {
   const response = await fetch(url, {
-    headers: {
-      "user-agent":
-        "Mozilla/5.0 (compatible; AIJobRadar/0.1; +https://github.com/)",
-      accept: "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
-      "accept-language": "ko-KR,ko;q=0.9,en;q=0.8",
-    },
+    headers: requestHeaders(),
   });
 
   if (!response.ok) throw new Error(`HTTP ${response.status}`);
   return response.text();
 }
 
-function parseJobKorea(html, source) {
+async function fetchJson(url) {
+  const response = await fetch(url, {
+    headers: {
+      ...requestHeaders(),
+      accept: "application/json,text/plain,*/*",
+    },
+  });
+
+  if (!response.ok) throw new Error(`HTTP ${response.status}`);
+  return response.json();
+}
+
+function requestHeaders() {
+  return {
+    "user-agent": "Mozilla/5.0 (compatible; AIJobRadar/0.2; +https://github.com/)",
+    accept: "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+    "accept-language": "ko-KR,ko;q=0.9,en;q=0.8",
+  };
+}
+
+function parseJobKorea(html, source, sourceUrl) {
   const jobs = [];
   const seen = new Set();
   const normalizedHtml = html.replaceAll('\\"', '"').replaceAll("\\u0026", "&");
-  const objectPattern =
-    /"id":"(?<id>\d+)","legacyJobNo":"(?<legacy>\d+)","section":"[^"]*","contentType":"JOB_POSTING"[\s\S]{0,9000}?"title":"(?<title>[^"]*)"[\s\S]{0,500}?"companyName":"(?<company>[^"]*)"[\s\S]{0,1800}?"careerType":"(?<careerType>[^"]*)"[\s\S]{0,120}?"careerRange":(?<careerRange>\d+)[\s\S]{0,500}?"employmentTypeCodeList":\[(?<employment>[^\]]*)\][\s\S]{0,220}?"educationCode":"(?<education>[^"]*)"[\s\S]{0,1800}?"applicationPeriod":\{"start":"(?<start>[^"]+)","end":"(?<end>[^"]+)"/g;
 
-  for (const match of normalizedHtml.matchAll(objectPattern)) {
-    const group = match.groups;
-    if (seen.has(group.legacy)) continue;
-    seen.add(group.legacy);
+  const patterns = [
+    /"id":"(?<id>\d+)","legacyJobNo":"(?<legacy>\d+)","section":"[^"]*","contentType":"JOB_POSTING"[\s\S]{0,9000}?"title":"(?<title>[^"]*)"[\s\S]{0,500}?"companyName":"(?<company>[^"]*)"[\s\S]{0,1800}?"careerType":"(?<careerType>[^"]*)"[\s\S]{0,120}?"careerRange":(?<careerRange>\d+)[\s\S]{0,500}?"employmentTypeCodeList":\[(?<employment>[^\]]*)\][\s\S]{0,220}?"educationCode":"(?<education>[^"]*)"[\s\S]{0,1800}?"applicationPeriod":\{"start":"(?<start>[^"]+)","end":"(?<end>[^"]+)"/g,
+    /"id":"(?<id>\d+)","legacyJobNo":"(?<legacy>\d+)","title":"(?<title>[^"]*)"[\s\S]{0,900}?"employmentTypeCodeList":\[(?<employment>[^\]]*)\][\s\S]{0,220}?"careerType":"(?<careerType>[^"]*)"[\s\S]{0,80}?"careerRange":(?<careerRange>\d+)[\s\S]{0,120}?"educationCode":"(?<education>[^"]*)"[\s\S]{0,600}?"companyName":"(?<company>[^"]*)"[\s\S]{0,900}?"applicationPeriod":\{"start":"(?<start>[^"]+)","end":"(?<end>[^"]+)"/g,
+  ];
 
-    const title = clean(group.title);
-    const company = clean(group.company);
-    const haystack = clean(match[0]);
+  for (const pattern of patterns) {
+    for (const match of normalizedHtml.matchAll(pattern)) {
+      const group = match.groups;
+      if (seen.has(group.legacy)) continue;
+      seen.add(group.legacy);
 
-    jobs.push(normalizeJob({
-      id: `${source.name}-${group.legacy}`,
-      source: source.name,
-      company,
-      title,
-      url: `https://www.jobkorea.co.kr/Recruit/GI_Read/${group.legacy}`,
-      career: careerLabel(group.careerType, group.careerRange),
-      careerGroup: careerGroup(careerLabel(group.careerType, group.careerRange), title),
-      education: educationLabel(group.education),
-      location: inferLocation(haystack),
-      employmentType: employmentLabel(group.employment),
-      deadline: deadlineFromIso(group.end),
-      fields: inferFields(`${title} ${haystack}`),
-      skills: inferSkills(`${title} ${haystack}`),
-      collectedAt,
-    }));
+      const title = clean(group.title);
+      const company = clean(group.company);
+      const haystack = clean(match[0]);
+
+      jobs.push(normalizeJob({
+        id: `${source.name}-${group.legacy}`,
+        source: source.name,
+        company,
+        title,
+        url: `https://www.jobkorea.co.kr/Recruit/GI_Read/${group.legacy}`,
+        career: careerLabel(group.careerType, group.careerRange),
+        careerGroup: careerGroup(careerLabel(group.careerType, group.careerRange), title),
+        education: educationLabel(group.education),
+        location: inferLocation(haystack),
+        employmentType: employmentLabel(group.employment),
+        deadline: deadlineFromIso(group.end),
+        fields: inferFields(`${title} ${haystack}`),
+        skills: inferSkills(`${title} ${haystack}`),
+        collectedAt,
+      }));
+    }
   }
 
-  const titlePattern = /"title":"(?<title>[^"]*(?:AI|ML|머신러닝|딥러닝|Computer Vision|HyperCLOVA|Research Engineer)[^"]*)","companyName":"(?<company>[^"]*)"/gi;
+  const titlePattern = /"title":"(?<title>[^"]*(?:AI|ML|머신러닝|딥러닝|Computer Vision|HyperCLOVA|Research Engineer|LLM)[^"]*)","companyName":"(?<company>[^"]*)"/gi;
   for (const match of normalizedHtml.matchAll(titlePattern)) {
     const title = clean(match.groups.title);
     const company = clean(match.groups.company);
@@ -152,6 +325,7 @@ function parseJobKorea(html, source) {
     if (seen.has(legacy)) continue;
     seen.add(legacy);
 
+    const careerMatch = after.match(/"careerType":"(?<type>[^"]*)"[\s\S]{0,80}?"careerRange":(?<range>\d+)/);
     jobs.push(normalizeJob({
       id: `${source.name}-${legacy}`,
       source: source.name,
@@ -159,14 +333,8 @@ function parseJobKorea(html, source) {
       title,
       url: /^\d+$/.test(legacy)
         ? `https://www.jobkorea.co.kr/Recruit/GI_Read/${legacy}`
-        : source.url,
-      career:
-        firstMatch(after, /"careerType":"(?<type>[^"]*)"[\s\S]{0,80}?"careerRange":(?<range>\d+)/)
-          ? careerLabel(
-              after.match(/"careerType":"(?<type>[^"]*)"[\s\S]{0,80}?"careerRange":(?<range>\d+)/).groups.type,
-              after.match(/"careerType":"(?<type>[^"]*)"[\s\S]{0,80}?"careerRange":(?<range>\d+)/).groups.range,
-            )
-          : "확인 필요",
+        : sourceUrl,
+      career: careerMatch ? careerLabel(careerMatch.groups.type, careerMatch.groups.range) : "확인 필요",
       careerGroup: careerGroup(after, title),
       education: educationLabel(firstMatch(after, /"educationCode":"([^"]*)"/)),
       location: inferLocation(after),
@@ -178,36 +346,6 @@ function parseJobKorea(html, source) {
     }));
   }
 
-  const mainListPattern =
-    /"id":"(?<id>\d+)","legacyJobNo":"(?<legacy>\d+)","title":"(?<title>[^"]*)"[\s\S]{0,900}?"employmentTypeCodeList":\[(?<employment>[^\]]*)\][\s\S]{0,220}?"careerType":"(?<careerType>[^"]*)"[\s\S]{0,80}?"careerRange":(?<careerRange>\d+)[\s\S]{0,120}?"educationCode":"(?<education>[^"]*)"[\s\S]{0,600}?"companyName":"(?<company>[^"]*)"[\s\S]{0,900}?"applicationPeriod":\{"start":"(?<start>[^"]+)","end":"(?<end>[^"]+)"/g;
-
-  for (const match of normalizedHtml.matchAll(mainListPattern)) {
-    const group = match.groups;
-    if (seen.has(group.legacy)) continue;
-    seen.add(group.legacy);
-
-    const title = clean(group.title);
-    const company = clean(group.company);
-    const haystack = clean(match[0]);
-
-    jobs.push(normalizeJob({
-      id: `${source.name}-${group.legacy}`,
-      source: source.name,
-      company,
-      title,
-      url: `https://www.jobkorea.co.kr/Recruit/GI_Read/${group.legacy}`,
-      career: careerLabel(group.careerType, group.careerRange),
-      careerGroup: careerGroup(careerLabel(group.careerType, group.careerRange), title),
-      education: educationLabel(group.education),
-      location: inferLocation(haystack),
-      employmentType: employmentLabel(group.employment),
-      deadline: deadlineFromIso(group.end),
-      fields: inferFields(`${title} ${haystack}`),
-      skills: inferSkills(`${title} ${haystack}`),
-      collectedAt,
-    }));
-  }
-
   return jobs;
 }
 
@@ -215,7 +353,7 @@ function parseSaramin(html, source) {
   const jobs = [];
   const blocks = html.split(/<div[^>]+class="[^"]*item_recruit[^"]*"[^>]*>/).slice(1);
 
-  for (const block of blocks.slice(0, 60)) {
+  for (const block of blocks.slice(0, 80)) {
     const titleMatch = block.match(/<h2[^>]*class="job_tit"[\s\S]*?<a[^>]+href="(?<href>[^"]+)"[^>]*>(?<title>[\s\S]*?)<\/a>/);
     const companyMatch = block.match(/class="corp_name"[\s\S]*?<a[^>]*>(?<company>[\s\S]*?)<\/a>/);
     if (!titleMatch || !companyMatch) continue;
@@ -245,60 +383,26 @@ function parseSaramin(html, source) {
   return jobs;
 }
 
-function parseZighang(html, source) {
-  const jobs = [];
-  const title = clean(firstMatch(html, /<title>(.*?)<\/title>/)) || "AI·데이터 채용공고";
-  const recruitmentLinks = unique(
-    [...html.matchAll(/href="(?<href>\/recruitment\/[a-f0-9-]+)"/g)].map((item) =>
-      absoluteUrl(item.groups.href, "https://zighang.com"),
-    ),
-  );
-
-  for (const url of recruitmentLinks.slice(0, 20)) {
-    jobs.push(normalizeJob({
-      id: `${source.name}-${hash(url)}`,
+function parseGreenhouse(json, source) {
+  return (json.jobs || []).map((job) => {
+    const text = clean(stripTags(`${job.title} ${job.content || ""} ${JSON.stringify(job.departments || [])}`));
+    return normalizeJob({
+      id: `${source.name}-${job.id}`,
       source: source.name,
-      company: "직행 수집 공고",
-      title,
-      url,
-      career: "확인 필요",
-      careerGroup: "experienced",
-      education: "확인 필요",
-      location: "확인 필요",
-      employmentType: "확인 필요",
-      deadline: "마감 확인",
-      fields: ["AI·데이터"],
-      skills: [],
-      collectedAt,
-    }));
-  }
-
-  return jobs;
-}
-
-function parseJasoseol(html, source) {
-  const text = clean(stripTags(html));
-  const title = clean(firstMatch(html, /<title>(.*?)<\/title>/)) || "채용 공고";
-  if (!/AI|인공지능|머신러닝|데이터/.test(text)) return [];
-
-  return [
-    normalizeJob({
-      id: `${source.name}-${hash(source.url)}`,
-      source: source.name,
-      company: "자소설닷컴",
-      title,
-      url: source.url,
-      career: "공채/신입 중심",
-      careerGroup: "junior",
-      education: "공고별 확인",
-      location: "공고별 확인",
+      company: source.company,
+      title: clean(job.title),
+      url: job.absolute_url || source.homepage,
+      career: inferCareerFromText(text),
+      careerGroup: careerGroup(text, job.title),
+      education: inferEducationFromText(text),
+      location: job.location?.name || "공고별 확인",
       employmentType: "공고별 확인",
-      deadline: "마감 확인",
-      fields: ["AI·데이터"],
-      skills: [],
+      deadline: "채용시마감",
+      fields: inferFields(text),
+      skills: inferSkills(text),
       collectedAt,
-    }),
-  ];
+    });
+  });
 }
 
 function normalizeJob(job) {
@@ -311,29 +415,50 @@ function normalizeJob(job) {
 
 function isAiRole(job) {
   const inferredFields = (job.fields || []).filter((field) => field !== "AI·데이터");
-  const text = `${job.title} ${inferredFields.join(" ")} ${job.skills?.join(" ")}`;
-  const hasAi = KEYWORDS.some((keyword) => text.toLowerCase().includes(keyword.toLowerCase()));
-  const onlyNegative = NEGATIVE_KEYWORDS.some((keyword) => text.includes(keyword)) && !/AI|ML|LLM|데이터|비전/.test(text);
-  return hasAi && !onlyNegative;
+  const titleText = `${job.title} ${job.company} ${job.skills?.join(" ")}`;
+  const text = `${titleText} ${inferredFields.join(" ")}`;
+  if (NON_JOB_TITLE_WORDS.some((keyword) => job.title.includes(keyword))) return false;
+
+  const lowerTitle = titleText.toLowerCase();
+  const hasAi = AI_KEYWORDS.some((keyword) => lowerTitle.includes(keyword.toLowerCase()));
+  const hasDataRole = /데이터\s?엔지니어|데이터\s?사이언|Data Engineer|Data Scientist|Data Analyst/i.test(titleText);
+  const hasStrongAi = /AI|ML|LLM|NLP|머신러닝|딥러닝|데이터|비전|Vision|MLOps|RAG/i.test(titleText);
+  const onlyNegative = NON_AI_WORDS.some((keyword) => text.includes(keyword)) && !hasStrongAi;
+  return (hasAi || hasDataRole) && !onlyNegative;
 }
 
 function inferFields(text) {
   const fields = [];
-  if (/LLM|생성형|Foundation|RAG|NLP|자연어/i.test(text)) fields.push("LLM/NLP");
-  if (/Computer Vision|컴퓨터비전|Vision|영상|이미지|3D|Object Detection/i.test(text)) fields.push("Computer Vision");
-  if (/MLOps|ML\s?Ops|플랫폼|Serving|서빙/i.test(text)) fields.push("MLOps");
-  if (/Data Scientist|데이터\s?사이언|분석|통계/i.test(text)) fields.push("Data Science");
-  if (/Data Engineer|데이터\s?엔지니어|ETL|SQL|Pipeline/i.test(text)) fields.push("Data Engineering");
-  if (/Machine Learning|머신러닝|ML|Deep Learning|딥러닝/i.test(text)) fields.push("머신러닝");
-  if (/(AI|ML|머신러닝|딥러닝|LLM|NLP|Computer Vision|컴퓨터비전).{0,20}(Research|리서치|연구)|(?:Research|리서치|연구).{0,20}(AI|ML|머신러닝|딥러닝|LLM|NLP|Computer Vision|컴퓨터비전)/i.test(text)) {
+  if (/LLM|생성형|Foundation|RAG|NLP|자연어|Large Language/i.test(text)) fields.push("LLM/NLP");
+  if (/Computer Vision|컴퓨터비전|Vision|영상|이미지|3D|Object Detection|OCR/i.test(text)) fields.push("Computer Vision");
+  if (/MLOps|ML\s?Ops|플랫폼|Serving|서빙|Model Ops/i.test(text)) fields.push("MLOps");
+  if (/Data Scientist|데이터\s?사이언|분석|통계|Experiment/i.test(text)) fields.push("Data Science");
+  if (/Data Engineer|데이터\s?엔지니어|ETL|SQL|Pipeline|Warehouse/i.test(text)) fields.push("Data Engineering");
+  if (/Machine Learning|머신러닝|ML|Deep Learning|딥러닝|Recommendation|추천/i.test(text)) fields.push("머신러닝");
+  if (/(AI|ML|머신러닝|딥러닝|LLM|NLP|Computer Vision|컴퓨터비전).{0,30}(Research|리서치|연구)|(?:Research|리서치|연구).{0,30}(AI|ML|머신러닝|딥러닝|LLM|NLP|Computer Vision|컴퓨터비전)/i.test(text)) {
     fields.push("AI Research");
   }
   return fields.length ? fields : ["AI·데이터"];
 }
 
 function inferSkills(text) {
-  return ["Python", "SQL", "PyTorch", "TensorFlow", "AWS", "Kubernetes", "Spark", "RAG"]
-    .filter((skill) => new RegExp(skill, "i").test(text));
+  return [
+    "Python",
+    "SQL",
+    "PyTorch",
+    "TensorFlow",
+    "AWS",
+    "Kubernetes",
+    "Spark",
+    "RAG",
+    "LangChain",
+    "Docker",
+    "GCP",
+    "Azure",
+    "Java",
+    "C++",
+    "Go",
+  ].filter((skill) => new RegExp(escapeRegExp(skill), "i").test(text));
 }
 
 function careerLabel(type, range) {
@@ -346,9 +471,17 @@ function careerLabel(type, range) {
 
 function careerGroup(text, title = "") {
   const value = `${text} ${title}`;
-  if (/인턴|intern/i.test(value)) return "intern";
-  if (/신입|경력무관|주니어|junior/i.test(value)) return "junior";
+  if (/인턴|intern|internship/i.test(value)) return "intern";
+  if (/신입|경력무관|주니어|junior|entry/i.test(value)) return "junior";
   return "experienced";
+}
+
+function inferCareerFromText(text) {
+  return firstMatch(text, /(신입·경력|신입|경력\s*\d+\s*년?\s*이상|경력무관|인턴|Internship|Senior|Staff)/i) || "공고별 확인";
+}
+
+function inferEducationFromText(text) {
+  return firstMatch(text, /(학력무관|대졸↑|초대졸↑|석사↑|박사↑|Bachelor|Master|PhD|Ph\.D\.)/i) || "공고별 확인";
 }
 
 function educationLabel(code) {
@@ -371,7 +504,7 @@ function employmentLabel(raw) {
 
 function inferLocation(text) {
   return (
-    firstMatch(text, /(서울|경기|인천|대전|대구|부산|광주|울산|세종|강원|충북|충남|전북|전남|경북|경남|제주)[^\s,·]{0,8}/) ||
+    firstMatch(text, /(서울|경기|인천|대전|대구|부산|광주|울산|세종|강원|충북|충남|전북|전남|경북|경남|제주|Seoul|Korea)[^\s,·]{0,10}/i) ||
     "확인 필요"
   );
 }
@@ -383,7 +516,7 @@ function deadlineFromIso(value) {
 }
 
 function safeDeadline(value) {
-  if (!value || value === "상시채용" || value === "채용시마감" || value === "마감 확인") {
+  if (!value || value === "상시채용" || value === "채용시마감" || value === "마감 확인" || value === "공고별 확인") {
     return Number.POSITIVE_INFINITY;
   }
   const time = new Date(value).getTime();
@@ -413,7 +546,7 @@ function absoluteUrl(href, base) {
 }
 
 function clean(value = "") {
-  const decoded = value
+  const decoded = String(value)
     .replaceAll("\\u0026", "&")
     .replaceAll('\\"', '"')
     .replaceAll("&amp;", "&")
@@ -426,7 +559,10 @@ function clean(value = "") {
 }
 
 function stripTags(value = "") {
-  return value.replace(/<script[\s\S]*?<\/script>/g, " ").replace(/<[^>]+>/g, " ");
+  return String(value)
+    .replace(/<script[\s\S]*?<\/script>/g, " ")
+    .replace(/<style[\s\S]*?<\/style>/g, " ")
+    .replace(/<[^>]+>/g, " ");
 }
 
 function hash(value) {
@@ -435,4 +571,8 @@ function hash(value) {
     output = (output * 31 + value.charCodeAt(index)) >>> 0;
   }
   return output.toString(36);
+}
+
+function escapeRegExp(value) {
+  return value.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 }

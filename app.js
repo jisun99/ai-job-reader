@@ -1,6 +1,8 @@
 const state = {
   jobs: [],
   sourceHealth: [],
+  discoverySources: [],
+  careerPortals: [],
   query: "",
   source: "all",
   field: "all",
@@ -12,6 +14,7 @@ const els = {
   totalJobs: document.querySelector("#totalJobs"),
   juniorJobs: document.querySelector("#juniorJobs"),
   soonJobs: document.querySelector("#soonJobs"),
+  channelCount: document.querySelector("#channelCount"),
   updatedAt: document.querySelector("#updatedAt"),
   resultCount: document.querySelector("#resultCount"),
   sourceFilter: document.querySelector("#sourceFilter"),
@@ -21,6 +24,9 @@ const els = {
   jobList: document.querySelector("#jobList"),
   emptyState: document.querySelector("#emptyState"),
   sourceList: document.querySelector("#sourceList"),
+  discoveryList: document.querySelector("#discoveryList"),
+  careerPortalList: document.querySelector("#careerPortalList"),
+  portalCount: document.querySelector("#portalCount"),
 };
 
 const formatDate = new Intl.DateTimeFormat("ko-KR", {
@@ -33,6 +39,8 @@ async function init() {
   const data = await response.json();
   state.jobs = Array.isArray(data.jobs) ? data.jobs : [];
   state.sourceHealth = Array.isArray(data.sourceHealth) ? data.sourceHealth : [];
+  state.discoverySources = Array.isArray(data.discoverySources) ? data.discoverySources : [];
+  state.careerPortals = Array.isArray(data.careerPortals) ? data.careerPortals : [];
 
   populateFilters();
   bindEvents();
@@ -95,6 +103,11 @@ function render(generatedAt) {
     .filter((job) => job.careerGroup === "junior" || job.careerGroup === "intern")
     .length.toLocaleString("ko-KR");
   els.soonJobs.textContent = state.jobs.filter(isClosingSoon).length.toLocaleString("ko-KR");
+  els.channelCount.textContent = (
+    state.sourceHealth.length +
+    state.discoverySources.length +
+    state.careerPortals.length
+  ).toLocaleString("ko-KR");
 
   if (generatedAt) {
     els.updatedAt.textContent = `마지막 갱신: ${formatDate.format(new Date(generatedAt))}`;
@@ -104,6 +117,7 @@ function render(generatedAt) {
   els.jobList.innerHTML = filtered.map(renderJobCard).join("");
   els.emptyState.hidden = filtered.length > 0;
   renderSources();
+  renderCareerPortals();
 }
 
 function applyFilters(jobs) {
@@ -171,34 +185,54 @@ function renderJobCard(job) {
 
 function renderSources() {
   const healthByName = new Map(state.sourceHealth.map((item) => [item.name, item]));
-  const defaults = [
-    ["잡코리아", "https://www.jobkorea.co.kr/Search/?stext=AI%20%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D"],
-    ["사람인", "https://www.saramin.co.kr/zf_user/search/recruit?searchword=AI%20%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D"],
-    ["자소설닷컴", "https://jasoseol.com/recruit"],
-    ["직행", "https://zighang.com/ai"],
-  ];
 
-  els.sourceList.innerHTML = defaults
-    .map(([name, url]) => {
-      const health = healthByName.get(name);
+  els.sourceList.innerHTML = state.sourceHealth
+    .map((health) => {
+      const name = health.name;
+      const url = health.url;
       const count = state.jobs.filter((job) => job.source === name).length;
       const status = health?.ok
-        ? `${count}개 수집됨`
+        ? `${count.toLocaleString("ko-KR")}개 수집됨`
         : count
           ? `${count}개 수집, 일부 확인 필요`
-          : "검색 페이지 연결";
+          : "직접 확인 필요";
 
       return `
         <article class="source-card">
           <div>
             <span class="source-status">${escapeHtml(status)}</span>
             <h3>${escapeHtml(name)}</h3>
-            <p>${escapeHtml(sourceDescription(name))}</p>
+            <p>${escapeHtml(health.message || sourceDescription(name))}</p>
           </div>
           <a class="source-link" href="${escapeAttribute(url)}" target="_blank" rel="noreferrer">원문 검색</a>
         </article>
       `;
     })
+    .join("");
+
+  els.discoveryList.innerHTML = state.discoverySources
+    .map((source) => `
+      <article class="source-card discovery-card">
+        <div>
+          <span class="source-status">탐색 링크</span>
+          <h3>${escapeHtml(source.name)}</h3>
+          <p>${escapeHtml(source.description)}</p>
+        </div>
+        <a class="source-link" href="${escapeAttribute(source.url)}" target="_blank" rel="noreferrer">열기</a>
+      </article>
+    `)
+    .join("");
+}
+
+function renderCareerPortals() {
+  els.portalCount.textContent = `${state.careerPortals.length.toLocaleString("ko-KR")}개 채널`;
+  els.careerPortalList.innerHTML = state.careerPortals
+    .map((portal) => `
+      <a class="portal-link" href="${escapeAttribute(portal.url)}" target="_blank" rel="noreferrer">
+        <span>${escapeHtml(portal.name)}</span>
+        <small>AI / ML / Data 검색</small>
+      </a>
+    `)
     .join("");
 }
 

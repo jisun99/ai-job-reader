@@ -8,12 +8,6 @@
       content="AI 분야 취업 준비생을 위한 채용 공고 자동 수집 보드"
     />
     <title>AI Job Radar</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
@@ -23,6 +17,7 @@
         <nav class="nav-links" aria-label="주요 메뉴">
           <a href="#jobs">채용공고</a>
           <a href="#sources">수집출처</a>
+          <a href="#portals">회사채용관</a>
           <a href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
         </nav>
       </div>
@@ -33,14 +28,14 @@
         <div class="container hero-grid">
           <div class="hero-copy">
             <p class="eyebrow">AI careers, collected daily</p>
-            <h1>AI 취업 준비생을 위한 채용 공고 레이더</h1>
+            <h1>AI 취업 준비생을 위한 넓은 채용 공고 레이더</h1>
             <p class="hero-subtitle">
-              머신러닝, 딥러닝, LLM, 컴퓨터비전, 데이터 사이언스 관련 공고만 모아
-              지원 자격과 분야를 한눈에 확인하고 원문 지원 페이지로 바로 이동하세요.
+              채용 포털 검색 결과, 회사 공식 채용 API, 주요 테크 기업 채용관을 함께
+              모아 머신러닝, LLM, 컴퓨터비전, 데이터 직무를 더 넓게 확인하세요.
             </p>
             <div class="hero-actions">
               <a class="primary-btn" href="#jobs">공고 보기</a>
-              <a class="secondary-btn" href="#sources">출처 확인</a>
+              <a class="secondary-btn" href="#portals">회사 채용관</a>
             </div>
           </div>
           <aside class="status-panel" aria-label="수집 상태">
@@ -60,6 +55,10 @@
               <div>
                 <dt>곧 마감</dt>
                 <dd id="soonJobs">-</dd>
+              </div>
+              <div>
+                <dt>추가 채널</dt>
+                <dd id="channelCount">-</dd>
               </div>
             </dl>
             <p id="updatedAt" class="updated-at">데이터를 불러오는 중입니다.</p>
@@ -130,6 +129,27 @@
             </div>
           </div>
           <div id="sourceList" class="source-list"></div>
+          <h3 class="subsection-title">추가 탐색 채널</h3>
+          <div id="discoveryList" class="source-list compact-list"></div>
+        </div>
+      </section>
+
+      <section class="section portal-section" id="portals">
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Company career portals</p>
+              <h2>회사 공식 채용관</h2>
+            </div>
+            <div class="view-meta">
+              <span id="portalCount">0개 채널</span>
+            </div>
+          </div>
+          <p class="section-note">
+            포털 수집에서 누락될 수 있는 자체 채용 페이지입니다. AI, ML, Data, Research,
+            Vision, LLM 키워드로 각 회사 채용관을 함께 확인하세요.
+          </p>
+          <div id="careerPortalList" class="portal-list"></div>
         </div>
       </section>
     </main>
