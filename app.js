@@ -72,7 +72,7 @@ const formatDate = new Intl.DateTimeFormat("ko-KR", {
 async function init() {
   const response = await fetch("./public/jobs.json", { cache: "no-store" });
   const data = await response.json();
-  state.jobs = Array.isArray(data.jobs) ? data.jobs : [];
+  state.jobs = Array.isArray(data.jobs) ? data.jobs.filter(isKoreaBasedJob) : [];
   state.sourceHealth = Array.isArray(data.sourceHealth) ? data.sourceHealth : [];
   state.discoverySources = Array.isArray(data.discoverySources) ? data.discoverySources : [];
   state.careerPortals = Array.isArray(data.careerPortals) ? data.careerPortals : [];
@@ -202,6 +202,7 @@ function applyFilters(jobs, overrides = {}) {
   const filters = { ...state, ...overrides };
   return jobs
     .filter((job) => {
+      if (!isKoreaBasedJob(job)) return false;
       if (filters.source !== "all" && normalizedSource(job) !== filters.source) return false;
       if (filters.field !== "all" && !(job.fields || []).includes(filters.field)) return false;
       if (filters.companyType !== "all" && (job.companyType || "분류 필요") !== filters.companyType) return false;
@@ -399,6 +400,13 @@ function normalizedSource(job) {
   const source = String(job?.source || "");
   if (/공식|캐치|Careers|Greenhouse|Lever/i.test(source)) return "회사 자체 사이트";
   return source || "기타";
+}
+
+function isKoreaBasedJob(job) {
+  const text = `${job?.location || ""} ${job?.title || ""}`.toLowerCase();
+  const overseasPattern =
+    /united states|california|new york|seattle|texas|san francisco|san mateo|menlo park|remote,\s*us|remote us|usa|u\.s\.|beijing|china|shanghai|singapore|tokyo|japan|berlin|germany|london|united kingdom|canada|vietnam|india|taiwan|hong kong|europe|미국|중국|일본|싱가포르|독일|영국|캐나다|베트남|인도|대만|홍콩|유럽|해외/i;
+  return !overseasPattern.test(text);
 }
 
 function sourceDescription(name) {

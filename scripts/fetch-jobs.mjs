@@ -227,7 +227,7 @@ const CAREER_PORTALS = [
 ].map(([name, url]) => ({ name, url }));
 
 const sourceHealth = [];
-const jobs = CURATED_JOBS.map(normalizeJob);
+const jobs = CURATED_JOBS.map(normalizeJob).filter(isKoreaBasedJob);
 
 for (const source of PLATFORM_SOURCES) {
   const sourceJobs = [];
@@ -242,7 +242,7 @@ for (const source of PLATFORM_SOURCES) {
     }
   }
 
-  const aiJobs = dedupe(sourceJobs.filter(isAiRole)).slice(0, source.maxJobs);
+  const aiJobs = dedupe(sourceJobs.filter(isAiRole).filter(isKoreaBasedJob)).slice(0, source.maxJobs);
   jobs.push(...aiJobs);
   sourceHealth.push({
     name: source.name,
@@ -258,7 +258,7 @@ for (const source of PLATFORM_SOURCES) {
 for (const source of OFFICIAL_API_SOURCES) {
   try {
     const json = await fetchJson(source.url);
-    const aiJobs = source.parse(json, source).filter(isAiRole).slice(0, source.maxJobs);
+    const aiJobs = source.parse(json, source).filter(isAiRole).filter(isKoreaBasedJob).slice(0, source.maxJobs);
     jobs.push(...aiJobs);
     sourceHealth.push({
       name: source.name,
@@ -283,7 +283,7 @@ const payload = {
   sourceHealth,
   discoverySources: DISCOVERY_SOURCES,
   careerPortals: CAREER_PORTALS,
-  jobs: dedupe(jobs).sort((a, b) => safeDeadline(a.deadline) - safeDeadline(b.deadline)),
+  jobs: dedupe(jobs).filter(isKoreaBasedJob).sort((a, b) => safeDeadline(a.deadline) - safeDeadline(b.deadline)),
 };
 
 await writeFile(OUT_FILE, `${JSON.stringify(payload, null, 2)}\n`, "utf8");
@@ -472,6 +472,13 @@ function isAiRole(job) {
   const hasStrongAi = /AI|ML|LLM|NLP|머신러닝|딥러닝|데이터|비전|Vision|MLOps|RAG/i.test(titleText);
   const onlyNegative = NON_AI_WORDS.some((keyword) => text.includes(keyword)) && !hasStrongAi;
   return (hasAi || hasDataRole) && !onlyNegative;
+}
+
+function isKoreaBasedJob(job) {
+  const text = `${job?.location || ""} ${job?.title || ""}`.toLowerCase();
+  const overseasPattern =
+    /united states|california|new york|seattle|texas|san francisco|san mateo|menlo park|remote,\s*us|remote us|usa|u\.s\.|beijing|china|shanghai|singapore|tokyo|japan|berlin|germany|london|united kingdom|canada|vietnam|india|taiwan|hong kong|europe|미국|중국|일본|싱가포르|독일|영국|캐나다|베트남|인도|대만|홍콩|유럽|해외/i;
+  return !overseasPattern.test(text);
 }
 
 function inferFields(text) {
