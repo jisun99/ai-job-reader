@@ -7,13 +7,13 @@
       name="description"
       content="AI 분야 취업 준비생을 위한 채용 공고 자동 수집 보드"
     />
-    <title>AI Job Rader</title>
+    <title>AI Job Reader</title>
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
     <header class="topbar">
       <div class="container nav">
-        <a class="brand" href="#top">AI Job Rader</a>
+        <a class="brand" href="#top">AI Job Reader</a>
         <nav class="nav-links" aria-label="주요 메뉴">
           <a href="#jobs">채용공고</a>
           <a href="#sources">수집출처</a>
@@ -24,58 +24,93 @@
     </header>
 
     <main id="top">
-      <section class="hero">
-        <div class="container hero-grid">
-          <div class="hero-copy">
-            <p class="eyebrow">AI careers, live signal</p>
-            <h1>AI Job Rader</h1>
-            <p class="hero-subtitle">
-              지금 열려 있는 AI 포지션을 더 빠르게, 더 선명하게.
-            </p>
-            <div class="hero-actions">
-              <a class="primary-btn" href="#jobs">공고 보기</a>
-              <a class="secondary-btn" href="#portals">회사 채용관</a>
-            </div>
-          </div>
-          <aside class="status-panel" aria-label="수집 상태">
-            <div class="status-head">
-              <span class="pulse"></span>
-              <span>자동 수집 상태</span>
-            </div>
-            <dl class="status-list">
-              <div>
-                <dt>총 공고</dt>
-                <dd id="totalJobs">-</dd>
-              </div>
-              <div>
-                <dt>신입 가능</dt>
-                <dd id="juniorJobs">-</dd>
-              </div>
-              <div>
-                <dt>곧 마감</dt>
-                <dd id="soonJobs">-</dd>
-              </div>
-              <div>
-                <dt>추가 채널</dt>
-                <dd id="channelCount">-</dd>
-              </div>
-            </dl>
-            <div class="radar-visual" aria-hidden="true">
-              <div class="radar-grid"></div>
-              <div class="radar-sweep"></div>
-              <span class="radar-pin pin-one"></span>
-              <span class="radar-pin pin-two"></span>
-              <span class="radar-pin pin-three"></span>
-            </div>
-            <div id="liveSignalList" class="live-signal-list"></div>
-            <p id="updatedAt" class="updated-at">데이터를 불러오는 중입니다.</p>
-          </aside>
+      <section class="reader-hero" id="readerIntro">
+        <div class="reader-beams" aria-hidden="true">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
-        <div class="container">
-          <div class="job-ticker" aria-label="실시간 AI 채용 신호">
-            <span class="ticker-label">Live scan</span>
-            <div class="ticker-window">
-              <div id="jobTicker" class="ticker-track"></div>
+        <div class="container reader-shell">
+          <p class="eyebrow">AI careers, live signal</p>
+          <h1>AI Job Reader</h1>
+          <p class="hero-subtitle">흩어진 AI 채용 신호를 한 번에 읽습니다.</p>
+          <div class="reader-actions">
+            <a class="primary-btn" href="#live-radar">레이더 보기</a>
+            <a class="secondary-btn" href="#jobs">공고 탐색</a>
+          </div>
+          <div class="reader-hints" aria-label="핵심 기능">
+            <span>Vision AI</span>
+            <span>LLM</span>
+            <span>Physical AI</span>
+            <span>신입 가능</span>
+          </div>
+        </div>
+        <a class="scroll-cue" href="#live-radar" aria-label="다음 섹션으로 이동">
+          <span></span>
+        </a>
+      </section>
+
+      <section class="morph-section" id="live-radar">
+        <div class="morph-sticky">
+          <div class="container morph-grid">
+            <div class="morph-copy">
+              <p id="phaseLabel" class="eyebrow">Signal scan</p>
+              <h2 id="phaseTitle">공고의 흐름이 열립니다</h2>
+              <p id="phaseText">
+                포털 검색, 회사 채용관, AI 키워드를 한 화면에서 재정렬합니다.
+              </p>
+              <div class="phase-meter" aria-hidden="true">
+                <span></span>
+              </div>
+              <div class="morph-tags" aria-label="주요 분류">
+                <span>대기업</span>
+                <span>중견기업</span>
+                <span>스타트업</span>
+                <span>연구직</span>
+                <span>MLOps</span>
+              </div>
+            </div>
+
+            <aside class="status-panel morph-card" aria-label="수집 상태">
+              <div class="status-head">
+                <span class="pulse"></span>
+                <span>Live radar</span>
+              </div>
+              <dl class="status-list">
+                <div>
+                  <dt>총 공고</dt>
+                  <dd id="totalJobs">-</dd>
+                </div>
+                <div>
+                  <dt>신입 가능</dt>
+                  <dd id="juniorJobs">-</dd>
+                </div>
+                <div>
+                  <dt>곧 마감</dt>
+                  <dd id="soonJobs">-</dd>
+                </div>
+                <div>
+                  <dt>추가 채널</dt>
+                  <dd id="channelCount">-</dd>
+                </div>
+              </dl>
+              <div class="radar-visual" aria-hidden="true">
+                <div class="radar-grid"></div>
+                <div class="radar-sweep"></div>
+                <span class="radar-pin pin-one"></span>
+                <span class="radar-pin pin-two"></span>
+                <span class="radar-pin pin-three"></span>
+              </div>
+              <div id="liveSignalList" class="live-signal-list"></div>
+              <p id="updatedAt" class="updated-at">데이터를 불러오는 중입니다.</p>
+            </aside>
+
+            <div class="job-ticker morph-ticker" aria-label="실시간 AI 채용 신호">
+              <span class="ticker-label">Live scan</span>
+              <div class="ticker-window">
+                <div id="jobTicker" class="ticker-track"></div>
+              </div>
             </div>
           </div>
         </div>
@@ -146,6 +181,9 @@
           <p id="filterSummary" class="filter-summary">현재 조건에 맞는 공고 0개</p>
 
           <div id="jobList" class="job-list" aria-live="polite"></div>
+          <button id="loadMoreBtn" class="load-more-btn" type="button" hidden>
+            더보기
+          </button>
           <div id="emptyState" class="empty-state" hidden>
             조건에 맞는 공고가 없습니다. 검색어나 필터를 조금 넓혀보세요.
           </div>
@@ -188,7 +226,7 @@
 
     <footer>
       <div class="container">
-        <span>AI Job Rader</span>
+        <span>AI Job Reader</span>
         <span>공고 데이터는 각 채용 플랫폼의 공개 페이지를 기준으로 매일 갱신됩니다.</span>
       </div>
     </footer>

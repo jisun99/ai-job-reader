@@ -25,7 +25,7 @@ const SEARCH_KEYWORDS = [
 const CURATED_JOBS = [
   {
     id: "curated-hdhyundai-2026-07-research-hdksoe",
-    source: "HD현대 공식/캐치",
+    source: "회사 자체 사이트",
     company: "HD한국조선해양",
     title: "[HD현대] 2026년 7월 연구직 채용 - AI/Physical AI/제조 AI",
     url: "https://recruit.hd.com/",
@@ -43,7 +43,7 @@ const CURATED_JOBS = [
   },
   {
     id: "curated-hdhyundai-2026-07-research-hhi",
-    source: "HD현대 공식/캐치",
+    source: "회사 자체 사이트",
     company: "HD현대중공업",
     title: "[HD현대] 2026년 7월 연구직 채용 - AI/AX 엔지니어·빅데이터·자율제어",
     url: "https://recruit.hd.com/",

@@ -1,3 +1,5 @@
+const PAGE_SIZE = 20;
+
 const state = {
   jobs: [],
   sourceHealth: [],
@@ -10,6 +12,7 @@ const state = {
   keyword: "all",
   career: "all",
   sort: "deadline",
+  visibleLimit: PAGE_SIZE,
 };
 
 document.body.classList.add("enhanced");
@@ -29,6 +32,7 @@ const els = {
   searchInput: document.querySelector("#searchInput"),
   filterSummary: document.querySelector("#filterSummary"),
   jobList: document.querySelector("#jobList"),
+  loadMoreBtn: document.querySelector("#loadMoreBtn"),
   emptyState: document.querySelector("#emptyState"),
   sourceList: document.querySelector("#sourceList"),
   discoveryList: document.querySelector("#discoveryList"),
@@ -36,7 +40,29 @@ const els = {
   portalCount: document.querySelector("#portalCount"),
   jobTicker: document.querySelector("#jobTicker"),
   liveSignalList: document.querySelector("#liveSignalList"),
+  morphSection: document.querySelector("#live-radar"),
+  phaseLabel: document.querySelector("#phaseLabel"),
+  phaseTitle: document.querySelector("#phaseTitle"),
+  phaseText: document.querySelector("#phaseText"),
 };
+
+const phases = [
+  {
+    label: "Signal scan",
+    title: "공고의 흐름이 열립니다",
+    text: "포털 검색, 회사 채용관, AI 키워드를 한 화면에서 재정렬합니다.",
+  },
+  {
+    label: "Role mapping",
+    title: "분야와 규모가 다시 정렬됩니다",
+    text: "Vision AI, LLM, Physical AI와 기업 규모를 겹쳐 보며 우선순위를 좁힙니다.",
+  },
+  {
+    label: "Apply ready",
+    title: "지원할 공고만 남깁니다",
+    text: "신입 가능, 경력, 인턴 조건을 확인하고 원문 지원 페이지로 바로 이동합니다.",
+  },
+];
 
 const formatDate = new Intl.DateTimeFormat("ko-KR", {
   dateStyle: "medium",
@@ -51,43 +77,38 @@ async function init() {
   state.discoverySources = Array.isArray(data.discoverySources) ? data.discoverySources : [];
   state.careerPortals = Array.isArray(data.careerPortals) ? data.careerPortals : [];
 
-  populateFilters();
   bindEvents();
+  bindScrollScene();
   render(data.generatedAt);
-}
-
-function populateFilters() {
-  refreshFilterOptions();
 }
 
 function bindEvents() {
   els.searchInput.addEventListener("input", (event) => {
-    state.query = event.target.value.trim().toLowerCase();
-    render();
+    updateFilter("query", event.target.value.trim().toLowerCase());
   });
 
   els.sourceFilter.addEventListener("change", (event) => {
-    state.source = event.target.value;
-    render();
+    updateFilter("source", event.target.value);
   });
 
   els.fieldFilter.addEventListener("change", (event) => {
-    state.field = event.target.value;
-    render();
+    updateFilter("field", event.target.value);
   });
 
   els.companyTypeFilter.addEventListener("change", (event) => {
-    state.companyType = event.target.value;
-    render();
+    updateFilter("companyType", event.target.value);
   });
 
   els.keywordFilter.addEventListener("change", (event) => {
-    state.keyword = event.target.value;
-    render();
+    updateFilter("keyword", event.target.value);
   });
 
   els.sortSelect.addEventListener("change", (event) => {
-    state.sort = event.target.value;
+    updateFilter("sort", event.target.value);
+  });
+
+  els.loadMoreBtn.addEventListener("click", () => {
+    state.visibleLimit += PAGE_SIZE;
     render();
   });
 
@@ -97,14 +118,54 @@ function bindEvents() {
         .querySelectorAll(".segment")
         .forEach((item) => item.classList.remove("active"));
       button.classList.add("active");
-      state.career = button.dataset.career;
-      render();
+      updateFilter("career", button.dataset.career);
     });
   });
 }
 
+function updateFilter(key, value) {
+  state[key] = value;
+  state.visibleLimit = PAGE_SIZE;
+  render();
+}
+
+function bindScrollScene() {
+  if (!els.morphSection) return;
+
+  let ticking = false;
+  const update = () => {
+    ticking = false;
+    const rect = els.morphSection.getBoundingClientRect();
+    const span = Math.max(rect.height - window.innerHeight, 1);
+    const progress = clamp((window.innerHeight * 0.22 - rect.top) / span, 0, 1);
+    const phaseIndex = progress > 0.68 ? 2 : progress > 0.34 ? 1 : 0;
+    const phase = phases[phaseIndex];
+
+    els.morphSection.style.setProperty("--scene-progress", progress.toFixed(3));
+    els.morphSection.style.setProperty("--scene-lift", `${Math.round(progress * -42)}px`);
+    els.morphSection.style.setProperty("--scene-slide", `${Math.round((0.5 - progress) * 48)}px`);
+    els.morphSection.style.setProperty("--scene-slide-reverse", `${Math.round((progress - 0.5) * 48)}px`);
+    els.morphSection.style.setProperty("--scene-card-lift", `${Math.round(progress * 23)}px`);
+    els.morphSection.dataset.phase = String(phaseIndex + 1);
+    els.phaseLabel.textContent = phase.label;
+    els.phaseTitle.textContent = phase.title;
+    els.phaseText.textContent = phase.text;
+  };
+
+  const requestUpdate = () => {
+    if (ticking) return;
+    ticking = true;
+    window.requestAnimationFrame(update);
+  };
+
+  window.addEventListener("scroll", requestUpdate, { passive: true });
+  window.addEventListener("resize", requestUpdate);
+  requestUpdate();
+}
+
 function render(generatedAt) {
   const filtered = applyFilters(state.jobs);
+  const visibleJobs = filtered.slice(0, state.visibleLimit);
 
   els.totalJobs.textContent = state.jobs.length.toLocaleString("ko-KR");
   els.juniorJobs.textContent = state.jobs
@@ -121,10 +182,13 @@ function render(generatedAt) {
     els.updatedAt.textContent = `마지막 갱신: ${formatDate.format(new Date(generatedAt))}`;
   }
 
-  els.resultCount.textContent = `${filtered.length.toLocaleString("ko-KR")}개 표시`;
-  els.filterSummary.textContent = `현재 조건에 맞는 공고 ${filtered.length.toLocaleString("ko-KR")}개`;
-  els.jobList.innerHTML = filtered.map(renderJobCard).join("");
+  els.resultCount.textContent = `${visibleJobs.length.toLocaleString("ko-KR")} / ${filtered.length.toLocaleString("ko-KR")}개 표시`;
+  els.filterSummary.textContent = `현재 조건에 맞는 공고 ${filtered.length.toLocaleString("ko-KR")}개 중 ${visibleJobs.length.toLocaleString("ko-KR")}개 표시`;
+  els.jobList.innerHTML = visibleJobs.map(renderJobCard).join("");
   els.emptyState.hidden = filtered.length > 0;
+  els.loadMoreBtn.hidden = visibleJobs.length >= filtered.length || filtered.length === 0;
+  els.loadMoreBtn.textContent = `더보기 ${Math.min(PAGE_SIZE, filtered.length - visibleJobs.length).toLocaleString("ko-KR")}개`;
+
   refreshFilterOptions();
   refreshCareerCounts();
   renderTicker(filtered);
@@ -138,7 +202,7 @@ function applyFilters(jobs, overrides = {}) {
   const filters = { ...state, ...overrides };
   return jobs
     .filter((job) => {
-      if (filters.source !== "all" && job.source !== filters.source) return false;
+      if (filters.source !== "all" && normalizedSource(job) !== filters.source) return false;
       if (filters.field !== "all" && !(job.fields || []).includes(filters.field)) return false;
       if (filters.companyType !== "all" && (job.companyType || "분류 필요") !== filters.companyType) return false;
       if (filters.keyword !== "all" && !(job.focusKeywords || []).includes(filters.keyword)) return false;
@@ -153,6 +217,7 @@ function applyFilters(jobs, overrides = {}) {
         job.education,
         job.employmentType,
         job.companyType,
+        normalizedSource(job),
         ...(job.fields || []),
         ...(job.skills || []),
         ...(job.focusKeywords || []),
@@ -166,7 +231,7 @@ function applyFilters(jobs, overrides = {}) {
 }
 
 function refreshFilterOptions() {
-  const sourceOptions = unique(state.jobs.map((job) => job.source).filter(Boolean));
+  const sourceOptions = unique(state.jobs.map(normalizedSource).filter(Boolean));
   const fieldOptions = unique(state.jobs.flatMap((job) => job.fields || []));
   const companyTypeOptions = ["대기업", "중견기업", "중소기업", "스타트업", "분류 필요"];
   const keywordOptions = unique(state.jobs.flatMap((job) => job.focusKeywords || []));
@@ -216,7 +281,7 @@ function renderJobCard(job) {
     <article class="job-card">
       <div class="job-main">
         <div class="job-topline">
-          <span class="source-badge">${escapeHtml(job.source)}</span>
+          <span class="source-badge">${escapeHtml(normalizedSource(job))}</span>
           <span class="company-type-badge">${escapeHtml(job.companyType || "분류 필요")}</span>
           <span class="deadline-badge">${escapeHtml(deadlineLabel(job.deadline))}</span>
         </div>
@@ -242,8 +307,6 @@ function renderJobCard(job) {
 }
 
 function renderSources() {
-  const healthByName = new Map(state.sourceHealth.map((item) => [item.name, item]));
-
   els.sourceList.innerHTML = state.sourceHealth
     .map((health) => {
       const name = health.name;
@@ -332,6 +395,12 @@ function revealJobCards() {
   });
 }
 
+function normalizedSource(job) {
+  const source = String(job?.source || "");
+  if (/공식|캐치|Careers|Greenhouse|Lever/i.test(source)) return "회사 자체 사이트";
+  return source || "기타";
+}
+
 function sourceDescription(name) {
   return {
     잡코리아: "AI, ML, 데이터 직무 검색 결과에서 공개 공고를 읽습니다.",
@@ -392,6 +461,10 @@ function safe(value) {
 
 function unique(items) {
   return [...new Set(items)].sort((a, b) => a.localeCompare(b, "ko"));
+}
+
+function clamp(value, min, max) {
+  return Math.min(Math.max(value, min), max);
 }
 
 function escapeHtml(value) {
