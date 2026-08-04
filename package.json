@@ -1,0 +1,13 @@
+{
+  "name": "ai-job-radar",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "collect": "node scripts/fetch-jobs.mjs",
+    "serve": "python -m http.server 4173"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

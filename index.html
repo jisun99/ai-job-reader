@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="AI 분야 취업 준비생을 위한 채용 공고 자동 수집 보드"
+    />
+    <title>AI Job Radar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container nav">
+        <a class="brand" href="#top">AI Job Radar</a>
+        <nav class="nav-links" aria-label="주요 메뉴">
+          <a href="#jobs">채용공고</a>
+          <a href="#sources">수집출처</a>
+          <a href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">AI careers, collected daily</p>
+            <h1>AI 취업 준비생을 위한 채용 공고 레이더</h1>
+            <p class="hero-subtitle">
+              머신러닝, 딥러닝, LLM, 컴퓨터비전, 데이터 사이언스 관련 공고만 모아
+              지원 자격과 분야를 한눈에 확인하고 원문 지원 페이지로 바로 이동하세요.
+            </p>
+            <div class="hero-actions">
+              <a class="primary-btn" href="#jobs">공고 보기</a>
+              <a class="secondary-btn" href="#sources">출처 확인</a>
+            </div>
+          </div>
+          <aside class="status-panel" aria-label="수집 상태">
+            <div class="status-head">
+              <span class="pulse"></span>
+              <span>자동 수집 상태</span>
+            </div>
+            <dl class="status-list">
+              <div>
+                <dt>총 공고</dt>
+                <dd id="totalJobs">-</dd>
+              </div>
+              <div>
+                <dt>신입 가능</dt>
+                <dd id="juniorJobs">-</dd>
+              </div>
+              <div>
+                <dt>곧 마감</dt>
+                <dd id="soonJobs">-</dd>
+              </div>
+            </dl>
+            <p id="updatedAt" class="updated-at">데이터를 불러오는 중입니다.</p>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section" id="jobs">
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Open roles</p>
+              <h2>AI 채용 공고</h2>
+            </div>
+            <div class="view-meta">
+              <span id="resultCount">0개 표시</span>
+            </div>
+          </div>
+
+          <div class="toolbar" aria-label="채용공고 필터">
+            <label class="search-box">
+              <span>검색</span>
+              <input
+                id="searchInput"
+                type="search"
+                placeholder="회사, 직무, 기술스택 검색"
+                autocomplete="off"
+              />
+            </label>
+            <label>
+              <span>출처</span>
+              <select id="sourceFilter"></select>
+            </label>
+            <label>
+              <span>분야</span>
+              <select id="fieldFilter"></select>
+            </label>
+            <label>
+              <span>정렬</span>
+              <select id="sortSelect">
+                <option value="deadline">마감 임박순</option>
+                <option value="recent">최근 수집순</option>
+                <option value="company">회사명순</option>
+              </select>
+            </label>
+          </div>
+
+          <div class="segmented" aria-label="경력 필터">
+            <button class="segment active" type="button" data-career="all">전체</button>
+            <button class="segment" type="button" data-career="junior">신입 가능</button>
+            <button class="segment" type="button" data-career="experienced">경력</button>
+            <button class="segment" type="button" data-career="intern">인턴</button>
+          </div>
+
+          <div id="jobList" class="job-list" aria-live="polite"></div>
+          <div id="emptyState" class="empty-state" hidden>
+            조건에 맞는 공고가 없습니다. 검색어나 필터를 조금 넓혀보세요.
+          </div>
+        </div>
+      </section>
+
+      <section class="section source-section" id="sources">
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Sources</p>
+              <h2>수집 출처</h2>
+            </div>
+          </div>
+          <div id="sourceList" class="source-list"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <span>AI Job Radar</span>
+        <span>공고 데이터는 각 채용 플랫폼의 공개 페이지를 기준으로 매일 갱신됩니다.</span>
+      </div>
+    </footer>
+
+    <script src="./app.js" type="module"></script>
+  </body>
+</html>
