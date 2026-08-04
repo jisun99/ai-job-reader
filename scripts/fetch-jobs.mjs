@@ -5,6 +5,10 @@ const collectedAt = new Date().toISOString();
 
 const SEARCH_KEYWORDS = [
   "AI 머신러닝",
+  "HD현대 AI",
+  "HD현대 연구직",
+  "Physical AI",
+  "Vision AI",
   "LLM",
   "딥러닝",
   "컴퓨터비전",
@@ -16,6 +20,45 @@ const SEARCH_KEYWORDS = [
   "추천시스템",
   "생성형 AI",
   "Foundation Model",
+];
+
+const CURATED_JOBS = [
+  {
+    id: "curated-hdhyundai-2026-07-research-hdksoe",
+    source: "HD현대 공식/캐치",
+    company: "HD한국조선해양",
+    title: "[HD현대] 2026년 7월 연구직 채용 - AI/Physical AI/제조 AI",
+    url: "https://recruit.hd.com/",
+    career: "신입·경력",
+    careerGroup: "junior",
+    education: "석사↑",
+    location: "경기 성남시 분당구, 울산",
+    employmentType: "정규직",
+    deadline: "2026-08-10",
+    fields: ["Physical AI", "Vision AI", "제조 AI", "머신러닝", "AI Research"],
+    skills: ["Python", "C++"],
+    companyType: "대기업",
+    focusKeywords: ["Physical AI", "Vision AI", "Manufacturing AI", "Robotics"],
+    collectedAt,
+  },
+  {
+    id: "curated-hdhyundai-2026-07-research-hhi",
+    source: "HD현대 공식/캐치",
+    company: "HD현대중공업",
+    title: "[HD현대] 2026년 7월 연구직 채용 - AI/AX 엔지니어·빅데이터·자율제어",
+    url: "https://recruit.hd.com/",
+    career: "신입·경력",
+    careerGroup: "junior",
+    education: "석사↑",
+    location: "울산 동구, 경기 성남시 분당구",
+    employmentType: "정규직",
+    deadline: "2026-08-10",
+    fields: ["AI/AX", "Data Engineering", "Physical AI", "AI Research"],
+    skills: ["Python", "C++", "Java"],
+    companyType: "대기업",
+    focusKeywords: ["Physical AI", "Industrial AI", "Robotics", "Data Engineering"],
+    collectedAt,
+  },
 ];
 
 const AI_KEYWORDS = [
@@ -105,6 +148,16 @@ const OFFICIAL_API_SOURCES = [
 
 const DISCOVERY_SOURCES = [
   {
+    name: "HD현대 공식 채용",
+    url: "https://recruit.hd.com/",
+    description: "HD현대그룹 연구직, AI, Physical AI, 제조 AI 공고를 공식 채용관에서 확인합니다.",
+  },
+  {
+    name: "캐치 HD현대 연구직",
+    url: "https://www.catch.co.kr/NCS/RecruitInfoDetails/563682",
+    description: "HD한국조선해양 2026년 7월 연구직 채용 상세와 지원 정보를 확인합니다.",
+  },
+  {
     name: "원티드",
     url: "https://www.wanted.co.kr/search?query=AI&tab=position",
     description: "스타트업과 테크 기업의 AI, 데이터, ML 직무를 검색합니다.",
@@ -157,6 +210,9 @@ const DISCOVERY_SOURCES = [
 ];
 
 const CAREER_PORTALS = [
+  ["HD현대 공식 채용", "https://recruit.hd.com/"],
+  ["HD한국조선해양", "https://www.hd-ksoe.com/"],
+  ["HD현대중공업", "https://www.hhi.co.kr/"],
   ["NAVER Careers", "https://recruit.navercorp.com/"],
   ["Kakao Careers", "https://careers.kakao.com/"],
   ["LINE Careers", "https://careers.linecorp.com/ko/"],
@@ -184,7 +240,15 @@ const CAREER_PORTALS = [
 ].map(([name, url]) => ({ name, url }));
 
 const sourceHealth = [];
-const jobs = [];
+const jobs = CURATED_JOBS.map(normalizeJob);
+
+sourceHealth.push({
+  name: "핵심 공식 공고",
+  ok: CURATED_JOBS.length > 0,
+  count: CURATED_JOBS.length,
+  message: "HD현대 등 공식 채용관에서 확인된 중요 공고를 별도 반영",
+  url: "https://recruit.hd.com/",
+});
 
 for (const source of PLATFORM_SOURCES) {
   const sourceJobs = [];
@@ -406,10 +470,14 @@ function parseGreenhouse(json, source) {
 }
 
 function normalizeJob(job) {
+  const fields = unique(job.fields || []);
+  const skills = unique(job.skills || []);
   return {
     ...job,
-    fields: unique(job.fields || []),
-    skills: unique(job.skills || []),
+    fields,
+    skills,
+    companyType: job.companyType || inferCompanyType(job.company, job.source),
+    focusKeywords: unique(job.focusKeywords || inferFocusKeywords(`${job.title} ${job.company} ${fields.join(" ")} ${skills.join(" ")}`)),
   };
 }
 
@@ -429,16 +497,49 @@ function isAiRole(job) {
 
 function inferFields(text) {
   const fields = [];
+  if (/Physical AI|피지컬\s?AI|로봇|Robot|Robotics|자율제어|무인/i.test(text)) fields.push("Physical AI");
+  if (/Vision AI|Computer Vision|컴퓨터비전|Vision|영상|이미지|3D|Object Detection|OCR/i.test(text)) fields.push("Vision AI");
   if (/LLM|생성형|Foundation|RAG|NLP|자연어|Large Language/i.test(text)) fields.push("LLM/NLP");
-  if (/Computer Vision|컴퓨터비전|Vision|영상|이미지|3D|Object Detection|OCR/i.test(text)) fields.push("Computer Vision");
   if (/MLOps|ML\s?Ops|플랫폼|Serving|서빙|Model Ops/i.test(text)) fields.push("MLOps");
   if (/Data Scientist|데이터\s?사이언|분석|통계|Experiment/i.test(text)) fields.push("Data Science");
   if (/Data Engineer|데이터\s?엔지니어|ETL|SQL|Pipeline|Warehouse/i.test(text)) fields.push("Data Engineering");
+  if (/제조|Manufacturing|공정|품질|Industrial|설비|PHM|CBM|AIoT/i.test(text)) fields.push("Industrial AI");
+  if (/AX|AI\/AX|AI 전환|DT|Digital Transformation/i.test(text)) fields.push("AI/AX");
   if (/Machine Learning|머신러닝|ML|Deep Learning|딥러닝|Recommendation|추천/i.test(text)) fields.push("머신러닝");
   if (/(AI|ML|머신러닝|딥러닝|LLM|NLP|Computer Vision|컴퓨터비전).{0,30}(Research|리서치|연구)|(?:Research|리서치|연구).{0,30}(AI|ML|머신러닝|딥러닝|LLM|NLP|Computer Vision|컴퓨터비전)/i.test(text)) {
     fields.push("AI Research");
   }
   return fields.length ? fields : ["AI·데이터"];
+}
+
+function inferFocusKeywords(text) {
+  const keywords = [];
+  if (/Physical AI|피지컬\s?AI/i.test(text)) keywords.push("Physical AI");
+  if (/Vision AI|Computer Vision|컴퓨터비전|Object Detection|OCR|영상|이미지|3D/i.test(text)) keywords.push("Vision AI");
+  if (/LLM|RAG|생성형|Foundation|NLP|자연어|Large Language/i.test(text)) keywords.push("LLM");
+  if (/Robot|로봇|Robotics|자율제어|무인|Autonomous/i.test(text)) keywords.push("Robotics");
+  if (/Manufacturing|제조|공정|품질|Industrial|PHM|CBM|AIoT|설비/i.test(text)) keywords.push("Manufacturing AI");
+  if (/MLOps|Serving|서빙|Kubernetes|Docker/i.test(text)) keywords.push("MLOps");
+  if (/Data Engineer|Data Engineering|데이터\s?엔지니어|ETL|Pipeline|Warehouse/i.test(text)) keywords.push("Data Engineering");
+  if (/Data Scientist|Data Science|데이터\s?사이언|분석|통계/i.test(text)) keywords.push("Data Science");
+  if (/Recommendation|추천/i.test(text)) keywords.push("Recommendation");
+  if (/AI\/AX|AX|AI 전환|Digital Transformation|DT/i.test(text)) keywords.push("AI/AX");
+  return keywords.length ? keywords : ["AI"];
+}
+
+function inferCompanyType(company = "", source = "") {
+  const text = `${company} ${source}`;
+  if (/HD현대|HD한국|에이치디|HD현대중공업|삼성|Samsung|LG|SK|현대|Hyundai|NAVER|네이버|카카오뱅크|카카오|Kakao|LINE|Coupang|쿠팡|KT|NC소프트|NCSOFT|넥슨|Nexon|Moloco|Sendbird/i.test(text)) {
+    return "대기업";
+  }
+  if (/한글과컴퓨터|안랩|더존|솔트룩스|셀바스|코난테크놀로지|마크로젠|NHN|현대오토에버|롯데이노베이트|포스코DX|아이티센/i.test(text)) {
+    return "중견기업";
+  }
+  if (/업스테이지|Upstage|뤼튼|Wrtn|Rebellions|리벨리온|Lunit|루닛|Scatter|스타트업|Startup|벤처/i.test(text)) {
+    return "스타트업";
+  }
+  if (/㈜|주식회사|\(주\)/.test(text)) return "중소기업";
+  return "분류 필요";
 }
 
 function inferSkills(text) {

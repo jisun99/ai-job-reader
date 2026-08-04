@@ -7,9 +7,12 @@ AI 분야 취업 준비생을 위한 채용 공고 자동 수집 웹사이트입
 - 잡코리아, 사람인, 자소설닷컴, 직행 등 채용 플랫폼의 공개 검색 페이지 참고
 - 잡코리아, 사람인은 여러 AI 키워드로 반복 검색해 더 많은 공고 수집
 - Moloco, Sendbird 등 Greenhouse 기반 회사 공식 채용 API 수집
+- HD현대 2026년 7월 연구직 채용처럼 포털 수집에서 누락될 수 있는 핵심 공식 공고 큐레이션 반영
 - 원티드, 점핏, 프로그래머스 커리어, 랠릿, 로켓펀치, LinkedIn 등 추가 탐색 채널 제공
 - NAVER, Kakao, Coupang, Toss, Upstage, Rebellions, Lunit 등 주요 회사 공식 채용관 링크 제공
 - AI, 머신러닝, 딥러닝, LLM, NLP, 컴퓨터비전, MLOps, 데이터 직무 중심 필터링
+- 대기업, 중견기업, 중소기업, 스타트업 기업 규모 필터
+- Vision AI, LLM, Physical AI, Robotics, Manufacturing AI 등 세부 키워드 필터
 - 경력, 학력, 근무지, 고용형태, 마감 정보를 공고 카드에서 요약
 - 공고 클릭 시 원문 지원 페이지로 이동
 - GitHub Actions로 매일 `public/jobs.json` 자동 갱신

@@ -302,7 +302,7 @@ h2 {
 
 .toolbar {
   display: grid;
-  grid-template-columns: 1.3fr repeat(3, minmax(160px, 0.45fr));
+  grid-template-columns: 1.5fr repeat(5, minmax(130px, 0.45fr));
   gap: 12px;
   border-radius: var(--radius-lg);
   padding: 16px;
@@ -386,8 +386,10 @@ h2 {
 }
 
 .source-badge,
+.company-type-badge,
 .deadline-badge,
-.tag {
+.tag,
+.keyword-tag {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -402,9 +404,19 @@ h2 {
   color: var(--blue);
 }
 
+.company-type-badge {
+  background: #f1efe8;
+  color: #6b604b;
+}
+
 .deadline-badge {
   background: var(--warning-soft);
   color: var(--warning);
+}
+
+.keyword-tag {
+  background: #eef3ff;
+  color: #2f5f9f;
 }
 
 .tag {

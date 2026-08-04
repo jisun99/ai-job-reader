@@ -6,6 +6,8 @@ const state = {
   query: "",
   source: "all",
   field: "all",
+  companyType: "all",
+  keyword: "all",
   career: "all",
   sort: "deadline",
 };
@@ -19,6 +21,8 @@ const els = {
   resultCount: document.querySelector("#resultCount"),
   sourceFilter: document.querySelector("#sourceFilter"),
   fieldFilter: document.querySelector("#fieldFilter"),
+  companyTypeFilter: document.querySelector("#companyTypeFilter"),
+  keywordFilter: document.querySelector("#keywordFilter"),
   sortSelect: document.querySelector("#sortSelect"),
   searchInput: document.querySelector("#searchInput"),
   jobList: document.querySelector("#jobList"),
@@ -50,6 +54,8 @@ async function init() {
 function populateFilters() {
   const sources = unique(state.jobs.map((job) => job.source).filter(Boolean));
   const fields = unique(state.jobs.flatMap((job) => job.fields || []));
+  const companyTypes = ["대기업", "중견기업", "중소기업", "스타트업", "분류 필요"];
+  const keywords = unique(state.jobs.flatMap((job) => job.focusKeywords || []));
 
   els.sourceFilter.innerHTML = [
     option("all", "전체 출처"),
@@ -59,6 +65,16 @@ function populateFilters() {
   els.fieldFilter.innerHTML = [
     option("all", "전체 분야"),
     ...fields.map((field) => option(field, field)),
+  ].join("");
+
+  els.companyTypeFilter.innerHTML = [
+    option("all", "전체 규모"),
+    ...companyTypes.map((type) => option(type, type)),
+  ].join("");
+
+  els.keywordFilter.innerHTML = [
+    option("all", "전체 키워드"),
+    ...keywords.map((keyword) => option(keyword, keyword)),
   ].join("");
 }
 
@@ -75,6 +91,16 @@ function bindEvents() {
 
   els.fieldFilter.addEventListener("change", (event) => {
     state.field = event.target.value;
+    render();
+  });
+
+  els.companyTypeFilter.addEventListener("change", (event) => {
+    state.companyType = event.target.value;
+    render();
+  });
+
+  els.keywordFilter.addEventListener("change", (event) => {
+    state.keyword = event.target.value;
     render();
   });
 
@@ -125,6 +151,8 @@ function applyFilters(jobs) {
     .filter((job) => {
       if (state.source !== "all" && job.source !== state.source) return false;
       if (state.field !== "all" && !(job.fields || []).includes(state.field)) return false;
+      if (state.companyType !== "all" && (job.companyType || "분류 필요") !== state.companyType) return false;
+      if (state.keyword !== "all" && !(job.focusKeywords || []).includes(state.keyword)) return false;
       if (state.career !== "all" && job.careerGroup !== state.career) return false;
       if (!state.query) return true;
 
@@ -135,8 +163,10 @@ function applyFilters(jobs) {
         job.career,
         job.education,
         job.employmentType,
+        job.companyType,
         ...(job.fields || []),
         ...(job.skills || []),
+        ...(job.focusKeywords || []),
       ]
         .join(" ")
         .toLowerCase();
@@ -153,14 +183,18 @@ function sortJobs(a, b) {
 }
 
 function renderJobCard(job) {
-  const fields = (job.fields || []).slice(0, 4);
-  const skills = (job.skills || []).slice(0, 5);
+  const focusKeywords = (job.focusKeywords || []).slice(0, 5);
+  const usedTags = new Set(focusKeywords);
+  const fields = (job.fields || []).filter((field) => !usedTags.has(field)).slice(0, 4);
+  fields.forEach((field) => usedTags.add(field));
+  const skills = (job.skills || []).filter((skill) => !usedTags.has(skill)).slice(0, 5);
 
   return `
     <article class="job-card">
       <div class="job-main">
         <div class="job-topline">
           <span class="source-badge">${escapeHtml(job.source)}</span>
+          <span class="company-type-badge">${escapeHtml(job.companyType || "분류 필요")}</span>
           <span class="deadline-badge">${escapeHtml(deadlineLabel(job.deadline))}</span>
         </div>
         <h3>${escapeHtml(job.title)}</h3>
@@ -172,6 +206,7 @@ function renderJobCard(job) {
           ${metaBox("고용형태", job.employmentType)}
         </div>
         <div class="tags">
+          ${focusKeywords.map((keyword) => `<span class="keyword-tag">${escapeHtml(keyword)}</span>`).join("")}
           ${fields.map((field) => `<span class="tag">${escapeHtml(field)}</span>`).join("")}
           ${skills.map((skill) => `<span class="tag">${escapeHtml(skill)}</span>`).join("")}
         </div>
