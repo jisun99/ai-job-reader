@@ -148,16 +148,6 @@ const OFFICIAL_API_SOURCES = [
 
 const DISCOVERY_SOURCES = [
   {
-    name: "HD현대 공식 채용",
-    url: "https://recruit.hd.com/",
-    description: "HD현대그룹 연구직, AI, Physical AI, 제조 AI 공고를 공식 채용관에서 확인합니다.",
-  },
-  {
-    name: "캐치 HD현대 연구직",
-    url: "https://www.catch.co.kr/NCS/RecruitInfoDetails/563682",
-    description: "HD한국조선해양 2026년 7월 연구직 채용 상세와 지원 정보를 확인합니다.",
-  },
-  {
     name: "원티드",
     url: "https://www.wanted.co.kr/search?query=AI&tab=position",
     description: "스타트업과 테크 기업의 AI, 데이터, ML 직무를 검색합니다.",
@@ -210,9 +200,6 @@ const DISCOVERY_SOURCES = [
 ];
 
 const CAREER_PORTALS = [
-  ["HD현대 공식 채용", "https://recruit.hd.com/"],
-  ["HD한국조선해양", "https://www.hd-ksoe.com/"],
-  ["HD현대중공업", "https://www.hhi.co.kr/"],
   ["NAVER Careers", "https://recruit.navercorp.com/"],
   ["Kakao Careers", "https://careers.kakao.com/"],
   ["LINE Careers", "https://careers.linecorp.com/ko/"],
@@ -241,14 +228,6 @@ const CAREER_PORTALS = [
 
 const sourceHealth = [];
 const jobs = CURATED_JOBS.map(normalizeJob);
-
-sourceHealth.push({
-  name: "핵심 공식 공고",
-  ok: CURATED_JOBS.length > 0,
-  count: CURATED_JOBS.length,
-  message: "HD현대 등 공식 채용관에서 확인된 중요 공고를 별도 반영",
-  url: "https://recruit.hd.com/",
-});
 
 for (const source of PLATFORM_SOURCES) {
   const sourceJobs = [];

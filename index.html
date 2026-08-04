@@ -28,11 +28,9 @@
         <div class="container hero-grid">
           <div class="hero-copy">
             <p class="eyebrow">AI careers, collected daily</p>
-            <h1>AI 취업 준비생을 위한 넓은 채용 공고 레이더</h1>
+            <h1>AI 커리어를 고르는 더 선명한 기준</h1>
             <p class="hero-subtitle">
-              채용 포털 검색 결과, 회사 공식 채용 API, 주요 테크 기업 채용관을 함께
-              모아 머신러닝, LLM, Vision AI, Physical AI, 제조 AI, 데이터 직무를
-              기업 규모별로 확인하세요.
+              흩어진 AI 채용을 분야와 기업 규모로 정리했습니다.
             </p>
             <div class="hero-actions">
               <a class="primary-btn" href="#jobs">공고 보기</a>
@@ -116,11 +114,20 @@
           </div>
 
           <div class="segmented" aria-label="경력 필터">
-            <button class="segment active" type="button" data-career="all">전체</button>
-            <button class="segment" type="button" data-career="junior">신입 가능</button>
-            <button class="segment" type="button" data-career="experienced">경력</button>
-            <button class="segment" type="button" data-career="intern">인턴</button>
+            <button class="segment active" type="button" data-career="all">
+              <span>전체</span><small data-career-count="all">0</small>
+            </button>
+            <button class="segment" type="button" data-career="junior">
+              <span>신입 가능</span><small data-career-count="junior">0</small>
+            </button>
+            <button class="segment" type="button" data-career="experienced">
+              <span>경력</span><small data-career-count="experienced">0</small>
+            </button>
+            <button class="segment" type="button" data-career="intern">
+              <span>인턴</span><small data-career-count="intern">0</small>
+            </button>
           </div>
+          <p id="filterSummary" class="filter-summary">현재 조건에 맞는 공고 0개</p>
 
           <div id="jobList" class="job-list" aria-live="polite"></div>
           <div id="emptyState" class="empty-state" hidden>

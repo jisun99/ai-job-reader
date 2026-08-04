@@ -22,26 +22,50 @@
 }
 
 @font-face {
-  font-family: "NexonLv1Gothic";
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON%20Lv1%20Gothic%20OTF%20Light.woff")
-    format("woff");
+  font-family: "Pretendard";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Light.woff2")
+    format("woff2");
   font-weight: 300;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "NexonLv1Gothic";
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON%20Lv1%20Gothic%20OTF.woff")
-    format("woff");
+  font-family: "Pretendard";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Regular.woff2")
+    format("woff2");
   font-weight: 400;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "NexonLv1Gothic";
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON%20Lv1%20Gothic%20OTF%20Bold.woff")
-    format("woff");
+  font-family: "Pretendard";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Medium.woff2")
+    format("woff2");
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Pretendard";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-SemiBold.woff2")
+    format("woff2");
+  font-weight: 600;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Pretendard";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Bold.woff2")
+    format("woff2");
   font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Pretendard";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-ExtraBold.woff2")
+    format("woff2");
+  font-weight: 800;
   font-display: swap;
 }
 
@@ -55,7 +79,7 @@ html {
 
 body {
   margin: 0;
-  font-family: "NexonLv1Gothic", "Apple SD Gothic Neo", "Malgun Gothic",
+  font-family: "Pretendard", "Apple SD Gothic Neo", "Malgun Gothic",
     Arial, sans-serif;
   background:
     radial-gradient(circle at top left, rgba(210, 230, 196, 0.18), transparent 28%),
@@ -344,6 +368,9 @@ h2 {
 }
 
 .segment {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
   min-height: 38px;
   cursor: pointer;
   border: 1px solid var(--line);
@@ -354,10 +381,24 @@ h2 {
   font-weight: 800;
 }
 
+.segment small {
+  color: inherit;
+  font-size: 0.76rem;
+  font-weight: 800;
+  opacity: 0.68;
+}
+
 .segment.active {
   border-color: #d7e7c9;
   background: var(--accent-soft);
   color: var(--accent-deep);
+}
+
+.filter-summary {
+  margin: -8px 0 18px;
+  color: var(--text-soft);
+  font-size: 0.9rem;
+  font-weight: 800;
 }
 
 .job-list {

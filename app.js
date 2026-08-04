@@ -25,6 +25,7 @@ const els = {
   keywordFilter: document.querySelector("#keywordFilter"),
   sortSelect: document.querySelector("#sortSelect"),
   searchInput: document.querySelector("#searchInput"),
+  filterSummary: document.querySelector("#filterSummary"),
   jobList: document.querySelector("#jobList"),
   emptyState: document.querySelector("#emptyState"),
   sourceList: document.querySelector("#sourceList"),
@@ -52,30 +53,7 @@ async function init() {
 }
 
 function populateFilters() {
-  const sources = unique(state.jobs.map((job) => job.source).filter(Boolean));
-  const fields = unique(state.jobs.flatMap((job) => job.fields || []));
-  const companyTypes = ["대기업", "중견기업", "중소기업", "스타트업", "분류 필요"];
-  const keywords = unique(state.jobs.flatMap((job) => job.focusKeywords || []));
-
-  els.sourceFilter.innerHTML = [
-    option("all", "전체 출처"),
-    ...sources.map((source) => option(source, source)),
-  ].join("");
-
-  els.fieldFilter.innerHTML = [
-    option("all", "전체 분야"),
-    ...fields.map((field) => option(field, field)),
-  ].join("");
-
-  els.companyTypeFilter.innerHTML = [
-    option("all", "전체 규모"),
-    ...companyTypes.map((type) => option(type, type)),
-  ].join("");
-
-  els.keywordFilter.innerHTML = [
-    option("all", "전체 키워드"),
-    ...keywords.map((keyword) => option(keyword, keyword)),
-  ].join("");
+  refreshFilterOptions();
 }
 
 function bindEvents() {
@@ -140,21 +118,25 @@ function render(generatedAt) {
   }
 
   els.resultCount.textContent = `${filtered.length.toLocaleString("ko-KR")}개 표시`;
+  els.filterSummary.textContent = `현재 조건에 맞는 공고 ${filtered.length.toLocaleString("ko-KR")}개`;
   els.jobList.innerHTML = filtered.map(renderJobCard).join("");
   els.emptyState.hidden = filtered.length > 0;
+  refreshFilterOptions();
+  refreshCareerCounts();
   renderSources();
   renderCareerPortals();
 }
 
-function applyFilters(jobs) {
+function applyFilters(jobs, overrides = {}) {
+  const filters = { ...state, ...overrides };
   return jobs
     .filter((job) => {
-      if (state.source !== "all" && job.source !== state.source) return false;
-      if (state.field !== "all" && !(job.fields || []).includes(state.field)) return false;
-      if (state.companyType !== "all" && (job.companyType || "분류 필요") !== state.companyType) return false;
-      if (state.keyword !== "all" && !(job.focusKeywords || []).includes(state.keyword)) return false;
-      if (state.career !== "all" && job.careerGroup !== state.career) return false;
-      if (!state.query) return true;
+      if (filters.source !== "all" && job.source !== filters.source) return false;
+      if (filters.field !== "all" && !(job.fields || []).includes(filters.field)) return false;
+      if (filters.companyType !== "all" && (job.companyType || "분류 필요") !== filters.companyType) return false;
+      if (filters.keyword !== "all" && !(job.focusKeywords || []).includes(filters.keyword)) return false;
+      if (filters.career !== "all" && job.careerGroup !== filters.career) return false;
+      if (!filters.query) return true;
 
       const haystack = [
         job.title,
@@ -171,9 +153,43 @@ function applyFilters(jobs) {
         .join(" ")
         .toLowerCase();
 
-      return haystack.includes(state.query);
+      return haystack.includes(filters.query);
     })
     .sort(sortJobs);
+}
+
+function refreshFilterOptions() {
+  const sourceOptions = unique(state.jobs.map((job) => job.source).filter(Boolean));
+  const fieldOptions = unique(state.jobs.flatMap((job) => job.fields || []));
+  const companyTypeOptions = ["대기업", "중견기업", "중소기업", "스타트업", "분류 필요"];
+  const keywordOptions = unique(state.jobs.flatMap((job) => job.focusKeywords || []));
+
+  setSelectOptions(els.sourceFilter, "전체 출처", sourceOptions, "source");
+  setSelectOptions(els.fieldFilter, "전체 분야", fieldOptions, "field");
+  setSelectOptions(els.companyTypeFilter, "전체 규모", companyTypeOptions, "companyType");
+  setSelectOptions(els.keywordFilter, "전체 키워드", keywordOptions, "keyword");
+}
+
+function setSelectOptions(selectEl, allLabel, values, key) {
+  const currentValue = state[key];
+  const labels = [
+    option("all", `${allLabel} (${countForFilter(key, "all")})`),
+    ...values.map((value) => option(value, `${value} (${countForFilter(key, value)})`)),
+  ];
+
+  selectEl.innerHTML = labels.join("");
+  selectEl.value = values.includes(currentValue) || currentValue === "all" ? currentValue : "all";
+}
+
+function refreshCareerCounts() {
+  document.querySelectorAll("[data-career-count]").forEach((countEl) => {
+    const value = countEl.dataset.careerCount;
+    countEl.textContent = countForFilter("career", value).toLocaleString("ko-KR");
+  });
+}
+
+function countForFilter(key, value) {
+  return applyFilters(state.jobs, { [key]: value }).length;
 }
 
 function sortJobs(a, b) {
