@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-30T00:01:12.526Z",
+  "generatedAt": "2026-10-01T00:18:13.585Z",
   "sourceHealth": [
     {
       "name": "잡코리아",
@@ -10,9 +10,9 @@
     },
     {
       "name": "사람인",
-      "ok": false,
-      "count": 0,
-      "message": "https://www.saramin.co.kr/zf_user/search/recruit?searchword=AI%20%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D: fetch failed",
+      "ok": true,
+      "count": 160,
+      "message": "16개 키워드 검색 완료",
       "url": "https://www.saramin.co.kr"
     },
     {
@@ -211,7 +211,7 @@
         "Manufacturing AI",
         "Robotics"
       ],
-      "collectedAt": "2026-09-30T00:01:12.526Z"
+      "collectedAt": "2026-10-01T00:18:13.585Z"
     },
     {
       "id": "curated-hdhyundai-2026-07-research-hhi",
@@ -243,298 +243,7 @@
         "Robotics",
         "Data Engineering"
       ],
-      "collectedAt": "2026-09-30T00:01:12.526Z"
-    },
-    {
-      "id": "잡코리아-51558760",
-      "source": "잡코리아",
-      "company": "주식회사 루모스",
-      "title": "AI / ML 엔지니어",
-      "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/51558760",
-      "career": "경력 2년 이상",
-      "careerGroup": "experienced",
-      "education": "대졸↑",
-      "location": "확인 필요",
-      "employmentType": "정규직",
-      "deadline": "2026-09-30",
-      "fields": [
-        "머신러닝"
-      ],
-      "skills": [],
-      "collectedAt": "2026-09-30T00:01:12.526Z",
-      "companyType": "중소기업",
-      "focusKeywords": [
-        "AI"
-      ]
-    },
-    {
-      "id": "잡코리아-51531347",
-      "source": "잡코리아",
-      "company": "㈜헥토",
-      "title": "[헥토] AI/ML Engineer (경력)",
-      "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/51531347",
-      "career": "경력 3년 이상",
-      "careerGroup": "experienced",
-      "education": "학력무관",
-      "location": "확인 필요",
-      "employmentType": "정규직",
-      "deadline": "2026-09-30",
-      "fields": [
-        "머신러닝"
-      ],
-      "skills": [],
-      "collectedAt": "2026-09-30T00:01:12.526Z",
-      "companyType": "중소기업",
-      "focusKeywords": [
-        "AI"
-      ]
-    },
-    {
-      "id": "잡코리아-51543327",
-      "source": "잡코리아",
-      "company": "씨메스로보틱스㈜",
-      "title": "Physical AI 엔지니어",
-      "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/51543327",
-      "career": "인턴",
-      "careerGroup": "intern",
-      "education": "석사↑",
-      "location": "확인 필요",
-      "employmentType": "정규직",
-      "deadline": "2026-09-30",
-      "fields": [
-        "Physical AI"
-      ],
-      "skills": [],
-      "collectedAt": "2026-09-30T00:01:12.526Z",
-      "companyType": "중소기업",
-      "focusKeywords": [
-        "Physical AI"
-      ]
-    },
-    {
-      "id": "잡코리아-51439559",
-      "source": "잡코리아",
-      "company": "씨메스로보틱스㈜",
-      "title": "Physical AI 조합 최적화",
-      "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/51439559",
-      "career": "인턴",
-      "careerGroup": "intern",
-      "education": "석사↑",
-      "location": "확인 필요",
-      "employmentType": "정규직",
-      "deadline": "2026-09-30",
-      "fields": [
-        "Physical AI"
-      ],
-      "skills": [],
-      "collectedAt": "2026-09-30T00:01:12.526Z",
-      "companyType": "중소기업",
-      "focusKeywords": [
-        "Physical AI"
-      ]
-    },
-    {
-      "id": "잡코리아-51587775",
-      "source": "잡코리아",
-      "company": "플라잎",
-      "title": "Physical AI Group Lead",
-      "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/51587775",
-      "career": "경력 8년 이상",
-      "careerGroup": "experienced",
-      "education": "석사↑",
-      "location": "확인 필요",
-      "employmentType": "정규직",
-      "deadline": "2026-09-30",
-      "fields": [
-        "Physical AI"
-      ],
-      "skills": [],
-      "collectedAt": "2026-09-30T00:01:12.526Z",
-      "companyType": "분류 필요",
-      "focusKeywords": [
-        "Physical AI"
-      ]
-    },
-    {
-      "id": "잡코리아-51538771",
-      "source": "잡코리아",
-      "company": "플라잎",
-      "title": "[울산]Physical AI Engineer",
-      "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/51538771",
-      "career": "경력 3년 이상",
-      "careerGroup": "experienced",
-      "education": "석사↑",
-      "location": "울산",
-      "employmentType": "정규직",
-      "deadline": "2026-09-30",
-      "fields": [
-        "Physical AI"
-      ],
-      "skills": [],
-      "collectedAt": "2026-09-30T00:01:12.526Z",
-      "companyType": "분류 필요",
-      "focusKeywords": [
-        "Physical AI"
-      ]
-    },
-    {
-      "id": "잡코리아-51542875",
-      "source": "잡코리아",
-      "company": "씨메스로보틱스㈜",
-      "title": "Physical AI 기획 및 PM",
-      "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/51542875",
-      "career": "경력 3년 이상",
-      "careerGroup": "experienced",
-      "education": "대졸↑",
-      "location": "확인 필요",
-      "employmentType": "정규직",
-      "deadline": "2026-09-30",
-      "fields": [
-        "Physical AI"
-      ],
-      "skills": [],
-      "collectedAt": "2026-09-30T00:01:12.526Z",
-      "companyType": "중소기업",
-      "focusKeywords": [
-        "Physical AI"
-      ]
-    },
-    {
-      "id": "잡코리아-51524800",
-      "source": "잡코리아",
-      "company": "㈜솔로몬엠",
-      "title": "[솔로몬엠] Physical AI 소프트웨어 개발자 모집",
-      "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/51524800",
-      "career": "신입·경력",
-      "careerGroup": "junior",
-      "education": "대졸↑",
-      "location": "확인 필요",
-      "employmentType": "정규직",
-      "deadline": "2026-09-30",
-      "fields": [
-        "Physical AI"
-      ],
-      "skills": [],
-      "collectedAt": "2026-09-30T00:01:12.526Z",
-      "companyType": "중소기업",
-      "focusKeywords": [
-        "Physical AI"
-      ]
-    },
-    {
-      "id": "잡코리아-51539323",
-      "source": "잡코리아",
-      "company": "웍스피어(유)",
-      "title": "[웍스피어] AI 매칭 엔진 PO (5년이상)",
-      "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/51539323",
-      "career": "경력 5년 이상",
-      "careerGroup": "experienced",
-      "education": "학력무관",
-      "location": "확인 필요",
-      "employmentType": "확인 필요",
-      "deadline": "2026-09-30",
-      "fields": [
-        "AI·데이터"
-      ],
-      "skills": [],
-      "collectedAt": "2026-09-30T00:01:12.526Z",
-      "companyType": "분류 필요",
-      "focusKeywords": [
-        "AI"
-      ]
-    },
-    {
-      "id": "잡코리아-51530103",
-      "source": "잡코리아",
-      "company": "㈜코비엔",
-      "title": "LLM Engineer 경력 직원 모집",
-      "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/51530103",
-      "career": "경력 5년 이상",
-      "careerGroup": "experienced",
-      "education": "초대졸↑",
-      "location": "확인 필요",
-      "employmentType": "정규직",
-      "deadline": "2026-09-30",
-      "fields": [
-        "LLM/NLP"
-      ],
-      "skills": [],
-      "collectedAt": "2026-09-30T00:01:12.526Z",
-      "companyType": "중소기업",
-      "focusKeywords": [
-        "LLM"
-      ]
-    },
-    {
-      "id": "잡코리아-51532861",
-      "source": "잡코리아",
-      "company": "㈜리더스시스템즈",
-      "title": "MLOps / AI 플랫폼 R&D 엔지니어 채용 (신입/경력)",
-      "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/51532861",
-      "career": "인턴",
-      "careerGroup": "intern",
-      "education": "학력무관",
-      "location": "확인 필요",
-      "employmentType": "정규직",
-      "deadline": "2026-09-30",
-      "fields": [
-        "MLOps",
-        "머신러닝"
-      ],
-      "skills": [],
-      "collectedAt": "2026-09-30T00:01:12.526Z",
-      "companyType": "중소기업",
-      "focusKeywords": [
-        "MLOps"
-      ]
-    },
-    {
-      "id": "잡코리아-51670505",
-      "source": "잡코리아",
-      "company": "㈜예진",
-      "title": "[경력3년이상] 데이터 사이언티스트 채용",
-      "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/51670505",
-      "career": "경력 3년 이상",
-      "careerGroup": "experienced",
-      "education": "대졸↑",
-      "location": "확인 필요",
-      "employmentType": "정규직",
-      "deadline": "2026-09-30",
-      "fields": [
-        "Data Science"
-      ],
-      "skills": [],
-      "collectedAt": "2026-09-30T00:01:12.526Z",
-      "companyType": "중소기업",
-      "focusKeywords": [
-        "Data Science"
-      ]
-    },
-    {
-      "id": "잡코리아-51573249",
-      "source": "잡코리아",
-      "company": "㈜CJ올리브네트웍스",
-      "title": "[경력] 데이터 분석 플랫폼 개발 및 운영(Data Engineer)",
-      "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/51573249",
-      "career": "경력",
-      "careerGroup": "experienced",
-      "education": "확인 필요",
-      "location": "확인 필요",
-      "employmentType": "정규직",
-      "deadline": "2026-09-30",
-      "fields": [
-        "MLOps",
-        "Data Science",
-        "Data Engineering"
-      ],
-      "skills": [],
-      "collectedAt": "2026-09-30T00:01:12.526Z",
-      "companyType": "중소기업",
-      "focusKeywords": [
-        "MLOps",
-        "Data Engineering",
-        "Data Science"
-      ]
+      "collectedAt": "2026-10-01T00:18:13.585Z"
     },
     {
       "id": "잡코리아-51540089",
@@ -552,7 +261,7 @@
         "머신러닝"
       ],
       "skills": [],
-      "collectedAt": "2026-09-30T00:01:12.526Z",
+      "collectedAt": "2026-10-01T00:18:13.585Z",
       "companyType": "중소기업",
       "focusKeywords": [
         "AI"
@@ -574,7 +283,7 @@
         "Physical AI"
       ],
       "skills": [],
-      "collectedAt": "2026-09-30T00:01:12.526Z",
+      "collectedAt": "2026-10-01T00:18:13.585Z",
       "companyType": "중소기업",
       "focusKeywords": [
         "Physical AI",
@@ -597,7 +306,7 @@
         "Physical AI"
       ],
       "skills": [],
-      "collectedAt": "2026-09-30T00:01:12.526Z",
+      "collectedAt": "2026-10-01T00:18:13.585Z",
       "companyType": "분류 필요",
       "focusKeywords": [
         "Physical AI"
@@ -619,7 +328,7 @@
         "Data Science"
       ],
       "skills": [],
-      "collectedAt": "2026-09-30T00:01:12.526Z",
+      "collectedAt": "2026-10-01T00:18:13.585Z",
       "companyType": "중소기업",
       "focusKeywords": [
         "Data Science"
@@ -641,7 +350,7 @@
         "Vision AI"
       ],
       "skills": [],
-      "collectedAt": "2026-09-30T00:01:12.526Z",
+      "collectedAt": "2026-10-01T00:18:13.585Z",
       "companyType": "분류 필요",
       "focusKeywords": [
         "Vision AI"
@@ -663,7 +372,7 @@
         "AI Research"
       ],
       "skills": [],
-      "collectedAt": "2026-09-30T00:01:12.526Z",
+      "collectedAt": "2026-10-01T00:18:13.585Z",
       "companyType": "중소기업",
       "focusKeywords": [
         "AI"
@@ -687,7 +396,7 @@
       "skills": [
         "Python"
       ],
-      "collectedAt": "2026-09-30T00:01:12.526Z",
+      "collectedAt": "2026-10-01T00:18:13.585Z",
       "companyType": "중소기업",
       "focusKeywords": [
         "LLM"
@@ -712,7 +421,7 @@
       "skills": [
         "C++"
       ],
-      "collectedAt": "2026-09-30T00:01:12.526Z",
+      "collectedAt": "2026-10-01T00:18:13.585Z",
       "companyType": "중소기업",
       "focusKeywords": [
         "Vision AI"
@@ -734,10 +443,32 @@
         "머신러닝"
       ],
       "skills": [],
-      "collectedAt": "2026-09-30T00:01:12.526Z",
+      "collectedAt": "2026-10-01T00:18:13.585Z",
       "companyType": "중소기업",
       "focusKeywords": [
         "AI"
+      ]
+    },
+    {
+      "id": "잡코리아-51554729",
+      "source": "잡코리아",
+      "company": "유한회사 하이크비전코리아",
+      "title": "물리보안 AIot 기술지원 엔지니어 신입/경력",
+      "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/51554729",
+      "career": "인턴",
+      "careerGroup": "intern",
+      "education": "대졸↑",
+      "location": "확인 필요",
+      "employmentType": "인턴",
+      "deadline": "2026-10-03",
+      "fields": [
+        "Industrial AI"
+      ],
+      "skills": [],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "분류 필요",
+      "focusKeywords": [
+        "Manufacturing AI"
       ]
     },
     {
@@ -756,7 +487,7 @@
         "AI·데이터"
       ],
       "skills": [],
-      "collectedAt": "2026-09-30T00:01:12.526Z",
+      "collectedAt": "2026-10-01T00:18:13.585Z",
       "companyType": "중소기업",
       "focusKeywords": [
         "AI"
@@ -781,7 +512,7 @@
       "skills": [
         "RAG"
       ],
-      "collectedAt": "2026-09-30T00:01:12.526Z",
+      "collectedAt": "2026-10-01T00:18:13.585Z",
       "companyType": "중소기업",
       "focusKeywords": [
         "LLM"
@@ -803,10 +534,33 @@
         "Data Science"
       ],
       "skills": [],
-      "collectedAt": "2026-09-30T00:01:12.526Z",
+      "collectedAt": "2026-10-01T00:18:13.585Z",
       "companyType": "중소기업",
       "focusKeywords": [
         "Data Science"
+      ]
+    },
+    {
+      "id": "잡코리아-51387372",
+      "source": "잡코리아",
+      "company": "㈜에니아이",
+      "title": "Robot Learning Engineer - Physical AI",
+      "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/51387372",
+      "career": "경력 3년 이상",
+      "careerGroup": "experienced",
+      "education": "학력무관",
+      "location": "확인 필요",
+      "employmentType": "정규직",
+      "deadline": "2026-10-05",
+      "fields": [
+        "Physical AI"
+      ],
+      "skills": [],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "중소기업",
+      "focusKeywords": [
+        "Physical AI",
+        "Robotics"
       ]
     },
     {
@@ -826,32 +580,32 @@
         "AI Research"
       ],
       "skills": [],
-      "collectedAt": "2026-09-30T00:01:12.526Z",
+      "collectedAt": "2026-10-01T00:18:13.585Z",
       "companyType": "분류 필요",
       "focusKeywords": [
         "AI"
       ]
     },
     {
-      "id": "잡코리아-51690421",
+      "id": "잡코리아-51698548",
       "source": "잡코리아",
-      "company": "현대차증권",
-      "title": "AI 데이터 엔지니어 담당자(경력) 채용",
-      "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/51690421",
-      "career": "경력",
+      "company": "㈜유니베이아이엔씨",
+      "title": "[AI 프로젝트] AI 프로그래머 및 엔지니어 경력직 채용",
+      "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/51698548",
+      "career": "경력 3년 이상",
       "careerGroup": "experienced",
-      "education": "확인 필요",
+      "education": "초대졸↑",
       "location": "확인 필요",
       "employmentType": "정규직",
       "deadline": "2026-10-06",
       "fields": [
-        "Data Engineering"
+        "AI·데이터"
       ],
       "skills": [],
-      "collectedAt": "2026-09-30T00:01:12.526Z",
-      "companyType": "대기업",
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "중소기업",
       "focusKeywords": [
-        "Data Engineering"
+        "AI"
       ]
     },
     {
@@ -870,7 +624,7 @@
         "머신러닝"
       ],
       "skills": [],
-      "collectedAt": "2026-09-30T00:01:12.526Z",
+      "collectedAt": "2026-10-01T00:18:13.585Z",
       "companyType": "중소기업",
       "focusKeywords": [
         "AI"
@@ -892,7 +646,7 @@
         "머신러닝"
       ],
       "skills": [],
-      "collectedAt": "2026-09-30T00:01:12.526Z",
+      "collectedAt": "2026-10-01T00:18:13.585Z",
       "companyType": "중소기업",
       "focusKeywords": [
         "AI"
@@ -914,7 +668,7 @@
         "LLM/NLP"
       ],
       "skills": [],
-      "collectedAt": "2026-09-30T00:01:12.526Z",
+      "collectedAt": "2026-10-01T00:18:13.585Z",
       "companyType": "분류 필요",
       "focusKeywords": [
         "LLM"
@@ -936,7 +690,7 @@
         "Data Engineering"
       ],
       "skills": [],
-      "collectedAt": "2026-09-30T00:01:12.526Z",
+      "collectedAt": "2026-10-01T00:18:13.585Z",
       "companyType": "중소기업",
       "focusKeywords": [
         "Data Engineering"
@@ -960,7 +714,7 @@
       "skills": [
         "RAG"
       ],
-      "collectedAt": "2026-09-30T00:01:12.526Z",
+      "collectedAt": "2026-10-01T00:18:13.585Z",
       "companyType": "중소기업",
       "focusKeywords": [
         "LLM"
@@ -982,7 +736,7 @@
         "머신러닝"
       ],
       "skills": [],
-      "collectedAt": "2026-09-30T00:01:12.526Z",
+      "collectedAt": "2026-10-01T00:18:13.585Z",
       "companyType": "대기업",
       "focusKeywords": [
         "AI"
@@ -1004,7 +758,7 @@
         "Physical AI"
       ],
       "skills": [],
-      "collectedAt": "2026-09-30T00:01:12.526Z",
+      "collectedAt": "2026-10-01T00:18:13.585Z",
       "companyType": "분류 필요",
       "focusKeywords": [
         "Physical AI",
@@ -1027,7 +781,7 @@
         "Vision AI"
       ],
       "skills": [],
-      "collectedAt": "2026-09-30T00:01:12.526Z",
+      "collectedAt": "2026-10-01T00:18:13.585Z",
       "companyType": "중소기업",
       "focusKeywords": [
         "Vision AI"
@@ -1049,7 +803,7 @@
         "Vision AI"
       ],
       "skills": [],
-      "collectedAt": "2026-09-30T00:01:12.526Z",
+      "collectedAt": "2026-10-01T00:18:13.585Z",
       "companyType": "중소기업",
       "focusKeywords": [
         "Vision AI"
@@ -1071,7 +825,7 @@
         "Physical AI"
       ],
       "skills": [],
-      "collectedAt": "2026-09-30T00:01:12.526Z",
+      "collectedAt": "2026-10-01T00:18:13.585Z",
       "companyType": "분류 필요",
       "focusKeywords": [
         "Physical AI",
@@ -1096,7 +850,7 @@
         "AI/AX"
       ],
       "skills": [],
-      "collectedAt": "2026-09-30T00:01:12.526Z",
+      "collectedAt": "2026-10-01T00:18:13.585Z",
       "companyType": "중소기업",
       "focusKeywords": [
         "LLM",
@@ -1123,7 +877,7 @@
       "skills": [
         "Kubernetes"
       ],
-      "collectedAt": "2026-09-30T00:01:12.526Z",
+      "collectedAt": "2026-10-01T00:18:13.585Z",
       "companyType": "중소기업",
       "focusKeywords": [
         "MLOps"
@@ -1145,36 +899,10 @@
         "Data Science"
       ],
       "skills": [],
-      "collectedAt": "2026-09-30T00:01:12.526Z",
+      "collectedAt": "2026-10-01T00:18:13.585Z",
       "companyType": "중소기업",
       "focusKeywords": [
         "Data Science"
-      ]
-    },
-    {
-      "id": "잡코리아-51592267",
-      "source": "잡코리아",
-      "company": "㈜디엑스이",
-      "title": "[CJ그룹-디엑스이] AI/AX 플랫폼 개발 백엔드/데이터 엔지니어 경력채용",
-      "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/51592267",
-      "career": "경력 3년 이상",
-      "careerGroup": "experienced",
-      "education": "대졸↑",
-      "location": "확인 필요",
-      "employmentType": "정규직",
-      "deadline": "2026-10-09",
-      "fields": [
-        "MLOps",
-        "Data Engineering",
-        "AI/AX"
-      ],
-      "skills": [],
-      "collectedAt": "2026-09-30T00:01:12.526Z",
-      "companyType": "중소기업",
-      "focusKeywords": [
-        "MLOps",
-        "Data Engineering",
-        "AI/AX"
       ]
     },
     {
@@ -1194,7 +922,7 @@
         "AI Research"
       ],
       "skills": [],
-      "collectedAt": "2026-09-30T00:01:12.526Z",
+      "collectedAt": "2026-10-01T00:18:13.585Z",
       "companyType": "중소기업",
       "focusKeywords": [
         "AI"
@@ -1217,7 +945,7 @@
         "AI Research"
       ],
       "skills": [],
-      "collectedAt": "2026-09-30T00:01:12.526Z",
+      "collectedAt": "2026-10-01T00:18:13.585Z",
       "companyType": "중소기업",
       "focusKeywords": [
         "LLM"
@@ -1239,7 +967,7 @@
         "머신러닝"
       ],
       "skills": [],
-      "collectedAt": "2026-09-30T00:01:12.526Z",
+      "collectedAt": "2026-10-01T00:18:13.585Z",
       "companyType": "중소기업",
       "focusKeywords": [
         "AI"
@@ -1261,10 +989,33 @@
         "머신러닝"
       ],
       "skills": [],
-      "collectedAt": "2026-09-30T00:01:12.526Z",
+      "collectedAt": "2026-10-01T00:18:13.585Z",
       "companyType": "중소기업",
       "focusKeywords": [
         "AI"
+      ]
+    },
+    {
+      "id": "잡코리아-51420980",
+      "source": "잡코리아",
+      "company": "수퍼빈㈜",
+      "title": "[수퍼빈] 개발 엔지니어 채용 (AI, 로봇 SW)",
+      "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/51420980",
+      "career": "경력 2년 이상",
+      "careerGroup": "experienced",
+      "education": "학력무관",
+      "location": "확인 필요",
+      "employmentType": "확인 필요",
+      "deadline": "2026-10-11",
+      "fields": [
+        "Physical AI"
+      ],
+      "skills": [],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "중소기업",
+      "focusKeywords": [
+        "Physical AI",
+        "Robotics"
       ]
     },
     {
@@ -1286,7 +1037,7 @@
       "skills": [
         "Python"
       ],
-      "collectedAt": "2026-09-30T00:01:12.526Z",
+      "collectedAt": "2026-10-01T00:18:13.585Z",
       "companyType": "중소기업",
       "focusKeywords": [
         "Vision AI"
@@ -1308,7 +1059,7 @@
         "Data Science"
       ],
       "skills": [],
-      "collectedAt": "2026-09-30T00:01:12.526Z",
+      "collectedAt": "2026-10-01T00:18:13.585Z",
       "companyType": "대기업",
       "focusKeywords": [
         "Data Science"
@@ -1330,7 +1081,7 @@
         "Data Engineering"
       ],
       "skills": [],
-      "collectedAt": "2026-09-30T00:01:12.526Z",
+      "collectedAt": "2026-10-01T00:18:13.585Z",
       "companyType": "대기업",
       "focusKeywords": [
         "Data Engineering"
@@ -1353,7 +1104,7 @@
         "AI Research"
       ],
       "skills": [],
-      "collectedAt": "2026-09-30T00:01:12.526Z",
+      "collectedAt": "2026-10-01T00:18:13.585Z",
       "companyType": "분류 필요",
       "focusKeywords": [
         "Physical AI"
@@ -1375,7 +1126,7 @@
         "Vision AI"
       ],
       "skills": [],
-      "collectedAt": "2026-09-30T00:01:12.526Z",
+      "collectedAt": "2026-10-01T00:18:13.585Z",
       "companyType": "중소기업",
       "focusKeywords": [
         "Vision AI"
@@ -1397,7 +1148,7 @@
         "Physical AI"
       ],
       "skills": [],
-      "collectedAt": "2026-09-30T00:01:12.526Z",
+      "collectedAt": "2026-10-01T00:18:13.585Z",
       "companyType": "중소기업",
       "focusKeywords": [
         "Physical AI"
@@ -1419,7 +1170,7 @@
         "LLM/NLP"
       ],
       "skills": [],
-      "collectedAt": "2026-09-30T00:01:12.526Z",
+      "collectedAt": "2026-10-01T00:18:13.585Z",
       "companyType": "중소기업",
       "focusKeywords": [
         "LLM"
@@ -1441,7 +1192,7 @@
         "머신러닝"
       ],
       "skills": [],
-      "collectedAt": "2026-09-30T00:01:12.526Z",
+      "collectedAt": "2026-10-01T00:18:13.585Z",
       "companyType": "중소기업",
       "focusKeywords": [
         "AI"
@@ -1464,10 +1215,33 @@
         "AI Research"
       ],
       "skills": [],
-      "collectedAt": "2026-09-30T00:01:12.526Z",
+      "collectedAt": "2026-10-01T00:18:13.585Z",
       "companyType": "분류 필요",
       "focusKeywords": [
         "AI"
+      ]
+    },
+    {
+      "id": "잡코리아-51446965",
+      "source": "잡코리아",
+      "company": "㈜로보티즈",
+      "title": "[로보티즈AI]피지컬AI 로봇 인식/제어 엔지니어 모집의 건",
+      "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/51446965",
+      "career": "인턴",
+      "careerGroup": "intern",
+      "education": "대졸↑",
+      "location": "확인 필요",
+      "employmentType": "정규직",
+      "deadline": "2026-10-17",
+      "fields": [
+        "Physical AI"
+      ],
+      "skills": [],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "중소기업",
+      "focusKeywords": [
+        "Physical AI",
+        "Robotics"
       ]
     },
     {
@@ -1488,7 +1262,7 @@
         "머신러닝"
       ],
       "skills": [],
-      "collectedAt": "2026-09-30T00:01:12.526Z",
+      "collectedAt": "2026-10-01T00:18:13.585Z",
       "companyType": "중소기업",
       "focusKeywords": [
         "Vision AI",
@@ -1511,7 +1285,7 @@
         "AI Research"
       ],
       "skills": [],
-      "collectedAt": "2026-09-30T00:01:12.526Z",
+      "collectedAt": "2026-10-01T00:18:13.585Z",
       "companyType": "중소기업",
       "focusKeywords": [
         "AI"
@@ -1533,10 +1307,56 @@
         "Data Engineering"
       ],
       "skills": [],
-      "collectedAt": "2026-09-30T00:01:12.526Z",
+      "collectedAt": "2026-10-01T00:18:13.585Z",
       "companyType": "중소기업",
       "focusKeywords": [
         "Data Engineering"
+      ]
+    },
+    {
+      "id": "잡코리아-51456230",
+      "source": "잡코리아",
+      "company": "㈜이자(eZar Inc.)",
+      "title": "LLM & RAG 엔지니어 채용",
+      "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/51456230",
+      "career": "경력 2년 이상",
+      "careerGroup": "experienced",
+      "education": "대졸↑",
+      "location": "확인 필요",
+      "employmentType": "정규직",
+      "deadline": "2026-10-18",
+      "fields": [
+        "LLM/NLP"
+      ],
+      "skills": [
+        "RAG"
+      ],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "중소기업",
+      "focusKeywords": [
+        "LLM"
+      ]
+    },
+    {
+      "id": "잡코리아-51698693",
+      "source": "잡코리아",
+      "company": "㈜숲(SOOP CO., LTD.)",
+      "title": "[SOOP] AI 기반 개인화 추천 시스템 엔지니어",
+      "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/51698693",
+      "career": "경력 3년 이상",
+      "careerGroup": "experienced",
+      "education": "학력무관",
+      "location": "확인 필요",
+      "employmentType": "정규직",
+      "deadline": "2026-10-18",
+      "fields": [
+        "머신러닝"
+      ],
+      "skills": [],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "중소기업",
+      "focusKeywords": [
+        "Recommendation"
       ]
     },
     {
@@ -1555,7 +1375,7 @@
         "Data Science"
       ],
       "skills": [],
-      "collectedAt": "2026-09-30T00:01:12.526Z",
+      "collectedAt": "2026-10-01T00:18:13.585Z",
       "companyType": "중소기업",
       "focusKeywords": [
         "Data Science"
@@ -1577,7 +1397,7 @@
         "Data Engineering"
       ],
       "skills": [],
-      "collectedAt": "2026-09-30T00:01:12.526Z",
+      "collectedAt": "2026-10-01T00:18:13.585Z",
       "companyType": "중소기업",
       "focusKeywords": [
         "Data Engineering"
@@ -1599,7 +1419,7 @@
         "Data Engineering"
       ],
       "skills": [],
-      "collectedAt": "2026-09-30T00:01:12.526Z",
+      "collectedAt": "2026-10-01T00:18:13.585Z",
       "companyType": "중소기업",
       "focusKeywords": [
         "Data Engineering"
@@ -1621,7 +1441,7 @@
         "LLM/NLP"
       ],
       "skills": [],
-      "collectedAt": "2026-09-30T00:01:12.526Z",
+      "collectedAt": "2026-10-01T00:18:13.585Z",
       "companyType": "중소기업",
       "focusKeywords": [
         "LLM"
@@ -1645,7 +1465,7 @@
       "skills": [
         "RAG"
       ],
-      "collectedAt": "2026-09-30T00:01:12.526Z",
+      "collectedAt": "2026-10-01T00:18:13.585Z",
       "companyType": "중소기업",
       "focusKeywords": [
         "LLM"
@@ -1667,7 +1487,7 @@
         "LLM/NLP"
       ],
       "skills": [],
-      "collectedAt": "2026-09-30T00:01:12.526Z",
+      "collectedAt": "2026-10-01T00:18:13.585Z",
       "companyType": "중소기업",
       "focusKeywords": [
         "LLM"
@@ -1689,7 +1509,7 @@
         "머신러닝"
       ],
       "skills": [],
-      "collectedAt": "2026-09-30T00:01:12.526Z",
+      "collectedAt": "2026-10-01T00:18:13.585Z",
       "companyType": "중소기업",
       "focusKeywords": [
         "AI"
@@ -1711,7 +1531,7 @@
         "머신러닝"
       ],
       "skills": [],
-      "collectedAt": "2026-09-30T00:01:12.526Z",
+      "collectedAt": "2026-10-01T00:18:13.585Z",
       "companyType": "중소기업",
       "focusKeywords": [
         "AI"
@@ -1733,32 +1553,33 @@
         "Data Science"
       ],
       "skills": [],
-      "collectedAt": "2026-09-30T00:01:12.526Z",
+      "collectedAt": "2026-10-01T00:18:13.585Z",
       "companyType": "중소기업",
       "focusKeywords": [
         "Data Science"
       ]
     },
     {
-      "id": "잡코리아-51658745",
+      "id": "잡코리아-51658035",
       "source": "잡코리아",
-      "company": "㈜하이브랩",
-      "title": "[하이브랩] AI 엔지니어 (AI Engineer / ML Engineer)",
-      "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/51658745",
-      "career": "경력 3년 이상",
-      "careerGroup": "experienced",
-      "education": "초대졸↑",
+      "company": "㈜원오토메이션",
+      "title": "[(주)원오토메이션] Physical AI 연구 개발 엔지니어",
+      "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/51658035",
+      "career": "신입·경력",
+      "careerGroup": "junior",
+      "education": "학력무관",
       "location": "확인 필요",
       "employmentType": "정규직",
       "deadline": "2026-10-22",
       "fields": [
-        "머신러닝"
+        "Physical AI",
+        "AI Research"
       ],
       "skills": [],
-      "collectedAt": "2026-09-30T00:01:12.526Z",
+      "collectedAt": "2026-10-01T00:18:13.585Z",
       "companyType": "중소기업",
       "focusKeywords": [
-        "AI"
+        "Physical AI"
       ]
     },
     {
@@ -1777,34 +1598,10 @@
         "머신러닝"
       ],
       "skills": [],
-      "collectedAt": "2026-09-30T00:01:12.526Z",
+      "collectedAt": "2026-10-01T00:18:13.585Z",
       "companyType": "중소기업",
       "focusKeywords": [
         "AI"
-      ]
-    },
-    {
-      "id": "잡코리아-51481478",
-      "source": "잡코리아",
-      "company": "씨메스로보틱스㈜",
-      "title": "Physical AI 플랫폼 개발",
-      "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/51481478",
-      "career": "인턴",
-      "careerGroup": "intern",
-      "education": "석사↑",
-      "location": "확인 필요",
-      "employmentType": "정규직",
-      "deadline": "2026-10-23",
-      "fields": [
-        "Physical AI",
-        "MLOps"
-      ],
-      "skills": [],
-      "collectedAt": "2026-09-30T00:01:12.526Z",
-      "companyType": "중소기업",
-      "focusKeywords": [
-        "Physical AI",
-        "MLOps"
       ]
     },
     {
@@ -1823,7 +1620,7 @@
         "Vision AI"
       ],
       "skills": [],
-      "collectedAt": "2026-09-30T00:01:12.526Z",
+      "collectedAt": "2026-10-01T00:18:13.585Z",
       "companyType": "중소기업",
       "focusKeywords": [
         "Vision AI"
@@ -1845,7 +1642,7 @@
         "Vision AI"
       ],
       "skills": [],
-      "collectedAt": "2026-09-30T00:01:12.526Z",
+      "collectedAt": "2026-10-01T00:18:13.585Z",
       "companyType": "중소기업",
       "focusKeywords": [
         "Vision AI"
@@ -1867,7 +1664,7 @@
         "LLM/NLP"
       ],
       "skills": [],
-      "collectedAt": "2026-09-30T00:01:12.526Z",
+      "collectedAt": "2026-10-01T00:18:13.585Z",
       "companyType": "중소기업",
       "focusKeywords": [
         "LLM"
@@ -1889,7 +1686,7 @@
         "머신러닝"
       ],
       "skills": [],
-      "collectedAt": "2026-09-30T00:01:12.526Z",
+      "collectedAt": "2026-10-01T00:18:13.585Z",
       "companyType": "중소기업",
       "focusKeywords": [
         "AI"
@@ -1911,32 +1708,10 @@
         "머신러닝"
       ],
       "skills": [],
-      "collectedAt": "2026-09-30T00:01:12.526Z",
+      "collectedAt": "2026-10-01T00:18:13.585Z",
       "companyType": "중소기업",
       "focusKeywords": [
         "AI"
-      ]
-    },
-    {
-      "id": "잡코리아-51669030",
-      "source": "잡코리아",
-      "company": "㈜퓨어글로벌",
-      "title": "데이터 엔지니어 Data Engineer 정규직 채용",
-      "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/51669030",
-      "career": "경력 5년 이상",
-      "careerGroup": "experienced",
-      "education": "대졸↑",
-      "location": "확인 필요",
-      "employmentType": "정규직",
-      "deadline": "2026-10-23",
-      "fields": [
-        "Data Engineering"
-      ],
-      "skills": [],
-      "collectedAt": "2026-09-30T00:01:12.526Z",
-      "companyType": "중소기업",
-      "focusKeywords": [
-        "Data Engineering"
       ]
     },
     {
@@ -1957,7 +1732,7 @@
         "머신러닝"
       ],
       "skills": [],
-      "collectedAt": "2026-09-30T00:01:12.526Z",
+      "collectedAt": "2026-10-01T00:18:13.585Z",
       "companyType": "중소기업",
       "focusKeywords": [
         "Vision AI",
@@ -1981,35 +1756,11 @@
         "Data Science"
       ],
       "skills": [],
-      "collectedAt": "2026-09-30T00:01:12.526Z",
+      "collectedAt": "2026-10-01T00:18:13.585Z",
       "companyType": "중소기업",
       "focusKeywords": [
         "LLM",
         "Data Science"
-      ]
-    },
-    {
-      "id": "잡코리아-51496091",
-      "source": "잡코리아",
-      "company": "엔에이치엔케이씨피㈜",
-      "title": "[NHN KCP] 대용량 결제 플랫폼 데이터 엔지니어(4년 이상)",
-      "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/51496091",
-      "career": "경력 4년 이상",
-      "careerGroup": "experienced",
-      "education": "학력무관",
-      "location": "확인 필요",
-      "employmentType": "정규직",
-      "deadline": "2026-10-24",
-      "fields": [
-        "MLOps",
-        "Data Engineering"
-      ],
-      "skills": [],
-      "collectedAt": "2026-09-30T00:01:12.526Z",
-      "companyType": "중소기업",
-      "focusKeywords": [
-        "MLOps",
-        "Data Engineering"
       ]
     },
     {
@@ -2029,7 +1780,7 @@
         "AI Research"
       ],
       "skills": [],
-      "collectedAt": "2026-09-30T00:01:12.526Z",
+      "collectedAt": "2026-10-01T00:18:13.585Z",
       "companyType": "분류 필요",
       "focusKeywords": [
         "Physical AI"
@@ -2052,7 +1803,7 @@
         "AI Research"
       ],
       "skills": [],
-      "collectedAt": "2026-09-30T00:01:12.526Z",
+      "collectedAt": "2026-10-01T00:18:13.585Z",
       "companyType": "대기업",
       "focusKeywords": [
         "LLM"
@@ -2074,7 +1825,7 @@
         "Data Science"
       ],
       "skills": [],
-      "collectedAt": "2026-09-30T00:01:12.526Z",
+      "collectedAt": "2026-10-01T00:18:13.585Z",
       "companyType": "대기업",
       "focusKeywords": [
         "Data Science"
@@ -2097,7 +1848,7 @@
         "머신러닝"
       ],
       "skills": [],
-      "collectedAt": "2026-09-30T00:01:12.526Z",
+      "collectedAt": "2026-10-01T00:18:13.585Z",
       "companyType": "중소기업",
       "focusKeywords": [
         "MLOps"
@@ -2119,7 +1870,7 @@
         "AI·데이터"
       ],
       "skills": [],
-      "collectedAt": "2026-09-30T00:01:12.526Z",
+      "collectedAt": "2026-10-01T00:18:13.585Z",
       "companyType": "분류 필요",
       "focusKeywords": [
         "AI"
@@ -2141,7 +1892,7 @@
         "머신러닝"
       ],
       "skills": [],
-      "collectedAt": "2026-09-30T00:01:12.526Z",
+      "collectedAt": "2026-10-01T00:18:13.585Z",
       "companyType": "중소기업",
       "focusKeywords": [
         "AI"
@@ -2163,10 +1914,33 @@
         "Physical AI"
       ],
       "skills": [],
-      "collectedAt": "2026-09-30T00:01:12.526Z",
+      "collectedAt": "2026-10-01T00:18:13.585Z",
       "companyType": "중소기업",
       "focusKeywords": [
         "Physical AI"
+      ]
+    },
+    {
+      "id": "잡코리아-51682305",
+      "source": "잡코리아",
+      "company": "㈜알체라",
+      "title": "[Physical AI] 로봇 운용 및 데이터 수집 필드 엔지니어",
+      "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/51682305",
+      "career": "인턴",
+      "careerGroup": "intern",
+      "education": "학력무관",
+      "location": "확인 필요",
+      "employmentType": "계약직",
+      "deadline": "2026-10-28",
+      "fields": [
+        "Physical AI"
+      ],
+      "skills": [],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "중소기업",
+      "focusKeywords": [
+        "Physical AI",
+        "Robotics"
       ]
     },
     {
@@ -2185,7 +1959,7 @@
         "Data Science"
       ],
       "skills": [],
-      "collectedAt": "2026-09-30T00:01:12.526Z",
+      "collectedAt": "2026-10-01T00:18:13.585Z",
       "companyType": "중소기업",
       "focusKeywords": [
         "Data Science"
@@ -2207,10 +1981,32 @@
         "Data Science"
       ],
       "skills": [],
-      "collectedAt": "2026-09-30T00:01:12.526Z",
+      "collectedAt": "2026-10-01T00:18:13.585Z",
       "companyType": "중소기업",
       "focusKeywords": [
         "Data Science"
+      ]
+    },
+    {
+      "id": "잡코리아-51691584",
+      "source": "잡코리아",
+      "company": "더선한㈜",
+      "title": "[PEAKRO] 머신러닝 엔지니어 (경력 2년 이상)",
+      "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/51691584",
+      "career": "경력 2년 이상",
+      "careerGroup": "experienced",
+      "education": "학력무관",
+      "location": "확인 필요",
+      "employmentType": "정규직",
+      "deadline": "2026-10-29",
+      "fields": [
+        "머신러닝"
+      ],
+      "skills": [],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "중소기업",
+      "focusKeywords": [
+        "AI"
       ]
     },
     {
@@ -2229,7 +2025,7 @@
         "Physical AI"
       ],
       "skills": [],
-      "collectedAt": "2026-09-30T00:01:12.526Z",
+      "collectedAt": "2026-10-01T00:18:13.585Z",
       "companyType": "중소기업",
       "focusKeywords": [
         "Physical AI",
@@ -2254,51 +2050,29 @@
       "skills": [
         "RAG"
       ],
-      "collectedAt": "2026-09-30T00:01:12.526Z",
+      "collectedAt": "2026-10-01T00:18:13.585Z",
       "companyType": "중소기업",
       "focusKeywords": [
         "LLM"
       ]
     },
     {
-      "id": "잡코리아-51686280",
+      "id": "잡코리아-51696043",
       "source": "잡코리아",
-      "company": "메드소프트",
-      "title": "개발자/기획자- 바이브코딩/LLM자동화 개발",
-      "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/51686280",
-      "career": "인턴",
-      "careerGroup": "intern",
+      "company": "㈜메타론",
+      "title": "새로운 AI 서비스의 시작, LOGG 사업화 전담팀 채용",
+      "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/51696043",
+      "career": "신입·경력",
+      "careerGroup": "junior",
       "education": "학력무관",
       "location": "확인 필요",
       "employmentType": "정규직",
-      "deadline": "2026-10-29",
-      "fields": [
-        "LLM/NLP"
-      ],
-      "skills": [],
-      "collectedAt": "2026-09-30T00:01:12.526Z",
-      "companyType": "분류 필요",
-      "focusKeywords": [
-        "LLM"
-      ]
-    },
-    {
-      "id": "잡코리아-51686448",
-      "source": "잡코리아",
-      "company": "피피에스㈜",
-      "title": "AI 에이전트 개발자 모집 (3년 이상)",
-      "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/51686448",
-      "career": "경력 3년 이상",
-      "careerGroup": "experienced",
-      "education": "대졸↑",
-      "location": "확인 필요",
-      "employmentType": "정규직",
-      "deadline": "2026-10-29",
+      "deadline": "2026-10-30",
       "fields": [
         "AI·데이터"
       ],
       "skills": [],
-      "collectedAt": "2026-09-30T00:01:12.526Z",
+      "collectedAt": "2026-10-01T00:18:13.585Z",
       "companyType": "중소기업",
       "focusKeywords": [
         "AI"
@@ -2320,7 +2094,29 @@
         "Physical AI"
       ],
       "skills": [],
-      "collectedAt": "2026-09-30T00:01:12.526Z",
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "분류 필요",
+      "focusKeywords": [
+        "Physical AI"
+      ]
+    },
+    {
+      "id": "잡코리아-51698150",
+      "source": "잡코리아",
+      "company": "비욘드허니컴",
+      "title": "[Physical AI] 콘텐츠 마케팅 인턴 (체험형)",
+      "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/51698150",
+      "career": "신입",
+      "careerGroup": "intern",
+      "education": "학력무관",
+      "location": "확인 필요",
+      "employmentType": "확인 필요",
+      "deadline": "2026-10-30",
+      "fields": [
+        "Physical AI"
+      ],
+      "skills": [],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
       "companyType": "분류 필요",
       "focusKeywords": [
         "Physical AI"
@@ -2343,10 +2139,143 @@
         "AI Research"
       ],
       "skills": [],
-      "collectedAt": "2026-09-30T00:01:12.526Z",
+      "collectedAt": "2026-10-01T00:18:13.585Z",
       "companyType": "대기업",
       "focusKeywords": [
         "LLM"
+      ]
+    },
+    {
+      "id": "잡코리아-51530103",
+      "source": "잡코리아",
+      "company": "㈜코비엔",
+      "title": "LLM Engineer 경력 직원 모집",
+      "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/51530103",
+      "career": "경력 5년 이상",
+      "careerGroup": "experienced",
+      "education": "초대졸↑",
+      "location": "확인 필요",
+      "employmentType": "정규직",
+      "deadline": "2026-10-30",
+      "fields": [
+        "LLM/NLP"
+      ],
+      "skills": [],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "중소기업",
+      "focusKeywords": [
+        "LLM"
+      ]
+    },
+    {
+      "id": "잡코리아-51695926",
+      "source": "잡코리아",
+      "company": "한국딥러닝㈜",
+      "title": "AI 엔지니어 7년 (리드급)",
+      "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/51695926",
+      "career": "경력 7년 이상",
+      "careerGroup": "experienced",
+      "education": "학력무관",
+      "location": "확인 필요",
+      "employmentType": "정규직",
+      "deadline": "2026-10-30",
+      "fields": [
+        "머신러닝"
+      ],
+      "skills": [],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "중소기업",
+      "focusKeywords": [
+        "AI"
+      ]
+    },
+    {
+      "id": "잡코리아-51695905",
+      "source": "잡코리아",
+      "company": "한국딥러닝㈜",
+      "title": "AI MLOps 엔지니어",
+      "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/51695905",
+      "career": "경력 3년 이상",
+      "careerGroup": "experienced",
+      "education": "학력무관",
+      "location": "확인 필요",
+      "employmentType": "정규직",
+      "deadline": "2026-10-30",
+      "fields": [
+        "MLOps",
+        "머신러닝"
+      ],
+      "skills": [],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "중소기업",
+      "focusKeywords": [
+        "MLOps"
+      ]
+    },
+    {
+      "id": "잡코리아-51698105",
+      "source": "잡코리아",
+      "company": "피피에스㈜",
+      "title": "AI 데이터 파이프라인 개발 책임자 모집 (3년 이상)",
+      "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/51698105",
+      "career": "경력 3년 이상",
+      "careerGroup": "experienced",
+      "education": "대졸↑",
+      "location": "확인 필요",
+      "employmentType": "정규직",
+      "deadline": "2026-10-30",
+      "fields": [
+        "AI·데이터"
+      ],
+      "skills": [],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "중소기업",
+      "focusKeywords": [
+        "AI"
+      ]
+    },
+    {
+      "id": "잡코리아-51697805",
+      "source": "잡코리아",
+      "company": "코드비전㈜",
+      "title": "AI 서비스 풀스택 개발자",
+      "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/51697805",
+      "career": "인턴",
+      "careerGroup": "intern",
+      "education": "대졸↑",
+      "location": "확인 필요",
+      "employmentType": "확인 필요",
+      "deadline": "2026-10-30",
+      "fields": [
+        "AI·데이터"
+      ],
+      "skills": [],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "중소기업",
+      "focusKeywords": [
+        "AI"
+      ]
+    },
+    {
+      "id": "잡코리아-51699063",
+      "source": "잡코리아",
+      "company": "데이콘",
+      "title": "데이콘AI 경진대회 운영 데이터사이언티스트/분석가 채용",
+      "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/51699063",
+      "career": "경력 1년 이상",
+      "careerGroup": "experienced",
+      "education": "학력무관",
+      "location": "확인 필요",
+      "employmentType": "정규직",
+      "deadline": "2026-10-30",
+      "fields": [
+        "Data Science"
+      ],
+      "skills": [],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "분류 필요",
+      "focusKeywords": [
+        "Data Science"
       ]
     },
     {
@@ -2366,7 +2295,7 @@
         "Industrial AI"
       ],
       "skills": [],
-      "collectedAt": "2026-09-30T00:01:12.526Z",
+      "collectedAt": "2026-10-01T00:18:13.585Z",
       "companyType": "중소기업",
       "focusKeywords": [
         "Manufacturing AI",
@@ -2389,10 +2318,32 @@
         "머신러닝"
       ],
       "skills": [],
-      "collectedAt": "2026-09-30T00:01:12.526Z",
+      "collectedAt": "2026-10-01T00:18:13.585Z",
       "companyType": "중소기업",
       "focusKeywords": [
         "AI"
+      ]
+    },
+    {
+      "id": "잡코리아-51693858",
+      "source": "잡코리아",
+      "company": "콘센트릭스서비스코리아",
+      "title": "LLM/Agent Engineer (과/차장급)",
+      "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/51693858",
+      "career": "경력 5년 이상",
+      "careerGroup": "experienced",
+      "education": "학력무관",
+      "location": "확인 필요",
+      "employmentType": "정규직",
+      "deadline": "2026-10-31",
+      "fields": [
+        "LLM/NLP"
+      ],
+      "skills": [],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "분류 필요",
+      "focusKeywords": [
+        "LLM"
       ]
     },
     {
@@ -2412,7 +2363,7 @@
         "AI Research"
       ],
       "skills": [],
-      "collectedAt": "2026-09-30T00:01:12.526Z",
+      "collectedAt": "2026-10-01T00:18:13.585Z",
       "companyType": "중소기업",
       "focusKeywords": [
         "AI"
@@ -2434,7 +2385,7 @@
         "Data Science"
       ],
       "skills": [],
-      "collectedAt": "2026-09-30T00:01:12.526Z",
+      "collectedAt": "2026-10-01T00:18:13.585Z",
       "companyType": "중소기업",
       "focusKeywords": [
         "Data Science"
@@ -2456,7 +2407,7 @@
         "Data Engineering"
       ],
       "skills": [],
-      "collectedAt": "2026-09-30T00:01:12.526Z",
+      "collectedAt": "2026-10-01T00:18:13.585Z",
       "companyType": "중소기업",
       "focusKeywords": [
         "Data Engineering"
@@ -2479,7 +2430,7 @@
         "AI Research"
       ],
       "skills": [],
-      "collectedAt": "2026-09-30T00:01:12.526Z",
+      "collectedAt": "2026-10-01T00:18:13.585Z",
       "companyType": "중소기업",
       "focusKeywords": [
         "AI"
@@ -2501,7 +2452,7 @@
         "AI·데이터"
       ],
       "skills": [],
-      "collectedAt": "2026-09-30T00:01:12.526Z",
+      "collectedAt": "2026-10-01T00:18:13.585Z",
       "companyType": "중소기업",
       "focusKeywords": [
         "AI"
@@ -2523,7 +2474,7 @@
         "Data Science"
       ],
       "skills": [],
-      "collectedAt": "2026-09-30T00:01:12.526Z",
+      "collectedAt": "2026-10-01T00:18:13.585Z",
       "companyType": "중소기업",
       "focusKeywords": [
         "Data Science"
@@ -2545,7 +2496,7 @@
         "Data Engineering"
       ],
       "skills": [],
-      "collectedAt": "2026-09-30T00:01:12.526Z",
+      "collectedAt": "2026-10-01T00:18:13.585Z",
       "companyType": "중소기업",
       "focusKeywords": [
         "Data Engineering"
@@ -2567,7 +2518,7 @@
         "Physical AI"
       ],
       "skills": [],
-      "collectedAt": "2026-09-30T00:01:12.526Z",
+      "collectedAt": "2026-10-01T00:18:13.585Z",
       "companyType": "중소기업",
       "focusKeywords": [
         "Physical AI"
@@ -2589,7 +2540,7 @@
         "LLM/NLP"
       ],
       "skills": [],
-      "collectedAt": "2026-09-30T00:01:12.526Z",
+      "collectedAt": "2026-10-01T00:18:13.585Z",
       "companyType": "중소기업",
       "focusKeywords": [
         "LLM"
@@ -2611,7 +2562,7 @@
         "Data Science"
       ],
       "skills": [],
-      "collectedAt": "2026-09-30T00:01:12.526Z",
+      "collectedAt": "2026-10-01T00:18:13.585Z",
       "companyType": "중소기업",
       "focusKeywords": [
         "Data Science"
@@ -2633,7 +2584,7 @@
         "Data Engineering"
       ],
       "skills": [],
-      "collectedAt": "2026-09-30T00:01:12.526Z",
+      "collectedAt": "2026-10-01T00:18:13.585Z",
       "companyType": "중소기업",
       "focusKeywords": [
         "Data Engineering"
@@ -2656,7 +2607,7 @@
         "AI Research"
       ],
       "skills": [],
-      "collectedAt": "2026-09-30T00:01:12.526Z",
+      "collectedAt": "2026-10-01T00:18:13.585Z",
       "companyType": "중소기업",
       "focusKeywords": [
         "AI"
@@ -2679,7 +2630,7 @@
         "AI Research"
       ],
       "skills": [],
-      "collectedAt": "2026-09-30T00:01:12.526Z",
+      "collectedAt": "2026-10-01T00:18:13.585Z",
       "companyType": "중소기업",
       "focusKeywords": [
         "AI"
@@ -2701,32 +2652,10 @@
         "머신러닝"
       ],
       "skills": [],
-      "collectedAt": "2026-09-30T00:01:12.526Z",
+      "collectedAt": "2026-10-01T00:18:13.585Z",
       "companyType": "중소기업",
       "focusKeywords": [
         "AI"
-      ]
-    },
-    {
-      "id": "잡코리아-51625301",
-      "source": "잡코리아",
-      "company": "뉴셀렉트㈜",
-      "title": "데이터 엔지니어",
-      "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/51625301",
-      "career": "경력 2년 이상",
-      "careerGroup": "experienced",
-      "education": "학력무관",
-      "location": "확인 필요",
-      "employmentType": "정규직",
-      "deadline": "2026-11-14",
-      "fields": [
-        "Data Engineering"
-      ],
-      "skills": [],
-      "collectedAt": "2026-09-30T00:01:12.526Z",
-      "companyType": "중소기업",
-      "focusKeywords": [
-        "Data Engineering"
       ]
     },
     {
@@ -2745,7 +2674,7 @@
         "Physical AI"
       ],
       "skills": [],
-      "collectedAt": "2026-09-30T00:01:12.526Z",
+      "collectedAt": "2026-10-01T00:18:13.585Z",
       "companyType": "중소기업",
       "focusKeywords": [
         "Physical AI",
@@ -2770,12 +2699,16 @@
         "AI Research"
       ],
       "skills": [
+        "Python",
+        "Kubernetes",
+        "Java",
         "Go"
       ],
-      "collectedAt": "2026-09-30T00:01:12.526Z",
+      "collectedAt": "2026-10-01T00:18:13.585Z",
       "companyType": "중소기업",
       "focusKeywords": [
-        "LLM"
+        "LLM",
+        "MLOps"
       ]
     },
     {
@@ -2795,7 +2728,7 @@
         "머신러닝"
       ],
       "skills": [],
-      "collectedAt": "2026-09-30T00:01:12.526Z",
+      "collectedAt": "2026-10-01T00:18:13.585Z",
       "companyType": "중소기업",
       "focusKeywords": [
         "Data Science"
@@ -2817,10 +2750,32 @@
         "Data Engineering"
       ],
       "skills": [],
-      "collectedAt": "2026-09-30T00:01:12.526Z",
+      "collectedAt": "2026-10-01T00:18:13.585Z",
       "companyType": "중소기업",
       "focusKeywords": [
         "Data Engineering"
+      ]
+    },
+    {
+      "id": "잡코리아-51651405",
+      "source": "잡코리아",
+      "company": "㈜비상교육",
+      "title": "[IT] AI ML 엔지니어",
+      "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/51651405",
+      "career": "경력 1년 이상",
+      "careerGroup": "experienced",
+      "education": "대졸↑",
+      "location": "확인 필요",
+      "employmentType": "정규직",
+      "deadline": "2026-11-20",
+      "fields": [
+        "머신러닝"
+      ],
+      "skills": [],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "중소기업",
+      "focusKeywords": [
+        "AI"
       ]
     },
     {
@@ -2839,7 +2794,7 @@
         "Data Science"
       ],
       "skills": [],
-      "collectedAt": "2026-09-30T00:01:12.526Z",
+      "collectedAt": "2026-10-01T00:18:13.585Z",
       "companyType": "중소기업",
       "focusKeywords": [
         "Data Science"
@@ -2861,7 +2816,7 @@
         "AI Research"
       ],
       "skills": [],
-      "collectedAt": "2026-09-30T00:01:12.526Z",
+      "collectedAt": "2026-10-01T00:18:13.585Z",
       "companyType": "중소기업",
       "focusKeywords": [
         "AI"
@@ -2883,10 +2838,32 @@
         "Data Engineering"
       ],
       "skills": [],
-      "collectedAt": "2026-09-30T00:01:12.526Z",
+      "collectedAt": "2026-10-01T00:18:13.585Z",
       "companyType": "중소기업",
       "focusKeywords": [
         "Data Engineering"
+      ]
+    },
+    {
+      "id": "잡코리아-51676796",
+      "source": "잡코리아",
+      "company": "㈜비상교육",
+      "title": "[IT] DevOps/AI Platform 엔지니어",
+      "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/51676796",
+      "career": "경력 5년 이상",
+      "careerGroup": "experienced",
+      "education": "대졸↑",
+      "location": "확인 필요",
+      "employmentType": "확인 필요",
+      "deadline": "2026-11-27",
+      "fields": [
+        "AI·데이터"
+      ],
+      "skills": [],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "중소기업",
+      "focusKeywords": [
+        "AI"
       ]
     },
     {
@@ -2905,7 +2882,7 @@
         "Data Science"
       ],
       "skills": [],
-      "collectedAt": "2026-09-30T00:01:12.526Z",
+      "collectedAt": "2026-10-01T00:18:13.585Z",
       "companyType": "중소기업",
       "focusKeywords": [
         "Data Science"
@@ -2927,7 +2904,7 @@
         "Data Engineering"
       ],
       "skills": [],
-      "collectedAt": "2026-09-30T00:01:12.526Z",
+      "collectedAt": "2026-10-01T00:18:13.585Z",
       "companyType": "중소기업",
       "focusKeywords": [
         "Data Engineering"
@@ -2950,7 +2927,7 @@
         "머신러닝"
       ],
       "skills": [],
-      "collectedAt": "2026-09-30T00:01:12.526Z",
+      "collectedAt": "2026-10-01T00:18:13.585Z",
       "companyType": "중소기업",
       "focusKeywords": [
         "LLM"
@@ -2973,10 +2950,32 @@
         "머신러닝"
       ],
       "skills": [],
-      "collectedAt": "2026-09-30T00:01:12.526Z",
+      "collectedAt": "2026-10-01T00:18:13.585Z",
       "companyType": "중소기업",
       "focusKeywords": [
         "Data Science"
+      ]
+    },
+    {
+      "id": "잡코리아-51405872",
+      "source": "잡코리아",
+      "company": "㈜모다플",
+      "title": "[모다플]머신러닝 엔지니어(3년이상)",
+      "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/51405872",
+      "career": "경력 3년 이상",
+      "careerGroup": "experienced",
+      "education": "대졸↑",
+      "location": "확인 필요",
+      "employmentType": "정규직",
+      "deadline": "상시채용",
+      "fields": [
+        "머신러닝"
+      ],
+      "skills": [],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "중소기업",
+      "focusKeywords": [
+        "AI"
       ]
     },
     {
@@ -2995,7 +2994,7 @@
         "Physical AI"
       ],
       "skills": [],
-      "collectedAt": "2026-09-30T00:01:12.526Z",
+      "collectedAt": "2026-10-01T00:18:13.585Z",
       "companyType": "대기업",
       "focusKeywords": [
         "Physical AI",
@@ -3018,10 +3017,56 @@
         "Physical AI"
       ],
       "skills": [],
-      "collectedAt": "2026-09-30T00:01:12.526Z",
+      "collectedAt": "2026-10-01T00:18:13.585Z",
       "companyType": "대기업",
       "focusKeywords": [
         "Physical AI"
+      ]
+    },
+    {
+      "id": "잡코리아-51449808",
+      "source": "잡코리아",
+      "company": "CJ대한통운㈜\\\\t",
+      "title": "[TES물류기술연구소] 로봇 S/W Engineer (Physical AI 개발) 경력사원 모집",
+      "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/51449808",
+      "career": "경력",
+      "careerGroup": "experienced",
+      "education": "석사↑",
+      "location": "확인 필요",
+      "employmentType": "정규직",
+      "deadline": "상시채용",
+      "fields": [
+        "Physical AI",
+        "AI Research"
+      ],
+      "skills": [],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "중소기업",
+      "focusKeywords": [
+        "Physical AI",
+        "Robotics"
+      ]
+    },
+    {
+      "id": "잡코리아-51583563",
+      "source": "잡코리아",
+      "company": "LG에너지솔루션",
+      "title": "[CDO] AI/빅데이터 경력 상시 모집",
+      "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/51583563",
+      "career": "경력",
+      "careerGroup": "experienced",
+      "education": "석사↑",
+      "location": "확인 필요",
+      "employmentType": "확인 필요",
+      "deadline": "상시채용",
+      "fields": [
+        "AI·데이터"
+      ],
+      "skills": [],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "대기업",
+      "focusKeywords": [
+        "AI"
       ]
     },
     {
@@ -3041,7 +3086,7 @@
         "AI Research"
       ],
       "skills": [],
-      "collectedAt": "2026-09-30T00:01:12.526Z",
+      "collectedAt": "2026-10-01T00:18:13.585Z",
       "companyType": "중소기업",
       "focusKeywords": [
         "Vision AI"
@@ -3064,7 +3109,7 @@
         "머신러닝"
       ],
       "skills": [],
-      "collectedAt": "2026-09-30T00:01:12.526Z",
+      "collectedAt": "2026-10-01T00:18:13.585Z",
       "companyType": "중소기업",
       "focusKeywords": [
         "Vision AI"
@@ -3086,8 +3131,30 @@
         "AI·데이터"
       ],
       "skills": [],
-      "collectedAt": "2026-09-30T00:01:12.526Z",
+      "collectedAt": "2026-10-01T00:18:13.585Z",
       "companyType": "대기업",
+      "focusKeywords": [
+        "AI"
+      ]
+    },
+    {
+      "id": "잡코리아-51549447",
+      "source": "잡코리아",
+      "company": "다겸㈜",
+      "title": "[병역특례]비전 AI 개발자 전문연구요원",
+      "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/51549447",
+      "career": "인턴",
+      "careerGroup": "intern",
+      "education": "석사↑",
+      "location": "확인 필요",
+      "employmentType": "정규직",
+      "deadline": "상시채용",
+      "fields": [
+        "AI Research"
+      ],
+      "skills": [],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "중소기업",
       "focusKeywords": [
         "AI"
       ]
@@ -3108,29 +3175,7 @@
         "LLM/NLP"
       ],
       "skills": [],
-      "collectedAt": "2026-09-30T00:01:12.526Z",
-      "companyType": "중견기업",
-      "focusKeywords": [
-        "LLM"
-      ]
-    },
-    {
-      "id": "잡코리아-51467086",
-      "source": "잡코리아",
-      "company": "㈜솔트룩스",
-      "title": "[AI서비스사업본부] AI/LLM 백엔드 개발자 경력직 채용",
-      "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/51467086",
-      "career": "경력 5년 이상",
-      "careerGroup": "experienced",
-      "education": "초대졸↑",
-      "location": "확인 필요",
-      "employmentType": "정규직",
-      "deadline": "상시채용",
-      "fields": [
-        "LLM/NLP"
-      ],
-      "skills": [],
-      "collectedAt": "2026-09-30T00:01:12.526Z",
+      "collectedAt": "2026-10-01T00:18:13.585Z",
       "companyType": "중견기업",
       "focusKeywords": [
         "LLM"
@@ -3153,7 +3198,7 @@
         "AI Research"
       ],
       "skills": [],
-      "collectedAt": "2026-09-30T00:01:12.526Z",
+      "collectedAt": "2026-10-01T00:18:13.585Z",
       "companyType": "분류 필요",
       "focusKeywords": [
         "AI"
@@ -3175,7 +3220,7 @@
         "AI·데이터"
       ],
       "skills": [],
-      "collectedAt": "2026-09-30T00:01:12.526Z",
+      "collectedAt": "2026-10-01T00:18:13.585Z",
       "companyType": "대기업",
       "focusKeywords": [
         "AI"
@@ -3197,7 +3242,7 @@
         "AI·데이터"
       ],
       "skills": [],
-      "collectedAt": "2026-09-30T00:01:12.526Z",
+      "collectedAt": "2026-10-01T00:18:13.585Z",
       "companyType": "대기업",
       "focusKeywords": [
         "AI"
@@ -3219,7 +3264,7 @@
         "머신러닝"
       ],
       "skills": [],
-      "collectedAt": "2026-09-30T00:01:12.526Z",
+      "collectedAt": "2026-10-01T00:18:13.585Z",
       "companyType": "대기업",
       "focusKeywords": [
         "AI"
@@ -3241,32 +3286,10 @@
         "Data Science"
       ],
       "skills": [],
-      "collectedAt": "2026-09-30T00:01:12.526Z",
+      "collectedAt": "2026-10-01T00:18:13.585Z",
       "companyType": "대기업",
       "focusKeywords": [
         "Data Science"
-      ]
-    },
-    {
-      "id": "잡코리아-51583563",
-      "source": "잡코리아",
-      "company": "LG에너지솔루션",
-      "title": "[CDO] AI/빅데이터 경력 상시 모집",
-      "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/51583563",
-      "career": "경력",
-      "careerGroup": "experienced",
-      "education": "석사↑",
-      "location": "확인 필요",
-      "employmentType": "확인 필요",
-      "deadline": "상시채용",
-      "fields": [
-        "AI·데이터"
-      ],
-      "skills": [],
-      "collectedAt": "2026-09-30T00:01:12.526Z",
-      "companyType": "대기업",
-      "focusKeywords": [
-        "AI"
       ]
     },
     {
@@ -3286,7 +3309,7 @@
         "머신러닝"
       ],
       "skills": [],
-      "collectedAt": "2026-09-30T00:01:12.526Z",
+      "collectedAt": "2026-10-01T00:18:13.585Z",
       "companyType": "중소기업",
       "focusKeywords": [
         "MLOps"
@@ -3308,7 +3331,7 @@
         "AI Research"
       ],
       "skills": [],
-      "collectedAt": "2026-09-30T00:01:12.526Z",
+      "collectedAt": "2026-10-01T00:18:13.585Z",
       "companyType": "중소기업",
       "focusKeywords": [
         "AI"
@@ -3330,7 +3353,7 @@
         "Data Science"
       ],
       "skills": [],
-      "collectedAt": "2026-09-30T00:01:12.526Z",
+      "collectedAt": "2026-10-01T00:18:13.585Z",
       "companyType": "중소기업",
       "focusKeywords": [
         "Data Science"
@@ -3352,30 +3375,8 @@
         "Data Engineering"
       ],
       "skills": [],
-      "collectedAt": "2026-09-30T00:01:12.526Z",
+      "collectedAt": "2026-10-01T00:18:13.585Z",
       "companyType": "분류 필요",
-      "focusKeywords": [
-        "Data Engineering"
-      ]
-    },
-    {
-      "id": "잡코리아-51689075",
-      "source": "잡코리아",
-      "company": "CJ대한통운㈜\\\\t",
-      "title": "[TES물류기술연구소] '데이터 엔지니어' 경력사원 모집",
-      "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/51689075",
-      "career": "경력",
-      "careerGroup": "experienced",
-      "education": "대졸↑",
-      "location": "확인 필요",
-      "employmentType": "정규직",
-      "deadline": "상시채용",
-      "fields": [
-        "Data Engineering"
-      ],
-      "skills": [],
-      "collectedAt": "2026-09-30T00:01:12.526Z",
-      "companyType": "중소기업",
       "focusKeywords": [
         "Data Engineering"
       ]
@@ -3397,11 +3398,3931 @@
         "Data Engineering"
       ],
       "skills": [],
-      "collectedAt": "2026-09-30T00:01:12.526Z",
+      "collectedAt": "2026-10-01T00:18:13.585Z",
       "companyType": "대기업",
       "focusKeywords": [
         "MLOps",
         "Data Engineering"
+      ]
+    },
+    {
+      "id": "사람인-klu2wc",
+      "source": "사람인",
+      "company": "글로빛(주)",
+      "title": "[글로빛논문컨설팅] 빅데이터 분석,AI(머신러닝,딥러닝)박사",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54704551&location=ts&searchword=AI+%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D&searchType=search&paid_fl=n&search_uuid=c90bbadd-2892-4fc3-a44e-7bb381358a26",
+      "career": "경력무관",
+      "careerGroup": "junior",
+      "education": "확인 필요",
+      "location": "서울",
+      "employmentType": "프리랜서",
+      "deadline": "마감 확인",
+      "fields": [
+        "Data Science",
+        "머신러닝"
+      ],
+      "skills": [],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "중소기업",
+      "focusKeywords": [
+        "Data Science"
+      ]
+    },
+    {
+      "id": "사람인-sivl4a",
+      "source": "사람인",
+      "company": "(주)세종분석연구원",
+      "title": "Senior AI Engineer/머신러닝 엔지니어 채용",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54588288&location=ts&searchword=AI+%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D&searchType=search&paid_fl=n&search_uuid=c90bbadd-2892-4fc3-a44e-7bb381358a26",
+      "career": "확인 필요",
+      "careerGroup": "experienced",
+      "education": "대졸↑",
+      "location": "서울",
+      "employmentType": "정규직",
+      "deadline": "마감 확인",
+      "fields": [
+        "Data Science",
+        "Data Engineering",
+        "머신러닝"
+      ],
+      "skills": [],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "중소기업",
+      "focusKeywords": [
+        "Data Engineering",
+        "Data Science"
+      ]
+    },
+    {
+      "id": "사람인-eb6ogo",
+      "source": "사람인",
+      "company": "부산인터넷방송국",
+      "title": "AI, 딥러닝, 머신러닝, 데이터분석, 분석방법론~학습로드맵 모집",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=55069825&location=ts&searchword=AI+%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D&searchType=search&paid_fl=n&search_uuid=c90bbadd-2892-4fc3-a44e-7bb381358a26",
+      "career": "확인 필요",
+      "careerGroup": "experienced",
+      "education": "대졸↑",
+      "location": "부산",
+      "employmentType": "정규직",
+      "deadline": "마감 확인",
+      "fields": [
+        "Data Science",
+        "Data Engineering",
+        "머신러닝"
+      ],
+      "skills": [
+        "Python"
+      ],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "분류 필요",
+      "focusKeywords": [
+        "Data Engineering",
+        "Data Science"
+      ]
+    },
+    {
+      "id": "사람인-17a73zk",
+      "source": "사람인",
+      "company": "(주)써로마인드",
+      "title": "[써로마인드] AI 모델 (머신러닝/딥러닝) 개발자 경력 채용",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=55007725&location=ts&searchword=AI+%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D&searchType=search&paid_fl=n&search_uuid=c90bbadd-2892-4fc3-a44e-7bb381358a26",
+      "career": "확인 필요",
+      "careerGroup": "experienced",
+      "education": "학력무관",
+      "location": "서울",
+      "employmentType": "정규직",
+      "deadline": "마감 확인",
+      "fields": [
+        "머신러닝"
+      ],
+      "skills": [
+        "Python"
+      ],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "중소기업",
+      "focusKeywords": [
+        "AI"
+      ]
+    },
+    {
+      "id": "사람인-153gre8",
+      "source": "사람인",
+      "company": "(주)솔비트",
+      "title": "[경력직/솔데] AI 개발자 모집합니다. - 머신러닝 엔지니어",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54914691&location=ts&searchword=AI+%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D&searchType=search&paid_fl=n&search_uuid=c90bbadd-2892-4fc3-a44e-7bb381358a26",
+      "career": "확인 필요",
+      "careerGroup": "experienced",
+      "education": "대졸↑",
+      "location": "서울",
+      "employmentType": "정규직",
+      "deadline": "마감 확인",
+      "fields": [
+        "머신러닝"
+      ],
+      "skills": [],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "중소기업",
+      "focusKeywords": [
+        "AI"
+      ]
+    },
+    {
+      "id": "사람인-fem428",
+      "source": "사람인",
+      "company": "(주)디오",
+      "title": "(주)디오 인공지능(AI) 및 머신러닝(ML) 엔지니어 담당자 채용",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54826386&location=ts&searchword=AI+%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D&searchType=search&paid_fl=n&search_uuid=c90bbadd-2892-4fc3-a44e-7bb381358a26",
+      "career": "확인 필요",
+      "careerGroup": "experienced",
+      "education": "대졸↑",
+      "location": "서울",
+      "employmentType": "정규직",
+      "deadline": "마감 확인",
+      "fields": [
+        "Vision AI",
+        "머신러닝"
+      ],
+      "skills": [
+        "PyTorch"
+      ],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "중소기업",
+      "focusKeywords": [
+        "Vision AI"
+      ]
+    },
+    {
+      "id": "사람인-banjlm",
+      "source": "사람인",
+      "company": "(주)모닝인",
+      "title": "[강남/교육기관] AI (머신러닝기반 교육운영기획,솔루션마케팅)",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=55076945&location=ts&searchword=AI+%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D&searchType=search&paid_fl=n&search_uuid=c90bbadd-2892-4fc3-a44e-7bb381358a26",
+      "career": "확인 필요",
+      "careerGroup": "experienced",
+      "education": "대졸↑",
+      "location": "서울",
+      "employmentType": "계약직",
+      "deadline": "마감 확인",
+      "fields": [
+        "머신러닝"
+      ],
+      "skills": [],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "중소기업",
+      "focusKeywords": [
+        "AI"
+      ]
+    },
+    {
+      "id": "사람인-1ljuxq8",
+      "source": "사람인",
+      "company": "(주)지티씨솔루션",
+      "title": "통계·머신러닝 기반 AI 데이터 분석가 / 컨설턴트 모집",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54743379&location=ts&searchword=AI+%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D&searchType=search&paid_fl=n&search_uuid=c90bbadd-2892-4fc3-a44e-7bb381358a26",
+      "career": "신입·경력",
+      "careerGroup": "junior",
+      "education": "대졸↑",
+      "location": "경기",
+      "employmentType": "정규직",
+      "deadline": "마감 확인",
+      "fields": [
+        "Data Science",
+        "Data Engineering",
+        "머신러닝"
+      ],
+      "skills": [],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "중소기업",
+      "focusKeywords": [
+        "Data Engineering",
+        "Data Science"
+      ]
+    },
+    {
+      "id": "사람인-1ecy33d",
+      "source": "사람인",
+      "company": "이에이치알앤씨(주)",
+      "title": "[환경] 머신러닝, AI 연구 석사 전문연구요원",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=55039234&location=ts&searchword=AI+%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D&searchType=search&paid_fl=n&search_uuid=c90bbadd-2892-4fc3-a44e-7bb381358a26",
+      "career": "신입",
+      "careerGroup": "junior",
+      "education": "석사↑",
+      "location": "인천",
+      "employmentType": "정규직",
+      "deadline": "마감 확인",
+      "fields": [
+        "Data Science",
+        "머신러닝",
+        "AI Research"
+      ],
+      "skills": [],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "중소기업",
+      "focusKeywords": [
+        "Data Science"
+      ]
+    },
+    {
+      "id": "사람인-1ckye0t",
+      "source": "사람인",
+      "company": "이에이치알앤씨(주)",
+      "title": "[환경] 머신러닝, AI 서버 시스템 관리 석사 전문연구요원",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=55038943&location=ts&searchword=AI+%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D&searchType=search&paid_fl=n&search_uuid=c90bbadd-2892-4fc3-a44e-7bb381358a26",
+      "career": "신입",
+      "careerGroup": "junior",
+      "education": "석사↑",
+      "location": "인천",
+      "employmentType": "정규직",
+      "deadline": "마감 확인",
+      "fields": [
+        "Data Science",
+        "머신러닝",
+        "AI Research"
+      ],
+      "skills": [],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "중소기업",
+      "focusKeywords": [
+        "Data Science"
+      ]
+    },
+    {
+      "id": "사람인-dvx5wl",
+      "source": "사람인",
+      "company": "(주)아이트럭",
+      "title": "[아이트럭] AI / ML 엔지니어 채용",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=55011229&location=ts&searchword=AI+%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D&searchType=search&paid_fl=n&search_uuid=c90bbadd-2892-4fc3-a44e-7bb381358a26",
+      "career": "경력무관",
+      "careerGroup": "junior",
+      "education": "대졸↑",
+      "location": "서울",
+      "employmentType": "정규직",
+      "deadline": "마감 확인",
+      "fields": [
+        "Data Science",
+        "Data Engineering",
+        "머신러닝"
+      ],
+      "skills": [],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "중소기업",
+      "focusKeywords": [
+        "Data Engineering",
+        "Data Science"
+      ]
+    },
+    {
+      "id": "사람인-1xvh9it",
+      "source": "사람인",
+      "company": "(주)해도사",
+      "title": "AI/ML엔지니어 경력무관 채용 공고(정규직)",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=55028674&location=ts&searchword=AI+%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D&searchType=search&paid_fl=n&search_uuid=c90bbadd-2892-4fc3-a44e-7bb381358a26",
+      "career": "경력무관",
+      "careerGroup": "junior",
+      "education": "학력무관",
+      "location": "경기",
+      "employmentType": "정규직",
+      "deadline": "마감 확인",
+      "fields": [
+        "머신러닝"
+      ],
+      "skills": [],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "중소기업",
+      "focusKeywords": [
+        "AI"
+      ]
+    },
+    {
+      "id": "사람인-1s84k4h",
+      "source": "사람인",
+      "company": "㈜풍인무역",
+      "title": "Digital팀 AI/ML 개발자 경력직 채용",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=55101577&location=ts&searchword=AI+%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D&searchType=search&paid_fl=n&search_uuid=c90bbadd-2892-4fc3-a44e-7bb381358a26",
+      "career": "확인 필요",
+      "careerGroup": "experienced",
+      "education": "대졸↑",
+      "location": "서울",
+      "employmentType": "정규직",
+      "deadline": "마감 확인",
+      "fields": [
+        "Data Engineering",
+        "머신러닝"
+      ],
+      "skills": [
+        "Python",
+        "SQL",
+        "PyTorch",
+        "TensorFlow"
+      ],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "중소기업",
+      "focusKeywords": [
+        "Data Engineering"
+      ]
+    },
+    {
+      "id": "사람인-slm92b",
+      "source": "사람인",
+      "company": "(주)하이브랩",
+      "title": "[하이브랩] AI 엔지니어 (AI Engineer / ML Engineer)",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=55100095&location=ts&searchword=AI+%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D&searchType=search&paid_fl=n&search_uuid=c90bbadd-2892-4fc3-a44e-7bb381358a26",
+      "career": "확인 필요",
+      "careerGroup": "experienced",
+      "education": "초대졸↑",
+      "location": "경기",
+      "employmentType": "정규직",
+      "deadline": "마감 확인",
+      "fields": [
+        "머신러닝"
+      ],
+      "skills": [
+        "Python",
+        "AWS",
+        "Docker"
+      ],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "중소기업",
+      "focusKeywords": [
+        "MLOps"
+      ]
+    },
+    {
+      "id": "사람인-18ncnz6",
+      "source": "사람인",
+      "company": "(주)사람인에이치에스",
+      "title": "[우대 사항 충족 시 급여 최대상향 / 정규직] AI/ML 연구원 채용",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54940534&location=ts&searchword=AI+%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D&searchType=search&paid_fl=n&search_uuid=c90bbadd-2892-4fc3-a44e-7bb381358a26",
+      "career": "확인 필요",
+      "careerGroup": "experienced",
+      "education": "석사↑",
+      "location": "서울",
+      "employmentType": "정규직",
+      "deadline": "마감 확인",
+      "fields": [
+        "머신러닝",
+        "AI Research"
+      ],
+      "skills": [],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "중소기업",
+      "focusKeywords": [
+        "AI"
+      ]
+    },
+    {
+      "id": "사람인-1lmyu0e",
+      "source": "사람인",
+      "company": "(주)루모스",
+      "title": "AI / ML 엔지니어",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=55115628&location=ts&searchword=AI+%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D&searchType=search&paid_fl=n&search_uuid=c90bbadd-2892-4fc3-a44e-7bb381358a26",
+      "career": "확인 필요",
+      "careerGroup": "experienced",
+      "education": "대졸↑",
+      "location": "서울",
+      "employmentType": "정규직",
+      "deadline": "마감 확인",
+      "fields": [
+        "머신러닝"
+      ],
+      "skills": [
+        "PyTorch"
+      ],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "중소기업",
+      "focusKeywords": [
+        "AI"
+      ]
+    },
+    {
+      "id": "사람인-y2bd7q",
+      "source": "사람인",
+      "company": "휴먼코어랩(주)",
+      "title": "AI 채팅 플랫폼 ML Researcher",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=55121761&location=ts&searchword=AI+%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D&searchType=search&paid_fl=n&search_uuid=c90bbadd-2892-4fc3-a44e-7bb381358a26",
+      "career": "경력무관",
+      "careerGroup": "junior",
+      "education": "학력무관",
+      "location": "서울",
+      "employmentType": "정규직",
+      "deadline": "마감 확인",
+      "fields": [
+        "MLOps",
+        "머신러닝",
+        "AI Research"
+      ],
+      "skills": [],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "중소기업",
+      "focusKeywords": [
+        "MLOps"
+      ]
+    },
+    {
+      "id": "사람인-1e1fxbf",
+      "source": "사람인",
+      "company": "(주)비상교육",
+      "title": "AI ML 엔지니어",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=55094072&location=ts&searchword=AI+%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D&searchType=search&paid_fl=n&search_uuid=c90bbadd-2892-4fc3-a44e-7bb381358a26",
+      "career": "확인 필요",
+      "careerGroup": "experienced",
+      "education": "대졸↑",
+      "location": "경기",
+      "employmentType": "정규직",
+      "deadline": "마감 확인",
+      "fields": [
+        "머신러닝"
+      ],
+      "skills": [
+        "Python",
+        "AWS",
+        "Docker"
+      ],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "중소기업",
+      "focusKeywords": [
+        "MLOps"
+      ]
+    },
+    {
+      "id": "사람인-lp9w81",
+      "source": "사람인",
+      "company": "(주)컨트로맥스",
+      "title": "Physical AI (PHM/ML) Engineer",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=55052315&location=ts&searchword=AI+%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D&searchType=search&paid_fl=n&search_uuid=c90bbadd-2892-4fc3-a44e-7bb381358a26",
+      "career": "확인 필요",
+      "careerGroup": "experienced",
+      "education": "대졸↑",
+      "location": "대전",
+      "employmentType": "정규직",
+      "deadline": "마감 확인",
+      "fields": [
+        "Physical AI",
+        "Industrial AI",
+        "머신러닝"
+      ],
+      "skills": [],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "중소기업",
+      "focusKeywords": [
+        "Physical AI",
+        "Manufacturing AI"
+      ]
+    },
+    {
+      "id": "사람인-1k4uw80",
+      "source": "사람인",
+      "company": "(주)클라비",
+      "title": "AI/ML 시스템 설계 및 개발 전문연구요원(병역특례) 채용",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54754370&location=ts&searchword=AI+%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D&searchType=search&paid_fl=n&search_uuid=c90bbadd-2892-4fc3-a44e-7bb381358a26",
+      "career": "신입",
+      "careerGroup": "junior",
+      "education": "석사↑",
+      "location": "서울",
+      "employmentType": "정규직",
+      "deadline": "상시채용",
+      "fields": [
+        "LLM/NLP",
+        "Data Engineering",
+        "머신러닝",
+        "AI Research"
+      ],
+      "skills": [],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "중소기업",
+      "focusKeywords": [
+        "LLM",
+        "Data Engineering"
+      ]
+    },
+    {
+      "id": "사람인-x0oqix",
+      "source": "사람인",
+      "company": "(주)럭스로보",
+      "title": "ML/AI 엔지니어",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=55127035&location=ts&searchword=AI+%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D&searchType=search&paid_fl=n&search_uuid=c90bbadd-2892-4fc3-a44e-7bb381358a26",
+      "career": "확인 필요",
+      "careerGroup": "experienced",
+      "education": "초대졸↑",
+      "location": "서울",
+      "employmentType": "정규직",
+      "deadline": "마감 확인",
+      "fields": [
+        "머신러닝"
+      ],
+      "skills": [],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "중소기업",
+      "focusKeywords": [
+        "AI"
+      ]
+    },
+    {
+      "id": "사람인-j6hm0m",
+      "source": "사람인",
+      "company": "코데이터솔루션(주)",
+      "title": "AI 모델(ML) 개발자 경력직 채용",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=55040950&location=ts&searchword=AI+%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D&searchType=search&paid_fl=n&search_uuid=c90bbadd-2892-4fc3-a44e-7bb381358a26",
+      "career": "확인 필요",
+      "careerGroup": "experienced",
+      "education": "대졸↑",
+      "location": "서울",
+      "employmentType": "계약직",
+      "deadline": "마감 확인",
+      "fields": [
+        "Data Science",
+        "Data Engineering",
+        "머신러닝"
+      ],
+      "skills": [
+        "Python"
+      ],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "중소기업",
+      "focusKeywords": [
+        "Data Engineering",
+        "Data Science"
+      ]
+    },
+    {
+      "id": "사람인-1a19n2e",
+      "source": "사람인",
+      "company": "휴먼코어랩(주)",
+      "title": "AI SaaS ML 엔지니어 (음성 AI)",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=55121821&location=ts&searchword=AI+%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D&searchType=search&paid_fl=n&search_uuid=c90bbadd-2892-4fc3-a44e-7bb381358a26",
+      "career": "확인 필요",
+      "careerGroup": "experienced",
+      "education": "학력무관",
+      "location": "서울",
+      "employmentType": "정규직",
+      "deadline": "마감 확인",
+      "fields": [
+        "Data Engineering",
+        "머신러닝"
+      ],
+      "skills": [],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "중소기업",
+      "focusKeywords": [
+        "Data Engineering"
+      ]
+    },
+    {
+      "id": "사람인-q756qr",
+      "source": "사람인",
+      "company": "(주)스카우트파트너스",
+      "title": "[AI기반 솔루션 기업] ML 플랫폼 설계",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=55151571&location=ts&searchword=AI+%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D&searchType=search&paid_fl=n&search_uuid=c90bbadd-2892-4fc3-a44e-7bb381358a26",
+      "career": "확인 필요",
+      "careerGroup": "experienced",
+      "education": "대졸↑",
+      "location": "서울",
+      "employmentType": "정규직",
+      "deadline": "마감 확인",
+      "fields": [
+        "MLOps",
+        "머신러닝"
+      ],
+      "skills": [],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "중소기업",
+      "focusKeywords": [
+        "MLOps"
+      ]
+    },
+    {
+      "id": "사람인-1d5yp2n",
+      "source": "사람인",
+      "company": "에이피써치",
+      "title": "AI/ML 개발 및 R&D·산업 적용 국내 상장 제약바이오기업",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=55125552&location=ts&searchword=AI+%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D&searchType=search&paid_fl=n&search_uuid=c90bbadd-2892-4fc3-a44e-7bb381358a26",
+      "career": "확인 필요",
+      "careerGroup": "experienced",
+      "education": "대졸↑",
+      "location": "서울",
+      "employmentType": "정규직",
+      "deadline": "마감 확인",
+      "fields": [
+        "머신러닝"
+      ],
+      "skills": [],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "분류 필요",
+      "focusKeywords": [
+        "AI"
+      ]
+    },
+    {
+      "id": "사람인-k9jq96",
+      "source": "사람인",
+      "company": "(주) 케인앤클루컨설팅",
+      "title": "AI Research Engineer (ML/LLM Service Engineering) 경력모집",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=55111700&location=ts&searchword=AI+%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D&searchType=search&paid_fl=n&search_uuid=c90bbadd-2892-4fc3-a44e-7bb381358a26",
+      "career": "확인 필요",
+      "careerGroup": "experienced",
+      "education": "대졸↑",
+      "location": "경기",
+      "employmentType": "정규직",
+      "deadline": "마감 확인",
+      "fields": [
+        "LLM/NLP",
+        "머신러닝",
+        "AI Research"
+      ],
+      "skills": [],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "중소기업",
+      "focusKeywords": [
+        "LLM"
+      ]
+    },
+    {
+      "id": "사람인-1xby6fs",
+      "source": "사람인",
+      "company": "준브로스소프트",
+      "title": "준브로스소프트 AI·LLM·RAG·ML 개발자 채용 공고",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54786274&location=ts&searchword=AI+%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D&searchType=search&paid_fl=n&search_uuid=c90bbadd-2892-4fc3-a44e-7bb381358a26",
+      "career": "경력무관",
+      "careerGroup": "junior",
+      "education": "학력무관",
+      "location": "경남",
+      "employmentType": "정규직",
+      "deadline": "마감 확인",
+      "fields": [
+        "LLM/NLP",
+        "머신러닝"
+      ],
+      "skills": [
+        "RAG"
+      ],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "분류 필요",
+      "focusKeywords": [
+        "LLM"
+      ]
+    },
+    {
+      "id": "사람인-1pc0cxq",
+      "source": "사람인",
+      "company": "주식회사 그라운드원",
+      "title": "AI/ML 엔지니어를 모집합니다",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=55116460&location=ts&searchword=AI+%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D&searchType=search&paid_fl=n&search_uuid=c90bbadd-2892-4fc3-a44e-7bb381358a26",
+      "career": "확인 필요",
+      "careerGroup": "experienced",
+      "education": "대졸↑",
+      "location": "서울",
+      "employmentType": "정규직",
+      "deadline": "상시채용",
+      "fields": [
+        "머신러닝"
+      ],
+      "skills": [],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "중소기업",
+      "focusKeywords": [
+        "AI"
+      ]
+    },
+    {
+      "id": "사람인-1whyemz",
+      "source": "사람인",
+      "company": "(주)아로아랩스",
+      "title": "AI 물류 스타트업 AI/ML 연구원(부산)",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54765820&location=ts&searchword=AI+%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D&searchType=search&paid_fl=n&search_uuid=c90bbadd-2892-4fc3-a44e-7bb381358a26",
+      "career": "확인 필요",
+      "careerGroup": "experienced",
+      "education": "석사↑",
+      "location": "부산",
+      "employmentType": "정규직",
+      "deadline": "상시채용",
+      "fields": [
+        "Data Science",
+        "머신러닝",
+        "AI Research"
+      ],
+      "skills": [],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "중소기업",
+      "focusKeywords": [
+        "Data Science"
+      ]
+    },
+    {
+      "id": "사람인-12qcv44",
+      "source": "사람인",
+      "company": "(주)시옷",
+      "title": "시니어 AI/ML 연구원 모집",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=55003866&location=ts&searchword=AI+%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D&searchType=search&paid_fl=n&search_uuid=c90bbadd-2892-4fc3-a44e-7bb381358a26",
+      "career": "경력무관",
+      "careerGroup": "junior",
+      "education": "대졸↑",
+      "location": "서울",
+      "employmentType": "정규직",
+      "deadline": "마감 확인",
+      "fields": [
+        "머신러닝",
+        "AI Research"
+      ],
+      "skills": [
+        "AWS",
+        "Java",
+        "C++"
+      ],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "중소기업",
+      "focusKeywords": [
+        "AI"
+      ]
+    },
+    {
+      "id": "사람인-1tecxmy",
+      "source": "사람인",
+      "company": "(주)미스릴",
+      "title": "AI/ML Engineer 채용의 건",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=55064210&location=ts&searchword=AI+%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D&searchType=search&paid_fl=n&search_uuid=c90bbadd-2892-4fc3-a44e-7bb381358a26",
+      "career": "확인 필요",
+      "careerGroup": "experienced",
+      "education": "석사↑",
+      "location": "서울",
+      "employmentType": "정규직",
+      "deadline": "마감 확인",
+      "fields": [
+        "머신러닝"
+      ],
+      "skills": [],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "중소기업",
+      "focusKeywords": [
+        "AI"
+      ]
+    },
+    {
+      "id": "사람인-pkz1j6",
+      "source": "사람인",
+      "company": "에이피써치",
+      "title": "[의료AI/생체신호] ML Research Engineer",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=55020818&location=ts&searchword=AI+%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D&searchType=search&paid_fl=n&search_uuid=c90bbadd-2892-4fc3-a44e-7bb381358a26",
+      "career": "신입·경력",
+      "careerGroup": "junior",
+      "education": "대졸↑",
+      "location": "서울",
+      "employmentType": "정규직",
+      "deadline": "마감 확인",
+      "fields": [
+        "머신러닝",
+        "AI Research"
+      ],
+      "skills": [],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "분류 필요",
+      "focusKeywords": [
+        "AI"
+      ]
+    },
+    {
+      "id": "사람인-1n872sz",
+      "source": "사람인",
+      "company": "제이앤파트너즈코리아(주)",
+      "title": "신약개발 AI/ML 개발 및 LLM/Agent 개발 융합 경험자 채용 안내",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=55120236&location=ts&searchword=AI+%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D&searchType=search&paid_fl=n&search_uuid=c90bbadd-2892-4fc3-a44e-7bb381358a26",
+      "career": "확인 필요",
+      "careerGroup": "experienced",
+      "education": "대졸↑",
+      "location": "서울",
+      "employmentType": "정규직",
+      "deadline": "마감 확인",
+      "fields": [
+        "LLM/NLP",
+        "머신러닝"
+      ],
+      "skills": [],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "중소기업",
+      "focusKeywords": [
+        "LLM"
+      ]
+    },
+    {
+      "id": "사람인-1chwjus",
+      "source": "사람인",
+      "company": "신플렛(주)",
+      "title": "[신플렛] 이미지 딥러닝 (파이썬) 개발자 모집 (신입)",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=55011629&location=ts&searchword=HD%ED%98%84%EB%8C%80+AI&searchType=search&paid_fl=n&search_uuid=03cc8e16-310b-46e3-8c9d-94b831239f83",
+      "career": "신입",
+      "careerGroup": "junior",
+      "education": "학력무관",
+      "location": "서울",
+      "employmentType": "정규직",
+      "deadline": "마감 확인",
+      "fields": [
+        "Vision AI",
+        "머신러닝"
+      ],
+      "skills": [
+        "Python",
+        "PyTorch"
+      ],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "중소기업",
+      "focusKeywords": [
+        "Vision AI"
+      ]
+    },
+    {
+      "id": "사람인-l5mab3",
+      "source": "사람인",
+      "company": "(주)로보아이",
+      "title": "[다목적 모바일 양팔로봇 ] Physical AI 엔지니어 경력직 채용",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=55148022&location=ts&searchword=Physical+AI&searchType=search&paid_fl=n&search_uuid=f5b3c11a-29da-4832-b206-9798b4c19a81",
+      "career": "확인 필요",
+      "careerGroup": "experienced",
+      "education": "대졸↑",
+      "location": "대구",
+      "employmentType": "정규직",
+      "deadline": "마감 확인",
+      "fields": [
+        "Physical AI"
+      ],
+      "skills": [
+        "Python"
+      ],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "중소기업",
+      "focusKeywords": [
+        "Physical AI",
+        "Robotics"
+      ]
+    },
+    {
+      "id": "사람인-1ysbveq",
+      "source": "사람인",
+      "company": "(주)엘지씨엔에스",
+      "title": "[LG CNS] Robotics 분야 모집(경력)( Physical AI Scientist)",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=55160753&location=ts&searchword=Physical+AI&searchType=search&paid_fl=n&search_uuid=f5b3c11a-29da-4832-b206-9798b4c19a81",
+      "career": "확인 필요",
+      "careerGroup": "experienced",
+      "education": "석사↑",
+      "location": "서울",
+      "employmentType": "정규직",
+      "deadline": "마감 확인",
+      "fields": [
+        "Physical AI"
+      ],
+      "skills": [],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "중소기업",
+      "focusKeywords": [
+        "Physical AI",
+        "Robotics"
+      ]
+    },
+    {
+      "id": "사람인-feto06",
+      "source": "사람인",
+      "company": "(주)로보티즈",
+      "title": "[로보티즈AI] Physical AI 로봇 인식제어 엔지니어 모집의 건",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54769564&location=ts&searchword=Physical+AI&searchType=search&paid_fl=n&search_uuid=f5b3c11a-29da-4832-b206-9798b4c19a81",
+      "career": "경력무관",
+      "careerGroup": "junior",
+      "education": "대졸↑",
+      "location": "서울",
+      "employmentType": "정규직",
+      "deadline": "마감 확인",
+      "fields": [
+        "Physical AI",
+        "AI Research"
+      ],
+      "skills": [],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "중소기업",
+      "focusKeywords": [
+        "Physical AI",
+        "Robotics"
+      ]
+    },
+    {
+      "id": "사람인-15voepy",
+      "source": "사람인",
+      "company": "(주)모라이",
+      "title": "Physical AI 시뮬레이션 플랫폼 시니어 개발자 (Unreal Engine)",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=55161036&location=ts&searchword=Physical+AI&searchType=search&paid_fl=n&search_uuid=f5b3c11a-29da-4832-b206-9798b4c19a81",
+      "career": "확인 필요",
+      "careerGroup": "experienced",
+      "education": "학력무관",
+      "location": "서울",
+      "employmentType": "정규직",
+      "deadline": "마감 확인",
+      "fields": [
+        "Physical AI",
+        "MLOps"
+      ],
+      "skills": [],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "중소기업",
+      "focusKeywords": [
+        "Physical AI",
+        "MLOps"
+      ]
+    },
+    {
+      "id": "사람인-8nv3fg",
+      "source": "사람인",
+      "company": "(주)플라잎",
+      "title": "[울산지사] Physical AI Engineer",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=55092118&location=ts&searchword=Physical+AI&searchType=search&paid_fl=n&search_uuid=f5b3c11a-29da-4832-b206-9798b4c19a81",
+      "career": "확인 필요",
+      "careerGroup": "experienced",
+      "education": "대졸↑",
+      "location": "울산",
+      "employmentType": "정규직",
+      "deadline": "마감 확인",
+      "fields": [
+        "Physical AI",
+        "머신러닝",
+        "AI Research"
+      ],
+      "skills": [
+        "Python",
+        "C++"
+      ],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "중소기업",
+      "focusKeywords": [
+        "Physical AI"
+      ]
+    },
+    {
+      "id": "사람인-oc54dr",
+      "source": "사람인",
+      "company": "(주)빅트론텍",
+      "title": "[신입] Physical AI 및 서버 소프트웨어 개발자",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54912948&location=ts&searchword=Physical+AI&searchType=search&paid_fl=n&search_uuid=f5b3c11a-29da-4832-b206-9798b4c19a81",
+      "career": "신입",
+      "careerGroup": "junior",
+      "education": "초대졸↑",
+      "location": "경기",
+      "employmentType": "정규직",
+      "deadline": "마감 확인",
+      "fields": [
+        "Physical AI",
+        "Vision AI",
+        "LLM/NLP"
+      ],
+      "skills": [
+        "Python"
+      ],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "중소기업",
+      "focusKeywords": [
+        "Physical AI",
+        "Vision AI",
+        "LLM"
+      ]
+    },
+    {
+      "id": "사람인-ed6q9s",
+      "source": "사람인",
+      "company": "(주)비전스페이스",
+      "title": "[정규직CTO] Physical AI 로봇 시뮬레이션 기술총괄 (경력10년+)",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54910369&location=ts&searchword=Physical+AI&searchType=search&paid_fl=n&search_uuid=f5b3c11a-29da-4832-b206-9798b4c19a81",
+      "career": "확인 필요",
+      "careerGroup": "experienced",
+      "education": "대졸↑",
+      "location": "서울",
+      "employmentType": "정규직",
+      "deadline": "마감 확인",
+      "fields": [
+        "Physical AI",
+        "머신러닝"
+      ],
+      "skills": [],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "중소기업",
+      "focusKeywords": [
+        "Physical AI",
+        "Robotics"
+      ]
+    },
+    {
+      "id": "사람인-tbizvw",
+      "source": "사람인",
+      "company": "(주)투모로 로보틱스",
+      "title": "[인턴] Physical AI / Robotics R&D",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=55003438&location=ts&searchword=Physical+AI&searchType=search&paid_fl=n&search_uuid=f5b3c11a-29da-4832-b206-9798b4c19a81",
+      "career": "인턴",
+      "careerGroup": "intern",
+      "education": "대졸↑",
+      "location": "서울",
+      "employmentType": "인턴직",
+      "deadline": "마감 확인",
+      "fields": [
+        "Physical AI",
+        "AI Research"
+      ],
+      "skills": [],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "중소기업",
+      "focusKeywords": [
+        "Physical AI",
+        "Robotics"
+      ]
+    },
+    {
+      "id": "사람인-13a4ff1",
+      "source": "사람인",
+      "company": "(주)에스디테크",
+      "title": "AI· Physical AI 소프트웨어 개발 신입/경력 모집 (2명)",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=55028396&location=ts&searchword=Physical+AI&searchType=search&paid_fl=n&search_uuid=f5b3c11a-29da-4832-b206-9798b4c19a81",
+      "career": "신입",
+      "careerGroup": "intern",
+      "education": "학력무관",
+      "location": "전남",
+      "employmentType": "정규직",
+      "deadline": "마감 확인",
+      "fields": [
+        "Physical AI"
+      ],
+      "skills": [],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "중소기업",
+      "focusKeywords": [
+        "Physical AI"
+      ]
+    },
+    {
+      "id": "사람인-vxxwgv",
+      "source": "사람인",
+      "company": "(주)투모로 로보틱스",
+      "title": "Physical AI Researcher: Data Strategy",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=55165527&location=ts&searchword=Physical+AI&searchType=search&paid_fl=n&search_uuid=f5b3c11a-29da-4832-b206-9798b4c19a81",
+      "career": "경력무관",
+      "careerGroup": "junior",
+      "education": "학력무관",
+      "location": "서울",
+      "employmentType": "정규직",
+      "deadline": "마감 확인",
+      "fields": [
+        "Physical AI",
+        "AI Research"
+      ],
+      "skills": [],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "중소기업",
+      "focusKeywords": [
+        "Physical AI"
+      ]
+    },
+    {
+      "id": "사람인-74wy9p",
+      "source": "사람인",
+      "company": "굿커리어",
+      "title": "중견기업 Physical AI 로봇제어 SW개발 대리,과장급 구함(굿커리",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=55147305&location=ts&searchword=Physical+AI&searchType=search&paid_fl=n&search_uuid=f5b3c11a-29da-4832-b206-9798b4c19a81",
+      "career": "신입·경력",
+      "careerGroup": "junior",
+      "education": "대졸↑",
+      "location": "서울",
+      "employmentType": "정규직",
+      "deadline": "마감 확인",
+      "fields": [
+        "Physical AI",
+        "머신러닝"
+      ],
+      "skills": [],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "분류 필요",
+      "focusKeywords": [
+        "Physical AI",
+        "Robotics"
+      ]
+    },
+    {
+      "id": "사람인-1oiijec",
+      "source": "사람인",
+      "company": "(주)서큘러스",
+      "title": "Physical AI 엔지니어 채용(교육 수료자 우대)",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54977947&location=ts&searchword=Physical+AI&searchType=search&paid_fl=n&search_uuid=f5b3c11a-29da-4832-b206-9798b4c19a81",
+      "career": "신입",
+      "careerGroup": "junior",
+      "education": "학력무관",
+      "location": "서울",
+      "employmentType": "정규직",
+      "deadline": "마감 확인",
+      "fields": [
+        "Physical AI",
+        "머신러닝"
+      ],
+      "skills": [],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "중소기업",
+      "focusKeywords": [
+        "Physical AI"
+      ]
+    },
+    {
+      "id": "사람인-9n340",
+      "source": "사람인",
+      "company": "(주)크라우드웍스",
+      "title": "[출퇴근] Physical AI 프로젝트 PL 모집",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=55101351&location=ts&searchword=Physical+AI&searchType=search&paid_fl=n&search_uuid=f5b3c11a-29da-4832-b206-9798b4c19a81",
+      "career": "경력무관",
+      "careerGroup": "junior",
+      "education": "학력무관",
+      "location": "서울",
+      "employmentType": "계약직",
+      "deadline": "마감 확인",
+      "fields": [
+        "Physical AI",
+        "Data Science",
+        "Data Engineering"
+      ],
+      "skills": [],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "중소기업",
+      "focusKeywords": [
+        "Physical AI",
+        "Data Engineering",
+        "Data Science"
+      ]
+    },
+    {
+      "id": "사람인-3odyu1",
+      "source": "사람인",
+      "company": "(주)유엔디로보틱스",
+      "title": "로봇 AI, 3D VLA, Physical AI 소프트웨어 엔지니어 모집(구미)",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54935141&location=ts&searchword=Physical+AI&searchType=search&paid_fl=n&search_uuid=f5b3c11a-29da-4832-b206-9798b4c19a81",
+      "career": "경력무관",
+      "careerGroup": "junior",
+      "education": "초대졸↑",
+      "location": "경북",
+      "employmentType": "정규직",
+      "deadline": "마감 확인",
+      "fields": [
+        "Physical AI",
+        "Vision AI",
+        "머신러닝"
+      ],
+      "skills": [],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "중소기업",
+      "focusKeywords": [
+        "Physical AI",
+        "Vision AI",
+        "Robotics"
+      ]
+    },
+    {
+      "id": "사람인-rls4a9",
+      "source": "사람인",
+      "company": "(주)마젠타로보틱스",
+      "title": "Physical AI / 로봇 모션 플래닝 엔지니어",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=55051006&location=ts&searchword=Physical+AI&searchType=search&paid_fl=n&search_uuid=f5b3c11a-29da-4832-b206-9798b4c19a81",
+      "career": "경력무관",
+      "careerGroup": "junior",
+      "education": "대졸↑",
+      "location": "대전",
+      "employmentType": "정규직",
+      "deadline": "마감 확인",
+      "fields": [
+        "Physical AI",
+        "Vision AI"
+      ],
+      "skills": [
+        "Python"
+      ],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "중소기업",
+      "focusKeywords": [
+        "Physical AI",
+        "Vision AI",
+        "Robotics"
+      ]
+    },
+    {
+      "id": "사람인-qdg5u1",
+      "source": "사람인",
+      "company": "메가존(주)",
+      "title": "[메가존] Physical AI 사업단 프로젝트 경력직 채용",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54977213&location=ts&searchword=Physical+AI&searchType=search&paid_fl=n&search_uuid=f5b3c11a-29da-4832-b206-9798b4c19a81",
+      "career": "확인 필요",
+      "careerGroup": "experienced",
+      "education": "학력무관",
+      "location": "경기",
+      "employmentType": "정규직",
+      "deadline": "마감 확인",
+      "fields": [
+        "Physical AI",
+        "Data Engineering"
+      ],
+      "skills": [],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "중소기업",
+      "focusKeywords": [
+        "Physical AI",
+        "Data Engineering"
+      ]
+    },
+    {
+      "id": "사람인-1ogf3i0",
+      "source": "사람인",
+      "company": "(주)에즈웰플러스",
+      "title": "(주)에즈웰플러스 IsaacSim/Robotics/ Physical AI 엔지니어 채용",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=55092260&location=ts&searchword=Physical+AI&searchType=search&paid_fl=n&search_uuid=f5b3c11a-29da-4832-b206-9798b4c19a81",
+      "career": "확인 필요",
+      "careerGroup": "experienced",
+      "education": "초대졸↑",
+      "location": "서울",
+      "employmentType": "정규직",
+      "deadline": "마감 확인",
+      "fields": [
+        "Physical AI"
+      ],
+      "skills": [],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "중소기업",
+      "focusKeywords": [
+        "Physical AI",
+        "Robotics"
+      ]
+    },
+    {
+      "id": "사람인-4mtgb4",
+      "source": "사람인",
+      "company": "(주)플라잎",
+      "title": "Physical AI Group Lead",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54987807&location=ts&searchword=Physical+AI&searchType=search&paid_fl=n&search_uuid=f5b3c11a-29da-4832-b206-9798b4c19a81",
+      "career": "확인 필요",
+      "careerGroup": "experienced",
+      "education": "대졸↑",
+      "location": "경기",
+      "employmentType": "정규직",
+      "deadline": "마감 확인",
+      "fields": [
+        "Physical AI",
+        "머신러닝"
+      ],
+      "skills": [
+        "Python",
+        "C++"
+      ],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "중소기업",
+      "focusKeywords": [
+        "Physical AI"
+      ]
+    },
+    {
+      "id": "사람인-10bfajb",
+      "source": "사람인",
+      "company": "(주)플라잎",
+      "title": "Physical AI Research Engineer (전문연 가능)",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=55092068&location=ts&searchword=Physical+AI&searchType=search&paid_fl=n&search_uuid=f5b3c11a-29da-4832-b206-9798b4c19a81",
+      "career": "확인 필요",
+      "careerGroup": "experienced",
+      "education": "학력무관",
+      "location": "경기",
+      "employmentType": "정규직",
+      "deadline": "마감 확인",
+      "fields": [
+        "Physical AI",
+        "머신러닝",
+        "AI Research"
+      ],
+      "skills": [
+        "Python"
+      ],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "중소기업",
+      "focusKeywords": [
+        "Physical AI"
+      ]
+    },
+    {
+      "id": "사람인-u39bfv",
+      "source": "사람인",
+      "company": "(주)제이스마트솔루션",
+      "title": "(제이스마트솔루션) Physical AI Robotics Engineer 채용",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54917775&location=ts&searchword=Physical+AI&searchType=search&paid_fl=n&search_uuid=f5b3c11a-29da-4832-b206-9798b4c19a81",
+      "career": "확인 필요",
+      "careerGroup": "experienced",
+      "education": "대졸↑",
+      "location": "경기",
+      "employmentType": "정규직",
+      "deadline": "마감 확인",
+      "fields": [
+        "Physical AI",
+        "Vision AI",
+        "Data Engineering"
+      ],
+      "skills": [
+        "Python"
+      ],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "중소기업",
+      "focusKeywords": [
+        "Physical AI",
+        "Vision AI",
+        "Robotics",
+        "Data Engineering"
+      ]
+    },
+    {
+      "id": "사람인-cjl5dw",
+      "source": "사람인",
+      "company": "(주)제이스마트솔루션",
+      "title": "Physical AI Robotics Engineer 채용",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=55144140&location=ts&searchword=Physical+AI&searchType=search&paid_fl=n&search_uuid=f5b3c11a-29da-4832-b206-9798b4c19a81",
+      "career": "확인 필요",
+      "careerGroup": "experienced",
+      "education": "대졸↑",
+      "location": "경기",
+      "employmentType": "정규직",
+      "deadline": "마감 확인",
+      "fields": [
+        "Physical AI",
+        "Vision AI",
+        "Data Engineering"
+      ],
+      "skills": [
+        "Python"
+      ],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "중소기업",
+      "focusKeywords": [
+        "Physical AI",
+        "Vision AI",
+        "Robotics",
+        "Data Engineering"
+      ]
+    },
+    {
+      "id": "사람인-1h5tg4w",
+      "source": "사람인",
+      "company": "(주)로자이크",
+      "title": "[로자이크(ROSAIC)] Physical AI ·로봇제어 경력채용(00명)",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54967097&location=ts&searchword=Physical+AI&searchType=search&paid_fl=n&search_uuid=f5b3c11a-29da-4832-b206-9798b4c19a81",
+      "career": "확인 필요",
+      "careerGroup": "experienced",
+      "education": "학력무관",
+      "location": "서울",
+      "employmentType": "정규직",
+      "deadline": "마감 확인",
+      "fields": [
+        "Physical AI",
+        "Data Engineering"
+      ],
+      "skills": [],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "중소기업",
+      "focusKeywords": [
+        "Physical AI",
+        "Robotics",
+        "Data Engineering"
+      ]
+    },
+    {
+      "id": "사람인-igbcut",
+      "source": "사람인",
+      "company": "씨제이대한통운(주)",
+      "title": "로봇 S/W Engineer ( Physical AI 개발) 경력사원 모집",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54100902&location=ts&searchword=Physical+AI&searchType=search&paid_fl=n&search_uuid=f5b3c11a-29da-4832-b206-9798b4c19a81",
+      "career": "확인 필요",
+      "careerGroup": "experienced",
+      "education": "석사↑",
+      "location": "서울",
+      "employmentType": "정규직",
+      "deadline": "마감 확인",
+      "fields": [
+        "Physical AI",
+        "Data Engineering"
+      ],
+      "skills": [],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "중소기업",
+      "focusKeywords": [
+        "Physical AI",
+        "Robotics",
+        "Data Engineering"
+      ]
+    },
+    {
+      "id": "사람인-l9euba",
+      "source": "사람인",
+      "company": "(주)제이엘티",
+      "title": "[JLT] Physical AI 팀장",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54979786&location=ts&searchword=Physical+AI&searchType=search&paid_fl=n&search_uuid=f5b3c11a-29da-4832-b206-9798b4c19a81",
+      "career": "확인 필요",
+      "careerGroup": "experienced",
+      "education": "대졸↑",
+      "location": "인천",
+      "employmentType": "정규직",
+      "deadline": "마감 확인",
+      "fields": [
+        "Physical AI",
+        "머신러닝"
+      ],
+      "skills": [
+        "Python",
+        "C++"
+      ],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "중소기업",
+      "focusKeywords": [
+        "Physical AI"
+      ]
+    },
+    {
+      "id": "사람인-hu7sah",
+      "source": "사람인",
+      "company": "(주) 케이와이씨지(KYCG)",
+      "title": "AI솔루션 기업 Physical AI Engineer (UAV)",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=55105573&location=ts&searchword=Physical+AI&searchType=search&paid_fl=n&search_uuid=f5b3c11a-29da-4832-b206-9798b4c19a81",
+      "career": "신입·경력",
+      "careerGroup": "junior",
+      "education": "석사↑",
+      "location": "서울",
+      "employmentType": "정규직",
+      "deadline": "마감 확인",
+      "fields": [
+        "Physical AI"
+      ],
+      "skills": [
+        "Python",
+        "C++"
+      ],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "중소기업",
+      "focusKeywords": [
+        "Physical AI"
+      ]
+    },
+    {
+      "id": "사람인-1p88r34",
+      "source": "사람인",
+      "company": "(주)HR컨설팅그룹",
+      "title": "(코스닥) Physical AI 로봇 인식.제어 엔지니어모집",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=55089927&location=ts&searchword=Physical+AI&searchType=search&paid_fl=n&search_uuid=f5b3c11a-29da-4832-b206-9798b4c19a81",
+      "career": "경력무관",
+      "careerGroup": "junior",
+      "education": "대졸↑",
+      "location": "서울",
+      "employmentType": "정규직",
+      "deadline": "마감 확인",
+      "fields": [
+        "Physical AI",
+        "AI Research"
+      ],
+      "skills": [],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "중소기업",
+      "focusKeywords": [
+        "Physical AI",
+        "Robotics"
+      ]
+    },
+    {
+      "id": "사람인-w0xpld",
+      "source": "사람인",
+      "company": "(주)비욘드허니컴",
+      "title": "[ Physical AI ] 콘텐츠 마케팅 인턴 (채용 연계형)",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54870021&location=ts&searchword=Physical+AI&searchType=search&paid_fl=n&search_uuid=f5b3c11a-29da-4832-b206-9798b4c19a81",
+      "career": "인턴",
+      "careerGroup": "intern",
+      "education": "학력무관",
+      "location": "서울",
+      "employmentType": "계약직",
+      "deadline": "마감 확인",
+      "fields": [
+        "Physical AI"
+      ],
+      "skills": [],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "중소기업",
+      "focusKeywords": [
+        "Physical AI"
+      ]
+    },
+    {
+      "id": "사람인-1d51xyi",
+      "source": "사람인",
+      "company": "(주)비욘드허니컴",
+      "title": "[ Physical AI ] 콘텐츠 마케팅 인턴 (체험형)",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54923137&location=ts&searchword=Physical+AI&searchType=search&paid_fl=n&search_uuid=f5b3c11a-29da-4832-b206-9798b4c19a81",
+      "career": "인턴",
+      "careerGroup": "intern",
+      "education": "학력무관",
+      "location": "서울",
+      "employmentType": "계약직",
+      "deadline": "마감 확인",
+      "fields": [
+        "Physical AI"
+      ],
+      "skills": [],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "중소기업",
+      "focusKeywords": [
+        "Physical AI"
+      ]
+    },
+    {
+      "id": "사람인-1n6fd4g",
+      "source": "사람인",
+      "company": "미래융합교육원",
+      "title": "트위니 로보테크 AI 자율주행 로봇",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54893201&location=ts&searchword=Physical+AI&searchType=search&paid_fl=n&search_uuid=f5b3c11a-29da-4832-b206-9798b4c19a81",
+      "career": "경력무관",
+      "careerGroup": "junior",
+      "education": "대졸↑",
+      "location": "대전",
+      "employmentType": "확인 필요",
+      "deadline": "마감 확인",
+      "fields": [
+        "Physical AI",
+        "Data Science",
+        "Data Engineering"
+      ],
+      "skills": [
+        "Python"
+      ],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "분류 필요",
+      "focusKeywords": [
+        "Physical AI",
+        "Robotics",
+        "Data Engineering",
+        "Data Science"
+      ]
+    },
+    {
+      "id": "사람인-17n0goz",
+      "source": "사람인",
+      "company": "(주)에셈블",
+      "title": "AI개발자 채용",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=55030633&location=ts&searchword=Physical+AI&searchType=search&paid_fl=n&search_uuid=f5b3c11a-29da-4832-b206-9798b4c19a81",
+      "career": "신입",
+      "careerGroup": "junior",
+      "education": "학력무관",
+      "location": "대전",
+      "employmentType": "정규직",
+      "deadline": "마감 확인",
+      "fields": [
+        "Data Engineering"
+      ],
+      "skills": [],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "중소기업",
+      "focusKeywords": [
+        "Data Engineering"
+      ]
+    },
+    {
+      "id": "사람인-fjlzj5",
+      "source": "사람인",
+      "company": "(주)레인보우로보틱스",
+      "title": "Vision AI 개발",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=55025531&location=ts&searchword=Vision+AI&searchType=search&paid_fl=n&search_uuid=4581deb6-1af3-4cc4-8c29-3fd7ae042e06",
+      "career": "경력무관",
+      "careerGroup": "junior",
+      "education": "석사↑",
+      "location": "경기",
+      "employmentType": "정규직",
+      "deadline": "마감 확인",
+      "fields": [
+        "Vision AI"
+      ],
+      "skills": [],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "중소기업",
+      "focusKeywords": [
+        "Vision AI"
+      ]
+    },
+    {
+      "id": "사람인-11lmzxw",
+      "source": "사람인",
+      "company": "텔레픽스(주)",
+      "title": "3D Vision AI 엔지니어",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54978882&location=ts&searchword=Vision+AI&searchType=search&paid_fl=n&search_uuid=4581deb6-1af3-4cc4-8c29-3fd7ae042e06",
+      "career": "경력무관",
+      "careerGroup": "junior",
+      "education": "석사↑",
+      "location": "서울",
+      "employmentType": "정규직",
+      "deadline": "마감 확인",
+      "fields": [
+        "Vision AI"
+      ],
+      "skills": [],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "중소기업",
+      "focusKeywords": [
+        "Vision AI"
+      ]
+    },
+    {
+      "id": "사람인-ui2num",
+      "source": "사람인",
+      "company": "하마랩(주)",
+      "title": "[AI팀] Vision AI 연구개발 인재 채용",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=55111049&location=ts&searchword=Vision+AI&searchType=search&paid_fl=n&search_uuid=4581deb6-1af3-4cc4-8c29-3fd7ae042e06",
+      "career": "확인 필요",
+      "careerGroup": "experienced",
+      "education": "대졸↑",
+      "location": "경기",
+      "employmentType": "계약직",
+      "deadline": "마감 확인",
+      "fields": [
+        "Vision AI",
+        "AI Research"
+      ],
+      "skills": [],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "중소기업",
+      "focusKeywords": [
+        "Vision AI"
+      ]
+    },
+    {
+      "id": "사람인-pxg5s5",
+      "source": "사람인",
+      "company": "(주)우리엔",
+      "title": "동물용 CT Vision AI 개발자",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54907810&location=ts&searchword=Vision+AI&searchType=search&paid_fl=n&search_uuid=4581deb6-1af3-4cc4-8c29-3fd7ae042e06",
+      "career": "확인 필요",
+      "careerGroup": "experienced",
+      "education": "대졸↑",
+      "location": "경기",
+      "employmentType": "정규직",
+      "deadline": "마감 확인",
+      "fields": [
+        "Vision AI",
+        "머신러닝"
+      ],
+      "skills": [
+        "Python",
+        "C++"
+      ],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "중소기업",
+      "focusKeywords": [
+        "Vision AI"
+      ]
+    },
+    {
+      "id": "사람인-e1p0dg",
+      "source": "사람인",
+      "company": "인트플로우(주)",
+      "title": "Computer Vision AI 개발자를 찾습니다(2년 이상/광주, 전남)",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54944137&location=ts&searchword=Vision+AI&searchType=search&paid_fl=n&search_uuid=4581deb6-1af3-4cc4-8c29-3fd7ae042e06",
+      "career": "확인 필요",
+      "careerGroup": "experienced",
+      "education": "학력무관",
+      "location": "광주",
+      "employmentType": "정규직",
+      "deadline": "마감 확인",
+      "fields": [
+        "Vision AI"
+      ],
+      "skills": [],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "중소기업",
+      "focusKeywords": [
+        "Vision AI"
+      ]
+    },
+    {
+      "id": "사람인-zhb0ea",
+      "source": "사람인",
+      "company": "휴먼코어랩(주)",
+      "title": "로봇 Vision AI 개발 (판교, 석사)",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=55121760&location=ts&searchword=Vision+AI&searchType=search&paid_fl=n&search_uuid=4581deb6-1af3-4cc4-8c29-3fd7ae042e06",
+      "career": "경력무관",
+      "careerGroup": "junior",
+      "education": "학력무관",
+      "location": "서울",
+      "employmentType": "정규직",
+      "deadline": "마감 확인",
+      "fields": [
+        "Physical AI",
+        "Vision AI"
+      ],
+      "skills": [],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "중소기업",
+      "focusKeywords": [
+        "Physical AI",
+        "Vision AI",
+        "Robotics"
+      ]
+    },
+    {
+      "id": "사람인-1elp3kc",
+      "source": "사람인",
+      "company": "(주)에이투마인드",
+      "title": "Vision AI 엔지니어",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54827310&location=ts&searchword=Vision+AI&searchType=search&paid_fl=n&search_uuid=4581deb6-1af3-4cc4-8c29-3fd7ae042e06",
+      "career": "확인 필요",
+      "careerGroup": "experienced",
+      "education": "대졸↑",
+      "location": "서울",
+      "employmentType": "정규직",
+      "deadline": "마감 확인",
+      "fields": [
+        "Vision AI"
+      ],
+      "skills": [],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "중소기업",
+      "focusKeywords": [
+        "Vision AI"
+      ]
+    },
+    {
+      "id": "사람인-1p4rzb8",
+      "source": "사람인",
+      "company": "(주)포지큐브",
+      "title": "(주)포지큐브에서 Vision AI 솔루션 TPM을 찾고 있어요",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54658088&location=ts&searchword=Vision+AI&searchType=search&paid_fl=n&search_uuid=4581deb6-1af3-4cc4-8c29-3fd7ae042e06",
+      "career": "확인 필요",
+      "careerGroup": "experienced",
+      "education": "학력무관",
+      "location": "서울",
+      "employmentType": "정규직",
+      "deadline": "마감 확인",
+      "fields": [
+        "Vision AI"
+      ],
+      "skills": [],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "중소기업",
+      "focusKeywords": [
+        "Vision AI"
+      ]
+    },
+    {
+      "id": "사람인-1e40ict",
+      "source": "사람인",
+      "company": "(주)포지큐브",
+      "title": "Vision AI 솔루션 TPM",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=55064957&location=ts&searchword=Vision+AI&searchType=search&paid_fl=n&search_uuid=4581deb6-1af3-4cc4-8c29-3fd7ae042e06",
+      "career": "확인 필요",
+      "careerGroup": "experienced",
+      "education": "학력무관",
+      "location": "서울",
+      "employmentType": "정규직",
+      "deadline": "마감 확인",
+      "fields": [
+        "Vision AI"
+      ],
+      "skills": [],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "중소기업",
+      "focusKeywords": [
+        "Vision AI"
+      ]
+    },
+    {
+      "id": "사람인-1lzocq9",
+      "source": "사람인",
+      "company": "(주)케이에이치정보교육원",
+      "title": "[KDT AI Campus] Vision AI ·딥러닝 실무 강사 모집",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=55066174&location=ts&searchword=Vision+AI&searchType=search&paid_fl=n&search_uuid=4581deb6-1af3-4cc4-8c29-3fd7ae042e06",
+      "career": "확인 필요",
+      "careerGroup": "experienced",
+      "education": "학력무관",
+      "location": "서울",
+      "employmentType": "계약직",
+      "deadline": "마감 확인",
+      "fields": [
+        "Vision AI",
+        "AI/AX",
+        "머신러닝"
+      ],
+      "skills": [],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "중소기업",
+      "focusKeywords": [
+        "Vision AI",
+        "AI/AX"
+      ]
+    },
+    {
+      "id": "사람인-1cgsa6u",
+      "source": "사람인",
+      "company": "(주)에이아이매틱스",
+      "title": "Machine Vision 설비 연동 SW개발 , AI 알고리즘 개발자 채용",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=55132738&location=ts&searchword=Vision+AI&searchType=search&paid_fl=n&search_uuid=4581deb6-1af3-4cc4-8c29-3fd7ae042e06",
+      "career": "확인 필요",
+      "careerGroup": "experienced",
+      "education": "대졸↑",
+      "location": "경기",
+      "employmentType": "정규직",
+      "deadline": "마감 확인",
+      "fields": [
+        "Vision AI",
+        "Industrial AI",
+        "AI Research"
+      ],
+      "skills": [],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "중소기업",
+      "focusKeywords": [
+        "Vision AI",
+        "Manufacturing AI"
+      ]
+    },
+    {
+      "id": "사람인-1ac2pcm",
+      "source": "사람인",
+      "company": "(주)나비프라",
+      "title": "[나비프라] Computer Vision / Edge AI Engineer",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54944756&location=ts&searchword=Vision+AI&searchType=search&paid_fl=n&search_uuid=4581deb6-1af3-4cc4-8c29-3fd7ae042e06",
+      "career": "경력무관",
+      "careerGroup": "junior",
+      "education": "대졸↑",
+      "location": "경기",
+      "employmentType": "계약직",
+      "deadline": "마감 확인",
+      "fields": [
+        "Vision AI",
+        "머신러닝"
+      ],
+      "skills": [],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "중소기업",
+      "focusKeywords": [
+        "Vision AI"
+      ]
+    },
+    {
+      "id": "사람인-e7ofdb",
+      "source": "사람인",
+      "company": "주식회사 브이원텍",
+      "title": "Machine Vision Application & AI Agent Platform 개발자 채용",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=55052939&location=ts&searchword=Vision+AI&searchType=search&paid_fl=n&search_uuid=4581deb6-1af3-4cc4-8c29-3fd7ae042e06",
+      "career": "신입·경력",
+      "careerGroup": "junior",
+      "education": "초대졸↑",
+      "location": "경기",
+      "employmentType": "정규직",
+      "deadline": "마감 확인",
+      "fields": [
+        "Vision AI",
+        "머신러닝"
+      ],
+      "skills": [],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "중소기업",
+      "focusKeywords": [
+        "Vision AI"
+      ]
+    },
+    {
+      "id": "사람인-zvi1jp",
+      "source": "사람인",
+      "company": "(주)모빌리티랩",
+      "title": "Vision Sensing & AI Algorithm Engineer (드론/자율비행)개발자",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54643517&location=ts&searchword=Vision+AI&searchType=search&paid_fl=n&search_uuid=4581deb6-1af3-4cc4-8c29-3fd7ae042e06",
+      "career": "확인 필요",
+      "careerGroup": "experienced",
+      "education": "대졸↑",
+      "location": "경기",
+      "employmentType": "정규직",
+      "deadline": "마감 확인",
+      "fields": [
+        "Physical AI",
+        "Vision AI"
+      ],
+      "skills": [
+        "Go"
+      ],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "중소기업",
+      "focusKeywords": [
+        "Physical AI",
+        "Vision AI"
+      ]
+    },
+    {
+      "id": "사람인-1trgekd",
+      "source": "사람인",
+      "company": "(주)에이아이웍스",
+      "title": "Vision & 3D AI Engineer",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=55076318&location=ts&searchword=Vision+AI&searchType=search&paid_fl=n&search_uuid=4581deb6-1af3-4cc4-8c29-3fd7ae042e06",
+      "career": "확인 필요",
+      "careerGroup": "experienced",
+      "education": "석사↑",
+      "location": "서울",
+      "employmentType": "정규직",
+      "deadline": "마감 확인",
+      "fields": [
+        "Vision AI",
+        "머신러닝",
+        "AI Research"
+      ],
+      "skills": [
+        "Python",
+        "PyTorch"
+      ],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "중소기업",
+      "focusKeywords": [
+        "Vision AI"
+      ]
+    },
+    {
+      "id": "사람인-12gbhlm",
+      "source": "사람인",
+      "company": "코닝나노프로텍(주)",
+      "title": "코닝나노프로텍: AI/Machine Vision S/W Engineer",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=55127142&location=ts&searchword=Vision+AI&searchType=search&paid_fl=n&search_uuid=4581deb6-1af3-4cc4-8c29-3fd7ae042e06",
+      "career": "확인 필요",
+      "careerGroup": "experienced",
+      "education": "대졸↑",
+      "location": "대전",
+      "employmentType": "정규직",
+      "deadline": "마감 확인",
+      "fields": [
+        "Vision AI"
+      ],
+      "skills": [],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "중소기업",
+      "focusKeywords": [
+        "Vision AI"
+      ]
+    },
+    {
+      "id": "사람인-1nyycvt",
+      "source": "사람인",
+      "company": "코드비전(주)",
+      "title": "석박사 AI Research Engineer (Vision & NLP)",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=55161204&location=ts&searchword=Vision+AI&searchType=search&paid_fl=n&search_uuid=4581deb6-1af3-4cc4-8c29-3fd7ae042e06",
+      "career": "신입",
+      "careerGroup": "junior",
+      "education": "석사↑",
+      "location": "서울",
+      "employmentType": "정규직",
+      "deadline": "마감 확인",
+      "fields": [
+        "Vision AI",
+        "LLM/NLP",
+        "AI Research"
+      ],
+      "skills": [],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "중소기업",
+      "focusKeywords": [
+        "Vision AI",
+        "LLM"
+      ]
+    },
+    {
+      "id": "사람인-1apklh6",
+      "source": "사람인",
+      "company": "에이치디씨랩스(주)",
+      "title": "[HDC랩스] AI LAB팀 AI Engineer(Vision) 부문 경력직 채용",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=55159860&location=ts&searchword=Vision+AI&searchType=search&paid_fl=n&search_uuid=4581deb6-1af3-4cc4-8c29-3fd7ae042e06",
+      "career": "확인 필요",
+      "careerGroup": "experienced",
+      "education": "석사↑",
+      "location": "서울",
+      "employmentType": "정규직",
+      "deadline": "마감 확인",
+      "fields": [
+        "Vision AI",
+        "LLM/NLP",
+        "머신러닝"
+      ],
+      "skills": [],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "대기업",
+      "focusKeywords": [
+        "Vision AI",
+        "LLM"
+      ]
+    },
+    {
+      "id": "사람인-1wghb5e",
+      "source": "사람인",
+      "company": "(주)넥스인테크놀로지",
+      "title": "AI Core Engineer - OCR & Vision",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54923274&location=ts&searchword=Vision+AI&searchType=search&paid_fl=n&search_uuid=4581deb6-1af3-4cc4-8c29-3fd7ae042e06",
+      "career": "신입·경력",
+      "careerGroup": "junior",
+      "education": "학력무관",
+      "location": "서울",
+      "employmentType": "정규직",
+      "deadline": "마감 확인",
+      "fields": [
+        "Vision AI",
+        "LLM/NLP",
+        "머신러닝"
+      ],
+      "skills": [],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "중소기업",
+      "focusKeywords": [
+        "Vision AI",
+        "LLM"
+      ]
+    },
+    {
+      "id": "사람인-e2b9zu",
+      "source": "사람인",
+      "company": "(주)아이벡스",
+      "title": "Industrial AI Vision PM (DL)",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54987194&location=ts&searchword=Vision+AI&searchType=search&paid_fl=n&search_uuid=4581deb6-1af3-4cc4-8c29-3fd7ae042e06",
+      "career": "확인 필요",
+      "careerGroup": "experienced",
+      "education": "대졸↑",
+      "location": "서울",
+      "employmentType": "계약직",
+      "deadline": "마감 확인",
+      "fields": [
+        "Vision AI",
+        "Data Science",
+        "Data Engineering",
+        "Industrial AI"
+      ],
+      "skills": [],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "중소기업",
+      "focusKeywords": [
+        "Vision AI",
+        "Manufacturing AI",
+        "Data Engineering",
+        "Data Science"
+      ]
+    },
+    {
+      "id": "사람인-bsq1rc",
+      "source": "사람인",
+      "company": "(주)메타써치",
+      "title": "Sr. Edge AI & Vision Field Application Engineer (FAE)",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=55086412&location=ts&searchword=Vision+AI&searchType=search&paid_fl=n&search_uuid=4581deb6-1af3-4cc4-8c29-3fd7ae042e06",
+      "career": "확인 필요",
+      "careerGroup": "experienced",
+      "education": "대졸↑",
+      "location": "서울",
+      "employmentType": "정규직",
+      "deadline": "마감 확인",
+      "fields": [
+        "Vision AI"
+      ],
+      "skills": [
+        "C++"
+      ],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "중소기업",
+      "focusKeywords": [
+        "Vision AI"
+      ]
+    },
+    {
+      "id": "사람인-1dzwq4q",
+      "source": "사람인",
+      "company": "(주)로보로드",
+      "title": "AI Vision Engineer (Computer Vision / Object Detection)",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54940251&location=ts&searchword=Vision+AI&searchType=search&paid_fl=n&search_uuid=4581deb6-1af3-4cc4-8c29-3fd7ae042e06",
+      "career": "확인 필요",
+      "careerGroup": "experienced",
+      "education": "대졸↑",
+      "location": "경기",
+      "employmentType": "정규직",
+      "deadline": "마감 확인",
+      "fields": [
+        "Vision AI",
+        "머신러닝"
+      ],
+      "skills": [
+        "Python"
+      ],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "중소기업",
+      "focusKeywords": [
+        "Vision AI"
+      ]
+    },
+    {
+      "id": "사람인-hbufuj",
+      "source": "사람인",
+      "company": "(주)더컴퍼니",
+      "title": "[경력자] AI Vision 개발자 - Python/PyTorch/OpenCV/YOLO",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=55028874&location=ts&searchword=Vision+AI&searchType=search&paid_fl=n&search_uuid=4581deb6-1af3-4cc4-8c29-3fd7ae042e06",
+      "career": "확인 필요",
+      "careerGroup": "experienced",
+      "education": "학력무관",
+      "location": "경남",
+      "employmentType": "정규직",
+      "deadline": "마감 확인",
+      "fields": [
+        "Vision AI"
+      ],
+      "skills": [
+        "Python",
+        "PyTorch"
+      ],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "중소기업",
+      "focusKeywords": [
+        "Vision AI"
+      ]
+    },
+    {
+      "id": "사람인-1elha8p",
+      "source": "사람인",
+      "company": "(주)써큘러랩스",
+      "title": "[AI Vision Engineer] YOLO 기반 다회용기 인식·계수·검수 시스템 개발 담당(경력)",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54939229&location=ts&searchword=Vision+AI&searchType=search&paid_fl=n&search_uuid=4581deb6-1af3-4cc4-8c29-3fd7ae042e06",
+      "career": "확인 필요",
+      "careerGroup": "experienced",
+      "education": "학력무관",
+      "location": "경기",
+      "employmentType": "정규직",
+      "deadline": "마감 확인",
+      "fields": [
+        "Vision AI"
+      ],
+      "skills": [],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "중소기업",
+      "focusKeywords": [
+        "Vision AI"
+      ]
+    },
+    {
+      "id": "사람인-7vyp0g",
+      "source": "사람인",
+      "company": "(주)써큘러랩스",
+      "title": "[AI Vision Engineer] YOLO 기반 다회용기 인식·계수·검수 시스템 개발 담당",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54939210&location=ts&searchword=Vision+AI&searchType=search&paid_fl=n&search_uuid=4581deb6-1af3-4cc4-8c29-3fd7ae042e06",
+      "career": "신입",
+      "careerGroup": "junior",
+      "education": "학력무관",
+      "location": "경기",
+      "employmentType": "정규직",
+      "deadline": "마감 확인",
+      "fields": [
+        "Vision AI"
+      ],
+      "skills": [],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "중소기업",
+      "focusKeywords": [
+        "Vision AI"
+      ]
+    },
+    {
+      "id": "사람인-1cyqxb2",
+      "source": "사람인",
+      "company": "삼익THK(주)",
+      "title": "AI·로보틱스 R&D 인재채용 | 로컬AI·비전·펌웨어·시스템",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=55134865&location=ts&searchword=Vision+AI&searchType=search&paid_fl=n&search_uuid=4581deb6-1af3-4cc4-8c29-3fd7ae042e06",
+      "career": "신입·경력",
+      "careerGroup": "junior",
+      "education": "대졸↑",
+      "location": "경기",
+      "employmentType": "정규직",
+      "deadline": "마감 확인",
+      "fields": [
+        "Vision AI"
+      ],
+      "skills": [],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "중소기업",
+      "focusKeywords": [
+        "Vision AI"
+      ]
+    },
+    {
+      "id": "사람인-negurj",
+      "source": "사람인",
+      "company": "다겸(주)",
+      "title": "[병역특례]비전 AI 개발자 전문연구요원",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54983982&location=ts&searchword=Vision+AI&searchType=search&paid_fl=n&search_uuid=4581deb6-1af3-4cc4-8c29-3fd7ae042e06",
+      "career": "경력무관",
+      "careerGroup": "junior",
+      "education": "대졸↑",
+      "location": "서울",
+      "employmentType": "정규직",
+      "deadline": "상시채용",
+      "fields": [
+        "Vision AI",
+        "AI Research"
+      ],
+      "skills": [],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "중소기업",
+      "focusKeywords": [
+        "Vision AI"
+      ]
+    },
+    {
+      "id": "사람인-1ni970i",
+      "source": "사람인",
+      "company": "(주)펨트론",
+      "title": "[펨트론] AI 비전·딥러닝 알고리즘 개발자 채용",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=55150489&location=ts&searchword=Vision+AI&searchType=search&paid_fl=n&search_uuid=4581deb6-1af3-4cc4-8c29-3fd7ae042e06",
+      "career": "신입·경력",
+      "careerGroup": "junior",
+      "education": "대졸↑",
+      "location": "서울",
+      "employmentType": "정규직",
+      "deadline": "마감 확인",
+      "fields": [
+        "머신러닝",
+        "AI Research"
+      ],
+      "skills": [],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "중소기업",
+      "focusKeywords": [
+        "AI"
+      ]
+    },
+    {
+      "id": "사람인-1h1psip",
+      "source": "사람인",
+      "company": "(주)러닝비전",
+      "title": "AI 기반 머신비전 엔지니어 채용 [신입]",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54796972&location=ts&searchword=Vision+AI&searchType=search&paid_fl=n&search_uuid=4581deb6-1af3-4cc4-8c29-3fd7ae042e06",
+      "career": "신입",
+      "careerGroup": "junior",
+      "education": "학력무관",
+      "location": "대구",
+      "employmentType": "정규직",
+      "deadline": "마감 확인",
+      "fields": [
+        "Vision AI"
+      ],
+      "skills": [],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "중소기업",
+      "focusKeywords": [
+        "Vision AI"
+      ]
+    },
+    {
+      "id": "사람인-qiietv",
+      "source": "사람인",
+      "company": "(주)델타엑스",
+      "title": "[AI GROUP] 비전 AI 연구소장, 개발자 및 서버관리자 채용",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54924288&location=ts&searchword=Vision+AI&searchType=search&paid_fl=n&search_uuid=4581deb6-1af3-4cc4-8c29-3fd7ae042e06",
+      "career": "확인 필요",
+      "careerGroup": "experienced",
+      "education": "대졸↑",
+      "location": "서울",
+      "employmentType": "정규직",
+      "deadline": "마감 확인",
+      "fields": [
+        "Vision AI",
+        "머신러닝",
+        "AI Research"
+      ],
+      "skills": [
+        "Python"
+      ],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "중소기업",
+      "focusKeywords": [
+        "Vision AI"
+      ]
+    },
+    {
+      "id": "사람인-1m1uo3m",
+      "source": "사람인",
+      "company": "(주)베오텍",
+      "title": "비전 AI 제스처 인식 및 제어 분야 엔지니어 채용",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=55089050&location=ts&searchword=Vision+AI&searchType=search&paid_fl=n&search_uuid=4581deb6-1af3-4cc4-8c29-3fd7ae042e06",
+      "career": "경력무관",
+      "careerGroup": "junior",
+      "education": "초대졸↑",
+      "location": "인천",
+      "employmentType": "정규직",
+      "deadline": "마감 확인",
+      "fields": [
+        "Vision AI",
+        "머신러닝",
+        "AI Research"
+      ],
+      "skills": [],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "중소기업",
+      "focusKeywords": [
+        "Vision AI"
+      ]
+    },
+    {
+      "id": "사람인-scgkj1",
+      "source": "사람인",
+      "company": "(주)플렉스로직",
+      "title": "[정규직]로봇 자동화 및 AI/비전 소프트웨어 엔지니어 채용",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=55103951&location=ts&searchword=Vision+AI&searchType=search&paid_fl=n&search_uuid=4581deb6-1af3-4cc4-8c29-3fd7ae042e06",
+      "career": "확인 필요",
+      "careerGroup": "experienced",
+      "education": "대졸↑",
+      "location": "충북",
+      "employmentType": "정규직",
+      "deadline": "마감 확인",
+      "fields": [
+        "Physical AI",
+        "Vision AI",
+        "머신러닝"
+      ],
+      "skills": [],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "중소기업",
+      "focusKeywords": [
+        "Physical AI",
+        "Vision AI",
+        "Robotics"
+      ]
+    },
+    {
+      "id": "사람인-g2caaj",
+      "source": "사람인",
+      "company": "주식회사이볼빅스",
+      "title": "(주)이볼빅스 연구원 모집(임베디드/AI/머신비전)",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=55110168&location=ts&searchword=Vision+AI&searchType=search&paid_fl=n&search_uuid=4581deb6-1af3-4cc4-8c29-3fd7ae042e06",
+      "career": "경력무관",
+      "careerGroup": "junior",
+      "education": "대졸↑",
+      "location": "경기",
+      "employmentType": "정규직",
+      "deadline": "마감 확인",
+      "fields": [
+        "머신러닝",
+        "AI Research"
+      ],
+      "skills": [],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "중소기업",
+      "focusKeywords": [
+        "AI"
+      ]
+    },
+    {
+      "id": "사람인-1enik4k",
+      "source": "사람인",
+      "company": "(주)에스에이티",
+      "title": "컴퓨터 비전 AI 학습용 영상 데이터분류 및 라벨링 계약직 모집",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=55148936&location=ts&searchword=Vision+AI&searchType=search&paid_fl=n&search_uuid=4581deb6-1af3-4cc4-8c29-3fd7ae042e06",
+      "career": "경력무관",
+      "careerGroup": "junior",
+      "education": "고졸↑",
+      "location": "경기",
+      "employmentType": "계약직",
+      "deadline": "마감 확인",
+      "fields": [
+        "Vision AI"
+      ],
+      "skills": [],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "중소기업",
+      "focusKeywords": [
+        "Vision AI"
+      ]
+    },
+    {
+      "id": "사람인-1qv1pii",
+      "source": "사람인",
+      "company": "(주)러닝비전",
+      "title": "AI 기반 머신비전 엔지니어 채용 [경력10년이상]",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54798373&location=ts&searchword=Vision+AI&searchType=search&paid_fl=n&search_uuid=4581deb6-1af3-4cc4-8c29-3fd7ae042e06",
+      "career": "경력10년이상",
+      "careerGroup": "experienced",
+      "education": "학력무관",
+      "location": "대구",
+      "employmentType": "정규직",
+      "deadline": "마감 확인",
+      "fields": [
+        "Vision AI"
+      ],
+      "skills": [],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "중소기업",
+      "focusKeywords": [
+        "Vision AI"
+      ]
+    },
+    {
+      "id": "사람인-1tr7izm",
+      "source": "사람인",
+      "company": "(주)러닝비전",
+      "title": "AI 기반 머신비전 엔지니어 채용 [경력5년이상]",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54798345&location=ts&searchword=Vision+AI&searchType=search&paid_fl=n&search_uuid=4581deb6-1af3-4cc4-8c29-3fd7ae042e06",
+      "career": "경력5년이상",
+      "careerGroup": "experienced",
+      "education": "학력무관",
+      "location": "대구",
+      "employmentType": "정규직",
+      "deadline": "마감 확인",
+      "fields": [
+        "Vision AI"
+      ],
+      "skills": [],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "중소기업",
+      "focusKeywords": [
+        "Vision AI"
+      ]
+    },
+    {
+      "id": "사람인-1p7ttza",
+      "source": "사람인",
+      "company": "(주)트윔",
+      "title": "AI로봇비전 개발자 채용",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=55170037&location=ts&searchword=Vision+AI&searchType=search&paid_fl=n&search_uuid=4581deb6-1af3-4cc4-8c29-3fd7ae042e06",
+      "career": "확인 필요",
+      "careerGroup": "experienced",
+      "education": "대졸↑",
+      "location": "경기",
+      "employmentType": "정규직",
+      "deadline": "마감 확인",
+      "fields": [
+        "Physical AI",
+        "Vision AI"
+      ],
+      "skills": [],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "중소기업",
+      "focusKeywords": [
+        "Physical AI",
+        "Vision AI",
+        "Robotics"
+      ]
+    },
+    {
+      "id": "사람인-aka4d7",
+      "source": "사람인",
+      "company": "(주)유클리드소프트",
+      "title": "(주)유클리드소프트 AI 비전 연구/개발 인력 채용 공고",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54753679&location=ts&searchword=Vision+AI&searchType=search&paid_fl=n&search_uuid=4581deb6-1af3-4cc4-8c29-3fd7ae042e06",
+      "career": "신입·경력",
+      "careerGroup": "junior",
+      "education": "대졸↑",
+      "location": "대전",
+      "employmentType": "정규직",
+      "deadline": "마감 확인",
+      "fields": [
+        "AI Research"
+      ],
+      "skills": [],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "중소기업",
+      "focusKeywords": [
+        "AI"
+      ]
+    },
+    {
+      "id": "사람인-z8xyyl",
+      "source": "사람인",
+      "company": "(주)하이퍼놀로지",
+      "title": "[하이퍼놀로지] AI 비전 R&D 신입/경력 모집",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54958250&location=ts&searchword=Vision+AI&searchType=search&paid_fl=n&search_uuid=4581deb6-1af3-4cc4-8c29-3fd7ae042e06",
+      "career": "신입",
+      "careerGroup": "junior",
+      "education": "석사↑",
+      "location": "경기",
+      "employmentType": "정규직",
+      "deadline": "마감 확인",
+      "fields": [
+        "머신러닝"
+      ],
+      "skills": [
+        "C++"
+      ],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "중소기업",
+      "focusKeywords": [
+        "AI"
+      ]
+    },
+    {
+      "id": "사람인-1e4s1wj",
+      "source": "사람인",
+      "company": "피피에스(주)",
+      "title": "AI연구소 AI/컴퓨터비전 개발 3년 이상",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=55061354&location=ts&searchword=Vision+AI&searchType=search&paid_fl=n&search_uuid=4581deb6-1af3-4cc4-8c29-3fd7ae042e06",
+      "career": "확인 필요",
+      "careerGroup": "experienced",
+      "education": "대졸↑",
+      "location": "서울",
+      "employmentType": "정규직",
+      "deadline": "마감 확인",
+      "fields": [
+        "Vision AI",
+        "MLOps",
+        "AI/AX",
+        "AI Research"
+      ],
+      "skills": [],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "중소기업",
+      "focusKeywords": [
+        "Vision AI",
+        "MLOps",
+        "AI/AX"
+      ]
+    },
+    {
+      "id": "사람인-1lwyxrh",
+      "source": "사람인",
+      "company": "(주)씨어스",
+      "title": "LLM Developer",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=55111337&location=ts&searchword=LLM&searchType=search&paid_fl=n&search_uuid=a72d7d6a-de6a-4c04-a34e-6687ae71ca95",
+      "career": "확인 필요",
+      "careerGroup": "experienced",
+      "education": "석사↑",
+      "location": "경기",
+      "employmentType": "정규직",
+      "deadline": "마감 확인",
+      "fields": [
+        "LLM/NLP"
+      ],
+      "skills": [
+        "AWS",
+        "GCP",
+        "Azure"
+      ],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "중소기업",
+      "focusKeywords": [
+        "LLM"
+      ]
+    },
+    {
+      "id": "사람인-1iznmla",
+      "source": "사람인",
+      "company": "(주)하이텔레서비스",
+      "title": "LLM /RAG 기반 상담지원 서비스 기획 및 고도화 업무 담당자 채용",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=55110284&location=ts&searchword=LLM&searchType=search&paid_fl=n&search_uuid=a72d7d6a-de6a-4c04-a34e-6687ae71ca95",
+      "career": "확인 필요",
+      "careerGroup": "experienced",
+      "education": "대졸↑",
+      "location": "서울",
+      "employmentType": "정규직",
+      "deadline": "마감 확인",
+      "fields": [
+        "LLM/NLP",
+        "Data Science"
+      ],
+      "skills": [
+        "RAG"
+      ],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "중소기업",
+      "focusKeywords": [
+        "LLM",
+        "Data Science"
+      ]
+    },
+    {
+      "id": "사람인-1gjk8f5",
+      "source": "사람인",
+      "company": "(주)틸론",
+      "title": "틸론(Tilon) LLM 기반 AI 서비스 개발자 경력자 채용",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=55094535&location=ts&searchword=LLM&searchType=search&paid_fl=n&search_uuid=a72d7d6a-de6a-4c04-a34e-6687ae71ca95",
+      "career": "경력무관",
+      "careerGroup": "junior",
+      "education": "초대졸↑",
+      "location": "서울",
+      "employmentType": "확인 필요",
+      "deadline": "마감 확인",
+      "fields": [
+        "LLM/NLP",
+        "머신러닝",
+        "AI Research"
+      ],
+      "skills": [],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "중소기업",
+      "focusKeywords": [
+        "LLM"
+      ]
+    },
+    {
+      "id": "사람인-17x3uzs",
+      "source": "사람인",
+      "company": "(주)엘지경영개발원",
+      "title": "Speech LLM Research Scientist Internship",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=55158722&location=ts&searchword=LLM&searchType=search&paid_fl=n&search_uuid=a72d7d6a-de6a-4c04-a34e-6687ae71ca95",
+      "career": "신입·경력",
+      "careerGroup": "intern",
+      "education": "석사↑",
+      "location": "서울",
+      "employmentType": "인턴직",
+      "deadline": "마감 확인",
+      "fields": [
+        "LLM/NLP",
+        "AI Research"
+      ],
+      "skills": [],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "중소기업",
+      "focusKeywords": [
+        "LLM"
+      ]
+    },
+    {
+      "id": "사람인-ssio7b",
+      "source": "사람인",
+      "company": "(주)솔트룩스",
+      "title": "[솔트룩스]AI/ LLM 엔지니어 경력직 채용(5년 이상)",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=55094515&location=ts&searchword=LLM&searchType=search&paid_fl=n&search_uuid=a72d7d6a-de6a-4c04-a34e-6687ae71ca95",
+      "career": "확인 필요",
+      "careerGroup": "experienced",
+      "education": "대졸↑",
+      "location": "서울",
+      "employmentType": "정규직",
+      "deadline": "마감 확인",
+      "fields": [
+        "LLM/NLP",
+        "머신러닝"
+      ],
+      "skills": [],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "중견기업",
+      "focusKeywords": [
+        "LLM"
+      ]
+    },
+    {
+      "id": "사람인-31e5kf",
+      "source": "사람인",
+      "company": "(주)다비치안경체인",
+      "title": "[다비치안경체인] AX 엔지니어 · LLM 엔지니어 경력직 채용",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=55063955&location=ts&searchword=LLM&searchType=search&paid_fl=n&search_uuid=a72d7d6a-de6a-4c04-a34e-6687ae71ca95",
+      "career": "확인 필요",
+      "careerGroup": "experienced",
+      "education": "대졸↑",
+      "location": "서울",
+      "employmentType": "정규직",
+      "deadline": "마감 확인",
+      "fields": [
+        "LLM/NLP",
+        "Data Science",
+        "Data Engineering",
+        "AI/AX",
+        "머신러닝"
+      ],
+      "skills": [],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "중소기업",
+      "focusKeywords": [
+        "LLM",
+        "Data Engineering",
+        "Data Science",
+        "AI/AX"
+      ]
+    },
+    {
+      "id": "사람인-1gylgbs",
+      "source": "사람인",
+      "company": "(주)에이아이매틱스",
+      "title": "[에이아이매틱스] LLM 챗봇 개발자 채용",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54934400&location=ts&searchword=LLM&searchType=search&paid_fl=n&search_uuid=a72d7d6a-de6a-4c04-a34e-6687ae71ca95",
+      "career": "확인 필요",
+      "careerGroup": "experienced",
+      "education": "대졸↑",
+      "location": "경기",
+      "employmentType": "정규직",
+      "deadline": "마감 확인",
+      "fields": [
+        "LLM/NLP"
+      ],
+      "skills": [],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "중소기업",
+      "focusKeywords": [
+        "LLM"
+      ]
+    },
+    {
+      "id": "사람인-whv47i",
+      "source": "사람인",
+      "company": "(주)사이버테크프랜드",
+      "title": "RAG· LLM ·AI 챗봇 개발 AI 엔지니어 모집",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=55159277&location=ts&searchword=LLM&searchType=search&paid_fl=n&search_uuid=a72d7d6a-de6a-4c04-a34e-6687ae71ca95",
+      "career": "확인 필요",
+      "careerGroup": "experienced",
+      "education": "초대졸↑",
+      "location": "경기",
+      "employmentType": "정규직",
+      "deadline": "마감 확인",
+      "fields": [
+        "LLM/NLP"
+      ],
+      "skills": [
+        "RAG"
+      ],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "중소기업",
+      "focusKeywords": [
+        "LLM"
+      ]
+    },
+    {
+      "id": "사람인-h7lr1n",
+      "source": "사람인",
+      "company": "베스핀글로벌(주)",
+      "title": "[베스핀글로벌] LLM Engineer (과장급) 영입",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54926556&location=ts&searchword=LLM&searchType=search&paid_fl=n&search_uuid=a72d7d6a-de6a-4c04-a34e-6687ae71ca95",
+      "career": "확인 필요",
+      "careerGroup": "experienced",
+      "education": "초대졸↑",
+      "location": "서울",
+      "employmentType": "정규직",
+      "deadline": "마감 확인",
+      "fields": [
+        "LLM/NLP"
+      ],
+      "skills": [],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "중소기업",
+      "focusKeywords": [
+        "LLM"
+      ]
+    },
+    {
+      "id": "사람인-d0qlkq",
+      "source": "사람인",
+      "company": "에이아이티스토리(주)",
+      "title": "에이아이티스토리 AI 개발자 ( LLM , M/L) 채용 (경력)",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54976114&location=ts&searchword=LLM&searchType=search&paid_fl=n&search_uuid=a72d7d6a-de6a-4c04-a34e-6687ae71ca95",
+      "career": "확인 필요",
+      "careerGroup": "experienced",
+      "education": "대졸↑",
+      "location": "서울",
+      "employmentType": "정규직",
+      "deadline": "마감 확인",
+      "fields": [
+        "LLM/NLP",
+        "Data Engineering",
+        "머신러닝"
+      ],
+      "skills": [
+        "Python"
+      ],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "중소기업",
+      "focusKeywords": [
+        "LLM",
+        "Data Engineering"
+      ]
+    },
+    {
+      "id": "사람인-d41xvh",
+      "source": "사람인",
+      "company": "에이아이티스토리(주)",
+      "title": "에이아이티스토리 AI 개발자 ( LLM , M/L) 채용 (신입)",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54976108&location=ts&searchword=LLM&searchType=search&paid_fl=n&search_uuid=a72d7d6a-de6a-4c04-a34e-6687ae71ca95",
+      "career": "신입",
+      "careerGroup": "junior",
+      "education": "대졸↑",
+      "location": "서울",
+      "employmentType": "정규직",
+      "deadline": "마감 확인",
+      "fields": [
+        "LLM/NLP",
+        "Data Engineering",
+        "머신러닝"
+      ],
+      "skills": [
+        "Python"
+      ],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "중소기업",
+      "focusKeywords": [
+        "LLM",
+        "Data Engineering"
+      ]
+    },
+    {
+      "id": "사람인-1r6l8ck",
+      "source": "사람인",
+      "company": "디딤(주)",
+      "title": "AI Agent / LLM 기반 개발자 경력 채용",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54996731&location=ts&searchword=LLM&searchType=search&paid_fl=n&search_uuid=a72d7d6a-de6a-4c04-a34e-6687ae71ca95",
+      "career": "확인 필요",
+      "careerGroup": "experienced",
+      "education": "초대졸↑",
+      "location": "서울",
+      "employmentType": "정규직",
+      "deadline": "마감 확인",
+      "fields": [
+        "LLM/NLP",
+        "머신러닝"
+      ],
+      "skills": [],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "중소기업",
+      "focusKeywords": [
+        "LLM"
+      ]
+    },
+    {
+      "id": "사람인-19u0g65",
+      "source": "사람인",
+      "company": "콘센트릭스서비스코리아(유)",
+      "title": "LLM / Agent Engineer (과/차장급)",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54703441&location=ts&searchword=LLM&searchType=search&paid_fl=n&search_uuid=a72d7d6a-de6a-4c04-a34e-6687ae71ca95",
+      "career": "확인 필요",
+      "careerGroup": "experienced",
+      "education": "학력무관",
+      "location": "서울",
+      "employmentType": "정규직",
+      "deadline": "마감 확인",
+      "fields": [
+        "LLM/NLP",
+        "Data Engineering"
+      ],
+      "skills": [
+        "Python"
+      ],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "분류 필요",
+      "focusKeywords": [
+        "LLM",
+        "Data Engineering"
+      ]
+    },
+    {
+      "id": "사람인-1a5hun8",
+      "source": "사람인",
+      "company": "(주)블루개러지",
+      "title": "AI Artist / LLM Engineer(9년~)",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=55161522&location=ts&searchword=LLM&searchType=search&paid_fl=n&search_uuid=a72d7d6a-de6a-4c04-a34e-6687ae71ca95",
+      "career": "확인 필요",
+      "careerGroup": "experienced",
+      "education": "대졸↑",
+      "location": "서울",
+      "employmentType": "정규직",
+      "deadline": "마감 확인",
+      "fields": [
+        "LLM/NLP",
+        "Data Science",
+        "Data Engineering"
+      ],
+      "skills": [
+        "SQL",
+        "Go"
+      ],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "중소기업",
+      "focusKeywords": [
+        "LLM",
+        "Data Engineering",
+        "Data Science"
+      ]
+    },
+    {
+      "id": "사람인-1mtpux3",
+      "source": "사람인",
+      "company": "(주)블루개러지",
+      "title": "AI Artist / LLM Engineer(6~8년)",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=55162028&location=ts&searchword=LLM&searchType=search&paid_fl=n&search_uuid=a72d7d6a-de6a-4c04-a34e-6687ae71ca95",
+      "career": "확인 필요",
+      "careerGroup": "experienced",
+      "education": "대졸↑",
+      "location": "서울",
+      "employmentType": "정규직",
+      "deadline": "마감 확인",
+      "fields": [
+        "LLM/NLP",
+        "Data Science",
+        "Data Engineering"
+      ],
+      "skills": [
+        "SQL",
+        "Go"
+      ],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "중소기업",
+      "focusKeywords": [
+        "LLM",
+        "Data Engineering",
+        "Data Science"
+      ]
+    },
+    {
+      "id": "사람인-1ms2ewx",
+      "source": "사람인",
+      "company": "(주)블루개러지",
+      "title": "AI Artist / LLM Engineer(3~5년)",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=55161493&location=ts&searchword=LLM&searchType=search&paid_fl=n&search_uuid=a72d7d6a-de6a-4c04-a34e-6687ae71ca95",
+      "career": "확인 필요",
+      "careerGroup": "experienced",
+      "education": "대졸↑",
+      "location": "서울",
+      "employmentType": "정규직",
+      "deadline": "마감 확인",
+      "fields": [
+        "LLM/NLP",
+        "Data Science",
+        "Data Engineering"
+      ],
+      "skills": [
+        "SQL",
+        "Go"
+      ],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "중소기업",
+      "focusKeywords": [
+        "LLM",
+        "Data Engineering",
+        "Data Science"
+      ]
+    },
+    {
+      "id": "사람인-1ajtvcg",
+      "source": "사람인",
+      "company": "(주)에이아이웍스",
+      "title": "LLM 기반 어플리케이션 엔지니어",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=55076351&location=ts&searchword=LLM&searchType=search&paid_fl=n&search_uuid=a72d7d6a-de6a-4c04-a34e-6687ae71ca95",
+      "career": "확인 필요",
+      "careerGroup": "experienced",
+      "education": "대졸↑",
+      "location": "서울",
+      "employmentType": "정규직",
+      "deadline": "마감 확인",
+      "fields": [
+        "LLM/NLP"
+      ],
+      "skills": [
+        "Python",
+        "PyTorch",
+        "TensorFlow"
+      ],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "중소기업",
+      "focusKeywords": [
+        "LLM"
+      ]
+    },
+    {
+      "id": "사람인-ffdh4c",
+      "source": "사람인",
+      "company": "올거나이즈코리아(주)",
+      "title": "LLM Project Manager (3년 이상)",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=55092253&location=ts&searchword=LLM&searchType=search&paid_fl=n&search_uuid=a72d7d6a-de6a-4c04-a34e-6687ae71ca95",
+      "career": "확인 필요",
+      "careerGroup": "experienced",
+      "education": "고졸↑",
+      "location": "서울",
+      "employmentType": "정규직",
+      "deadline": "마감 확인",
+      "fields": [
+        "LLM/NLP"
+      ],
+      "skills": [],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "중소기업",
+      "focusKeywords": [
+        "LLM"
+      ]
+    },
+    {
+      "id": "사람인-ne53y1",
+      "source": "사람인",
+      "company": "솔트웨어(주)",
+      "title": "[경력] 데이터엔지니어 PM/PL, AI/ LLM 엔지니어 채용",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=55132450&location=ts&searchword=LLM&searchType=search&paid_fl=n&search_uuid=a72d7d6a-de6a-4c04-a34e-6687ae71ca95",
+      "career": "확인 필요",
+      "careerGroup": "experienced",
+      "education": "학력무관",
+      "location": "경기",
+      "employmentType": "정규직",
+      "deadline": "마감 확인",
+      "fields": [
+        "LLM/NLP",
+        "Data Engineering",
+        "머신러닝"
+      ],
+      "skills": [],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "중소기업",
+      "focusKeywords": [
+        "LLM",
+        "Data Engineering"
+      ]
+    },
+    {
+      "id": "사람인-1w00ll4",
+      "source": "사람인",
+      "company": "(주)노리스페이스",
+      "title": "LLM Research Engineer 모집",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54650012&location=ts&searchword=LLM&searchType=search&paid_fl=n&search_uuid=a72d7d6a-de6a-4c04-a34e-6687ae71ca95",
+      "career": "경력무관",
+      "careerGroup": "junior",
+      "education": "학력무관",
+      "location": "서울",
+      "employmentType": "정규직",
+      "deadline": "마감 확인",
+      "fields": [
+        "LLM/NLP",
+        "머신러닝",
+        "AI Research"
+      ],
+      "skills": [],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "중소기업",
+      "focusKeywords": [
+        "LLM"
+      ]
+    },
+    {
+      "id": "사람인-rg7pvd",
+      "source": "사람인",
+      "company": "(주)디엑스이",
+      "title": "[CJ 그룹 - DXE] AI/AX 플랫폼 개발 AI/ LLM 엔지니어 경력채용",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54992258&location=ts&searchword=LLM&searchType=search&paid_fl=n&search_uuid=a72d7d6a-de6a-4c04-a34e-6687ae71ca95",
+      "career": "확인 필요",
+      "careerGroup": "experienced",
+      "education": "대졸↑",
+      "location": "서울",
+      "employmentType": "정규직",
+      "deadline": "마감 확인",
+      "fields": [
+        "LLM/NLP",
+        "MLOps",
+        "Data Engineering",
+        "AI/AX",
+        "머신러닝"
+      ],
+      "skills": [],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "중소기업",
+      "focusKeywords": [
+        "LLM",
+        "MLOps",
+        "Data Engineering",
+        "AI/AX"
+      ]
+    },
+    {
+      "id": "사람인-12ynfz2",
+      "source": "사람인",
+      "company": "(주)이아이씨엔",
+      "title": "AI (딥러닝,NLP,RAG, LLM ,Agent) 경력개발자 모집",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=55065972&location=ts&searchword=LLM&searchType=search&paid_fl=n&search_uuid=a72d7d6a-de6a-4c04-a34e-6687ae71ca95",
+      "career": "확인 필요",
+      "careerGroup": "experienced",
+      "education": "학력무관",
+      "location": "서울",
+      "employmentType": "정규직",
+      "deadline": "마감 확인",
+      "fields": [
+        "LLM/NLP",
+        "머신러닝"
+      ],
+      "skills": [
+        "RAG"
+      ],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "중소기업",
+      "focusKeywords": [
+        "LLM"
+      ]
+    },
+    {
+      "id": "사람인-13nigr9",
+      "source": "사람인",
+      "company": "(주)웨어비즈",
+      "title": "[R&D 연구소장] AI 코어 엔진 개발 / OCR· LLM ·검색 / 조직리딩",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=55128956&location=ts&searchword=LLM&searchType=search&paid_fl=n&search_uuid=a72d7d6a-de6a-4c04-a34e-6687ae71ca95",
+      "career": "확인 필요",
+      "careerGroup": "experienced",
+      "education": "대졸↑",
+      "location": "서울",
+      "employmentType": "정규직",
+      "deadline": "마감 확인",
+      "fields": [
+        "Vision AI",
+        "LLM/NLP",
+        "AI Research"
+      ],
+      "skills": [],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "중소기업",
+      "focusKeywords": [
+        "Vision AI",
+        "LLM"
+      ]
+    },
+    {
+      "id": "사람인-3ju222",
+      "source": "사람인",
+      "company": "(주)에이치비아이기술연구소",
+      "title": "Python부터 LLM ·RAG까지, 메인강사님 찾습니다.",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=55161333&location=ts&searchword=LLM&searchType=search&paid_fl=n&search_uuid=a72d7d6a-de6a-4c04-a34e-6687ae71ca95",
+      "career": "확인 필요",
+      "careerGroup": "experienced",
+      "education": "석사↑",
+      "location": "서울",
+      "employmentType": "프리랜서",
+      "deadline": "마감 확인",
+      "fields": [
+        "Vision AI",
+        "LLM/NLP",
+        "머신러닝"
+      ],
+      "skills": [
+        "Python",
+        "RAG"
+      ],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "중소기업",
+      "focusKeywords": [
+        "Vision AI",
+        "LLM"
+      ]
+    },
+    {
+      "id": "사람인-g4cwkd",
+      "source": "사람인",
+      "company": "(주)넥스인테크놀로지",
+      "title": "AI Core Engineer - RAG & LLM",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54923268&location=ts&searchword=LLM&searchType=search&paid_fl=n&search_uuid=a72d7d6a-de6a-4c04-a34e-6687ae71ca95",
+      "career": "신입·경력",
+      "careerGroup": "junior",
+      "education": "학력무관",
+      "location": "서울",
+      "employmentType": "정규직",
+      "deadline": "마감 확인",
+      "fields": [
+        "LLM/NLP",
+        "머신러닝"
+      ],
+      "skills": [
+        "RAG"
+      ],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "중소기업",
+      "focusKeywords": [
+        "LLM"
+      ]
+    },
+    {
+      "id": "사람인-12j3q08",
+      "source": "사람인",
+      "company": "휴먼AI교육센터_국비지원교육",
+      "title": "LLM ·SLM·VLM 모델 튜닝 경험 있는 강사를 찾고 있어요",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=55029654&location=ts&searchword=LLM&searchType=search&paid_fl=n&search_uuid=a72d7d6a-de6a-4c04-a34e-6687ae71ca95",
+      "career": "확인 필요",
+      "careerGroup": "experienced",
+      "education": "초대졸↑",
+      "location": "서울",
+      "employmentType": "프리랜서",
+      "deadline": "마감 확인",
+      "fields": [
+        "LLM/NLP",
+        "머신러닝"
+      ],
+      "skills": [],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "분류 필요",
+      "focusKeywords": [
+        "LLM"
+      ]
+    },
+    {
+      "id": "사람인-17vme9m",
+      "source": "사람인",
+      "company": "엠클라우드브리지(주)",
+      "title": "DeepSeek(Local LLM ) 기반 AI/ LLM 개발자 채용",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=55110187&location=ts&searchword=LLM&searchType=search&paid_fl=n&search_uuid=a72d7d6a-de6a-4c04-a34e-6687ae71ca95",
+      "career": "확인 필요",
+      "careerGroup": "experienced",
+      "education": "학력무관",
+      "location": "서울",
+      "employmentType": "정규직",
+      "deadline": "마감 확인",
+      "fields": [
+        "LLM/NLP"
+      ],
+      "skills": [],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "중소기업",
+      "focusKeywords": [
+        "LLM"
+      ]
+    },
+    {
+      "id": "사람인-18qtaap",
+      "source": "사람인",
+      "company": "(주)퀀텀씨엔에스",
+      "title": "[경력] Agentic AI 개발자를 찾습니다. ( LLM ·RAG·AI Agent)",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54978749&location=ts&searchword=LLM&searchType=search&paid_fl=n&search_uuid=a72d7d6a-de6a-4c04-a34e-6687ae71ca95",
+      "career": "확인 필요",
+      "careerGroup": "experienced",
+      "education": "학력무관",
+      "location": "서울",
+      "employmentType": "정규직",
+      "deadline": "상시채용",
+      "fields": [
+        "LLM/NLP",
+        "머신러닝"
+      ],
+      "skills": [
+        "Python",
+        "Kubernetes",
+        "RAG"
+      ],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "중소기업",
+      "focusKeywords": [
+        "LLM",
+        "MLOps"
+      ]
+    },
+    {
+      "id": "사람인-19w5d1n",
+      "source": "사람인",
+      "company": "HR컨설팅(주)",
+      "title": "AI / LLM 개발 엔지니어 채용(신입 및 경력)",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=55132221&location=ts&searchword=LLM&searchType=search&paid_fl=n&search_uuid=a72d7d6a-de6a-4c04-a34e-6687ae71ca95",
+      "career": "신입",
+      "careerGroup": "junior",
+      "education": "대졸↑",
+      "location": "서울",
+      "employmentType": "정규직",
+      "deadline": "마감 확인",
+      "fields": [
+        "LLM/NLP"
+      ],
+      "skills": [],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "중소기업",
+      "focusKeywords": [
+        "LLM"
+      ]
+    },
+    {
+      "id": "사람인-1sig3ia",
+      "source": "사람인",
+      "company": "(주)메인",
+      "title": "(주)메인 생성형 AI( LLM ) 개발자 경력 채용 공고",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54761324&location=ts&searchword=LLM&searchType=search&paid_fl=n&search_uuid=a72d7d6a-de6a-4c04-a34e-6687ae71ca95",
+      "career": "확인 필요",
+      "careerGroup": "experienced",
+      "education": "학력무관",
+      "location": "서울",
+      "employmentType": "정규직",
+      "deadline": "마감 확인",
+      "fields": [
+        "LLM/NLP",
+        "Data Science",
+        "머신러닝"
+      ],
+      "skills": [],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "중소기업",
+      "focusKeywords": [
+        "LLM",
+        "Data Science"
+      ]
+    },
+    {
+      "id": "사람인-17i5x2z",
+      "source": "사람인",
+      "company": "지비피엘(주)",
+      "title": "[대기업/분당] 멀티 LLM Python 개발자 경력 모집",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54930938&location=ts&searchword=LLM&searchType=search&paid_fl=n&search_uuid=a72d7d6a-de6a-4c04-a34e-6687ae71ca95",
+      "career": "확인 필요",
+      "careerGroup": "experienced",
+      "education": "학력무관",
+      "location": "경기",
+      "employmentType": "계약직",
+      "deadline": "마감 확인",
+      "fields": [
+        "LLM/NLP"
+      ],
+      "skills": [
+        "Python"
+      ],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "중소기업",
+      "focusKeywords": [
+        "LLM"
+      ]
+    },
+    {
+      "id": "사람인-30b54j",
+      "source": "사람인",
+      "company": "(주)벙커키즈",
+      "title": "[위프(WHIF)] Tech- LLM Engineer",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54730737&location=ts&searchword=LLM&searchType=search&paid_fl=n&search_uuid=a72d7d6a-de6a-4c04-a34e-6687ae71ca95",
+      "career": "확인 필요",
+      "careerGroup": "experienced",
+      "education": "학력무관",
+      "location": "서울",
+      "employmentType": "정규직",
+      "deadline": "상시채용",
+      "fields": [
+        "LLM/NLP"
+      ],
+      "skills": [],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "중소기업",
+      "focusKeywords": [
+        "LLM"
+      ]
+    },
+    {
+      "id": "사람인-1ag869x",
+      "source": "사람인",
+      "company": "주식회사 더씨에스알",
+      "title": "AI 엔지니어 ( LLM ·RAG)",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54977055&location=ts&searchword=LLM&searchType=search&paid_fl=n&search_uuid=a72d7d6a-de6a-4c04-a34e-6687ae71ca95",
+      "career": "확인 필요",
+      "careerGroup": "experienced",
+      "education": "대졸↑",
+      "location": "서울",
+      "employmentType": "정규직",
+      "deadline": "마감 확인",
+      "fields": [
+        "LLM/NLP"
+      ],
+      "skills": [
+        "RAG",
+        "Java"
+      ],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "중소기업",
+      "focusKeywords": [
+        "LLM"
+      ]
+    },
+    {
+      "id": "사람인-1pvofs3",
+      "source": "사람인",
+      "company": "(주)인티그리트",
+      "title": "[AI 플랫폼 SW] 로봇 주행 / AI SW ( LLM ) / 임베디드 SW 개발",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=55023761&location=ts&searchword=LLM&searchType=search&paid_fl=n&search_uuid=a72d7d6a-de6a-4c04-a34e-6687ae71ca95",
+      "career": "확인 필요",
+      "careerGroup": "experienced",
+      "education": "학력무관",
+      "location": "서울",
+      "employmentType": "정규직",
+      "deadline": "마감 확인",
+      "fields": [
+        "Physical AI",
+        "LLM/NLP",
+        "MLOps",
+        "머신러닝",
+        "AI Research"
+      ],
+      "skills": [],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "중소기업",
+      "focusKeywords": [
+        "Physical AI",
+        "LLM",
+        "Robotics",
+        "MLOps"
+      ]
+    },
+    {
+      "id": "사람인-131eygr",
+      "source": "사람인",
+      "company": "리뉴피플 주식회사",
+      "title": "LLM 최적화 및 포팅 개발 엔지니어 채용",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=55169674&location=ts&searchword=LLM&searchType=search&paid_fl=n&search_uuid=a72d7d6a-de6a-4c04-a34e-6687ae71ca95",
+      "career": "확인 필요",
+      "careerGroup": "experienced",
+      "education": "대졸↑",
+      "location": "서울",
+      "employmentType": "정규직",
+      "deadline": "마감 확인",
+      "fields": [
+        "LLM/NLP"
+      ],
+      "skills": [
+        "Python"
+      ],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "중소기업",
+      "focusKeywords": [
+        "LLM"
+      ]
+    },
+    {
+      "id": "사람인-dbn4xo",
+      "source": "사람인",
+      "company": "(주)이자",
+      "title": "LLM 트레이닝 엔지니어(데이터 사이언티스트) 채용",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54841110&location=ts&searchword=LLM&searchType=search&paid_fl=n&search_uuid=a72d7d6a-de6a-4c04-a34e-6687ae71ca95",
+      "career": "확인 필요",
+      "careerGroup": "experienced",
+      "education": "대졸↑",
+      "location": "서울",
+      "employmentType": "정규직",
+      "deadline": "마감 확인",
+      "fields": [
+        "LLM/NLP",
+        "Data Science"
+      ],
+      "skills": [],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "중소기업",
+      "focusKeywords": [
+        "LLM",
+        "Data Science"
+      ]
+    },
+    {
+      "id": "사람인-4n2yu4",
+      "source": "사람인",
+      "company": "(주)세이코어",
+      "title": "[세이코어] LLM AI 개발자 채용",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54864332&location=ts&searchword=LLM&searchType=search&paid_fl=n&search_uuid=a72d7d6a-de6a-4c04-a34e-6687ae71ca95",
+      "career": "확인 필요",
+      "careerGroup": "experienced",
+      "education": "대졸↑",
+      "location": "서울",
+      "employmentType": "정규직",
+      "deadline": "상시채용",
+      "fields": [
+        "LLM/NLP"
+      ],
+      "skills": [],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "중소기업",
+      "focusKeywords": [
+        "LLM"
+      ]
+    },
+    {
+      "id": "사람인-1ieqd3i",
+      "source": "사람인",
+      "company": "이한크리에이티브(주)",
+      "title": "AI Engineer (VLM / LLM / AI Pipeline / Agent) 채용 공고",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=55090902&location=ts&searchword=LLM&searchType=search&paid_fl=n&search_uuid=a72d7d6a-de6a-4c04-a34e-6687ae71ca95",
+      "career": "신입·경력",
+      "careerGroup": "junior",
+      "education": "학력무관",
+      "location": "경기",
+      "employmentType": "정규직",
+      "deadline": "마감 확인",
+      "fields": [
+        "Vision AI",
+        "LLM/NLP",
+        "Data Engineering",
+        "머신러닝"
+      ],
+      "skills": [
+        "PyTorch"
+      ],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "중소기업",
+      "focusKeywords": [
+        "Vision AI",
+        "LLM",
+        "Data Engineering"
+      ]
+    },
+    {
+      "id": "사람인-13cmkts",
+      "source": "사람인",
+      "company": "(주)업스테이지",
+      "title": "LLM Inference Optimization",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=55091375&location=ts&searchword=LLM&searchType=search&paid_fl=n&search_uuid=a72d7d6a-de6a-4c04-a34e-6687ae71ca95",
+      "career": "확인 필요",
+      "careerGroup": "experienced",
+      "education": "고졸↑",
+      "location": "경기",
+      "employmentType": "정규직",
+      "deadline": "마감 확인",
+      "fields": [
+        "LLM/NLP"
+      ],
+      "skills": [],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "스타트업",
+      "focusKeywords": [
+        "LLM"
+      ]
+    },
+    {
+      "id": "사람인-rspasv",
+      "source": "사람인",
+      "company": "(주)업스테이지",
+      "title": "AI Engineer - LLM Serving Platform",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=55091465&location=ts&searchword=LLM&searchType=search&paid_fl=n&search_uuid=a72d7d6a-de6a-4c04-a34e-6687ae71ca95",
+      "career": "확인 필요",
+      "careerGroup": "experienced",
+      "education": "고졸↑",
+      "location": "경기",
+      "employmentType": "정규직",
+      "deadline": "마감 확인",
+      "fields": [
+        "LLM/NLP",
+        "MLOps",
+        "AI/AX"
+      ],
+      "skills": [],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "스타트업",
+      "focusKeywords": [
+        "LLM",
+        "MLOps",
+        "AI/AX"
+      ]
+    },
+    {
+      "id": "사람인-6msj9w",
+      "source": "사람인",
+      "company": "(주)펨트론",
+      "title": "[펨트론] AI 비전· 딥러닝 알고리즘 개발자 채용",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=55150489&location=ts&searchword=%EB%94%A5%EB%9F%AC%EB%8B%9D&searchType=search&paid_fl=n&search_uuid=cdbed00b-fb37-4c2c-a2a4-65bd733d4815",
+      "career": "신입·경력",
+      "careerGroup": "junior",
+      "education": "대졸↑",
+      "location": "서울",
+      "employmentType": "정규직",
+      "deadline": "마감 확인",
+      "fields": [
+        "머신러닝",
+        "AI Research"
+      ],
+      "skills": [
+        "Python"
+      ],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "중소기업",
+      "focusKeywords": [
+        "AI"
+      ]
+    },
+    {
+      "id": "사람인-13odpyt",
+      "source": "사람인",
+      "company": "(주) 스카이브",
+      "title": "AI/ 딥러닝 개발자 경력사원 채용 (의료 데이터)",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=55091210&location=ts&searchword=%EB%94%A5%EB%9F%AC%EB%8B%9D&searchType=search&paid_fl=n&search_uuid=cdbed00b-fb37-4c2c-a2a4-65bd733d4815",
+      "career": "경력무관",
+      "careerGroup": "junior",
+      "education": "학력무관",
+      "location": "서울",
+      "employmentType": "정규직",
+      "deadline": "마감 확인",
+      "fields": [
+        "머신러닝"
+      ],
+      "skills": [],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "중소기업",
+      "focusKeywords": [
+        "AI"
+      ]
+    },
+    {
+      "id": "사람인-1ijb4bw",
+      "source": "사람인",
+      "company": "(주)이아이씨엔",
+      "title": "AI ( 딥러닝 ,NLP,RAG,LLM,Agent) 경력개발자 모집",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=55065972&location=ts&searchword=%EB%94%A5%EB%9F%AC%EB%8B%9D&searchType=search&paid_fl=n&search_uuid=cdbed00b-fb37-4c2c-a2a4-65bd733d4815",
+      "career": "확인 필요",
+      "careerGroup": "experienced",
+      "education": "학력무관",
+      "location": "서울",
+      "employmentType": "정규직",
+      "deadline": "마감 확인",
+      "fields": [
+        "LLM/NLP",
+        "머신러닝"
+      ],
+      "skills": [
+        "RAG"
+      ],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "중소기업",
+      "focusKeywords": [
+        "LLM"
+      ]
+    },
+    {
+      "id": "사람인-1904toe",
+      "source": "사람인",
+      "company": "부산인터넷방송국",
+      "title": "AI, 딥러닝 , 머신러닝, 데이터분석, 분석방법론~학습로드맵 모집",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=55069825&location=ts&searchword=%EB%94%A5%EB%9F%AC%EB%8B%9D&searchType=search&paid_fl=n&search_uuid=cdbed00b-fb37-4c2c-a2a4-65bd733d4815",
+      "career": "확인 필요",
+      "careerGroup": "experienced",
+      "education": "대졸↑",
+      "location": "부산",
+      "employmentType": "정규직",
+      "deadline": "마감 확인",
+      "fields": [
+        "Data Science",
+        "Data Engineering",
+        "머신러닝"
+      ],
+      "skills": [
+        "Python"
+      ],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "분류 필요",
+      "focusKeywords": [
+        "Data Engineering",
+        "Data Science"
+      ]
+    },
+    {
+      "id": "사람인-tbhmho",
+      "source": "사람인",
+      "company": "(주)써로마인드",
+      "title": "[써로마인드] AI 모델 (머신러닝/ 딥러닝 ) 개발자 경력 채용",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=55007725&location=ts&searchword=%EB%94%A5%EB%9F%AC%EB%8B%9D&searchType=search&paid_fl=n&search_uuid=cdbed00b-fb37-4c2c-a2a4-65bd733d4815",
+      "career": "확인 필요",
+      "careerGroup": "experienced",
+      "education": "학력무관",
+      "location": "서울",
+      "employmentType": "정규직",
+      "deadline": "마감 확인",
+      "fields": [
+        "머신러닝"
+      ],
+      "skills": [
+        "Python"
+      ],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "중소기업",
+      "focusKeywords": [
+        "AI"
+      ]
+    },
+    {
+      "id": "사람인-1m1qbwq",
+      "source": "사람인",
+      "company": "(주)엔플럭스",
+      "title": "AI/ 딥러닝 개발자 채용 공고",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54922513&location=ts&searchword=%EB%94%A5%EB%9F%AC%EB%8B%9D&searchType=search&paid_fl=n&search_uuid=cdbed00b-fb37-4c2c-a2a4-65bd733d4815",
+      "career": "확인 필요",
+      "careerGroup": "experienced",
+      "education": "대졸↑",
+      "location": "경기",
+      "employmentType": "정규직",
+      "deadline": "마감 확인",
+      "fields": [
+        "머신러닝"
+      ],
+      "skills": [
+        "Python",
+        "PyTorch"
+      ],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "중소기업",
+      "focusKeywords": [
+        "AI"
+      ]
+    },
+    {
+      "id": "사람인-1h0ijxc",
+      "source": "사람인",
+      "company": "(주)아이벡스",
+      "title": "[전문연구요원 가능] 딥러닝 리서치 엔지니어",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54924315&location=ts&searchword=%EB%94%A5%EB%9F%AC%EB%8B%9D&searchType=search&paid_fl=n&search_uuid=cdbed00b-fb37-4c2c-a2a4-65bd733d4815",
+      "career": "확인 필요",
+      "careerGroup": "experienced",
+      "education": "대졸↑",
+      "location": "서울",
+      "employmentType": "정규직",
+      "deadline": "마감 확인",
+      "fields": [
+        "Data Science",
+        "머신러닝",
+        "AI Research"
+      ],
+      "skills": [],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "중소기업",
+      "focusKeywords": [
+        "Data Science"
+      ]
+    },
+    {
+      "id": "사람인-1wrpdd3",
+      "source": "사람인",
+      "company": "(주) 케이와이씨지(KYCG)",
+      "title": "머신러닝/ 딥러닝 Researcher / 신입, 전문연구요원",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=55111240&location=ts&searchword=%EB%94%A5%EB%9F%AC%EB%8B%9D&searchType=search&paid_fl=n&search_uuid=cdbed00b-fb37-4c2c-a2a4-65bd733d4815",
+      "career": "신입",
+      "careerGroup": "junior",
+      "education": "석사↑",
+      "location": "경기",
+      "employmentType": "정규직",
+      "deadline": "마감 확인",
+      "fields": [
+        "머신러닝",
+        "AI Research"
+      ],
+      "skills": [],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "중소기업",
+      "focusKeywords": [
+        "AI"
+      ]
+    },
+    {
+      "id": "사람인-3vnwdd",
+      "source": "사람인",
+      "company": "포인드(주)",
+      "title": "포인드(주) 인공지능· 딥러닝 개발자(신입) 채용",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=55086811&location=ts&searchword=%EB%94%A5%EB%9F%AC%EB%8B%9D&searchType=search&paid_fl=n&search_uuid=cdbed00b-fb37-4c2c-a2a4-65bd733d4815",
+      "career": "신입",
+      "careerGroup": "junior",
+      "education": "초대졸↑",
+      "location": "경북",
+      "employmentType": "정규직",
+      "deadline": "마감 확인",
+      "fields": [
+        "머신러닝"
+      ],
+      "skills": [
+        "Python"
+      ],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "중소기업",
+      "focusKeywords": [
+        "AI"
+      ]
+    },
+    {
+      "id": "사람인-usjlhg",
+      "source": "사람인",
+      "company": "포인드(주)",
+      "title": "포인드(주) 인공지능· 딥러닝 개발자(경력) 채용",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=55086822&location=ts&searchword=%EB%94%A5%EB%9F%AC%EB%8B%9D&searchType=search&paid_fl=n&search_uuid=cdbed00b-fb37-4c2c-a2a4-65bd733d4815",
+      "career": "확인 필요",
+      "careerGroup": "experienced",
+      "education": "초대졸↑",
+      "location": "경북",
+      "employmentType": "정규직",
+      "deadline": "마감 확인",
+      "fields": [
+        "머신러닝"
+      ],
+      "skills": [
+        "Python"
+      ],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "중소기업",
+      "focusKeywords": [
+        "AI"
+      ]
+    },
+    {
+      "id": "사람인-1ojhw4m",
+      "source": "사람인",
+      "company": "가천대학교산학협력단",
+      "title": "영상처리전문가/인공지능/ 딥러닝 연구원 모집",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=55059209&location=ts&searchword=%EB%94%A5%EB%9F%AC%EB%8B%9D&searchType=search&paid_fl=n&search_uuid=cdbed00b-fb37-4c2c-a2a4-65bd733d4815",
+      "career": "경력무관",
+      "careerGroup": "junior",
+      "education": "대졸↑",
+      "location": "인천",
+      "employmentType": "계약직",
+      "deadline": "마감 확인",
+      "fields": [
+        "Vision AI",
+        "머신러닝",
+        "AI Research"
+      ],
+      "skills": [
+        "Java",
+        "C++"
+      ],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "분류 필요",
+      "focusKeywords": [
+        "Vision AI"
+      ]
+    },
+    {
+      "id": "사람인-9caaax",
+      "source": "사람인",
+      "company": "(주)이노메트리",
+      "title": "[X-Ray 및 CT 검사장비] AI( 딥러닝 )개발팀장 모집",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54998340&location=ts&searchword=%EB%94%A5%EB%9F%AC%EB%8B%9D&searchType=search&paid_fl=n&search_uuid=cdbed00b-fb37-4c2c-a2a4-65bd733d4815",
+      "career": "확인 필요",
+      "careerGroup": "experienced",
+      "education": "대졸↑",
+      "location": "경기",
+      "employmentType": "정규직",
+      "deadline": "마감 확인",
+      "fields": [
+        "Vision AI",
+        "머신러닝"
+      ],
+      "skills": [
+        "Python",
+        "PyTorch",
+        "C++"
+      ],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "중소기업",
+      "focusKeywords": [
+        "Vision AI"
+      ]
+    },
+    {
+      "id": "사람인-19o94sj",
+      "source": "사람인",
+      "company": "㈜애니파이브",
+      "title": "(주)애니파이브 - 딥러닝 엔지니어 정규직 채용(경력)",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=55090025&location=ts&searchword=%EB%94%A5%EB%9F%AC%EB%8B%9D&searchType=search&paid_fl=n&search_uuid=cdbed00b-fb37-4c2c-a2a4-65bd733d4815",
+      "career": "확인 필요",
+      "careerGroup": "experienced",
+      "education": "초대졸↑",
+      "location": "서울",
+      "employmentType": "정규직",
+      "deadline": "마감 확인",
+      "fields": [
+        "머신러닝"
+      ],
+      "skills": [
+        "Python",
+        "PyTorch"
+      ],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "중소기업",
+      "focusKeywords": [
+        "AI"
+      ]
+    },
+    {
+      "id": "사람인-1dplp7m",
+      "source": "사람인",
+      "company": "(주)신화엔지니어링",
+      "title": "AI, 딥러닝 솔루션, 서버 개발 연구원 모집",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54633003&location=ts&searchword=%EB%94%A5%EB%9F%AC%EB%8B%9D&searchType=search&paid_fl=n&search_uuid=cdbed00b-fb37-4c2c-a2a4-65bd733d4815",
+      "career": "확인 필요",
+      "careerGroup": "experienced",
+      "education": "대졸↑",
+      "location": "경기",
+      "employmentType": "정규직",
+      "deadline": "마감 확인",
+      "fields": [
+        "Data Science",
+        "머신러닝",
+        "AI Research"
+      ],
+      "skills": [
+        "Python"
+      ],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "중소기업",
+      "focusKeywords": [
+        "Data Science"
+      ]
+    },
+    {
+      "id": "사람인-os7gou",
+      "source": "사람인",
+      "company": "시큐어머신스랩 주식회사",
+      "title": "시큐어머신스랩 주식회사 AI· 딥러닝 ·보안 프로젝트 관리자(PM)",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54834176&location=ts&searchword=%EB%94%A5%EB%9F%AC%EB%8B%9D&searchType=search&paid_fl=n&search_uuid=cdbed00b-fb37-4c2c-a2a4-65bd733d4815",
+      "career": "확인 필요",
+      "careerGroup": "experienced",
+      "education": "대졸↑",
+      "location": "경기",
+      "employmentType": "정규직",
+      "deadline": "마감 확인",
+      "fields": [
+        "머신러닝"
+      ],
+      "skills": [],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "중소기업",
+      "focusKeywords": [
+        "AI"
+      ]
+    },
+    {
+      "id": "사람인-fsi6c0",
+      "source": "사람인",
+      "company": "(주)뉴머스",
+      "title": "(주)뉴머스 개발본부 딥러닝 AI기술 개발 분야 인재 채용",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=55091026&location=ts&searchword=%EB%94%A5%EB%9F%AC%EB%8B%9D&searchType=search&paid_fl=n&search_uuid=cdbed00b-fb37-4c2c-a2a4-65bd733d4815",
+      "career": "확인 필요",
+      "careerGroup": "experienced",
+      "education": "대졸↑",
+      "location": "서울",
+      "employmentType": "정규직",
+      "deadline": "마감 확인",
+      "fields": [
+        "머신러닝"
+      ],
+      "skills": [
+        "C++"
+      ],
+      "collectedAt": "2026-10-01T00:18:13.585Z",
+      "companyType": "중소기업",
+      "focusKeywords": [
+        "AI"
       ]
     },
     {
@@ -3433,7 +7354,7 @@
         "Java",
         "Go"
       ],
-      "collectedAt": "2026-09-30T00:01:12.526Z",
+      "collectedAt": "2026-10-01T00:18:13.585Z",
       "companyType": "대기업",
       "focusKeywords": [
         "Vision AI",
@@ -3466,7 +7387,7 @@
         "RAG",
         "Go"
       ],
-      "collectedAt": "2026-09-30T00:01:12.526Z",
+      "collectedAt": "2026-10-01T00:18:13.585Z",
       "companyType": "대기업",
       "focusKeywords": [
         "Vision AI",
@@ -3497,7 +7418,7 @@
         "RAG",
         "Go"
       ],
-      "collectedAt": "2026-09-30T00:01:12.526Z",
+      "collectedAt": "2026-10-01T00:18:13.585Z",
       "companyType": "대기업",
       "focusKeywords": [
         "Vision AI",
@@ -3534,7 +7455,7 @@
         "Java",
         "Go"
       ],
-      "collectedAt": "2026-09-30T00:01:12.526Z",
+      "collectedAt": "2026-10-01T00:18:13.585Z",
       "companyType": "대기업",
       "focusKeywords": [
         "Vision AI",
@@ -3575,7 +7496,7 @@
         "Java",
         "Go"
       ],
-      "collectedAt": "2026-09-30T00:01:12.526Z",
+      "collectedAt": "2026-10-01T00:18:13.585Z",
       "companyType": "대기업",
       "focusKeywords": [
         "Vision AI",
@@ -3609,7 +7530,7 @@
         "RAG",
         "Go"
       ],
-      "collectedAt": "2026-09-30T00:01:12.526Z",
+      "collectedAt": "2026-10-01T00:18:13.585Z",
       "companyType": "대기업",
       "focusKeywords": [
         "Vision AI",
@@ -3647,7 +7568,7 @@
         "RAG",
         "Go"
       ],
-      "collectedAt": "2026-09-30T00:01:12.526Z",
+      "collectedAt": "2026-10-01T00:18:13.585Z",
       "companyType": "대기업",
       "focusKeywords": [
         "Vision AI",
@@ -3681,7 +7602,7 @@
         "RAG",
         "Go"
       ],
-      "collectedAt": "2026-09-30T00:01:12.526Z",
+      "collectedAt": "2026-10-01T00:18:13.585Z",
       "companyType": "대기업",
       "focusKeywords": [
         "Vision AI",
@@ -3721,7 +7642,7 @@
         "C++",
         "Go"
       ],
-      "collectedAt": "2026-09-30T00:01:12.526Z",
+      "collectedAt": "2026-10-01T00:18:13.585Z",
       "companyType": "대기업",
       "focusKeywords": [
         "Vision AI",
@@ -3753,7 +7674,7 @@
         "RAG",
         "Go"
       ],
-      "collectedAt": "2026-09-30T00:01:12.526Z",
+      "collectedAt": "2026-10-01T00:18:13.585Z",
       "companyType": "대기업",
       "focusKeywords": [
         "Vision AI",
@@ -3765,7 +7686,7 @@
       "id": "Moloco Careers-8002090003",
       "source": "Moloco Careers",
       "company": "Moloco",
-      "title": "Staff Software Engineer - CTV (소프트웨어 엔지니어)",
+      "title": "Staff Software Engineer (소프트웨어 엔지니어)",
       "url": "https://job-boards.greenhouse.io/moloco/jobs/8002090003",
       "career": "Staff",
       "careerGroup": "intern",
@@ -3790,7 +7711,7 @@
         "C++",
         "Go"
       ],
-      "collectedAt": "2026-09-30T00:01:12.526Z",
+      "collectedAt": "2026-10-01T00:18:13.585Z",
       "companyType": "대기업",
       "focusKeywords": [
         "Vision AI",
@@ -3825,7 +7746,7 @@
         "GCP",
         "Go"
       ],
-      "collectedAt": "2026-09-30T00:01:12.526Z",
+      "collectedAt": "2026-10-01T00:18:13.585Z",
       "companyType": "대기업",
       "focusKeywords": [
         "Vision AI",
@@ -3854,7 +7775,7 @@
         "Java",
         "Go"
       ],
-      "collectedAt": "2026-09-30T00:01:12.526Z",
+      "collectedAt": "2026-10-01T00:18:13.585Z",
       "companyType": "대기업",
       "focusKeywords": [
         "LLM"
@@ -3886,7 +7807,7 @@
         "GCP",
         "Go"
       ],
-      "collectedAt": "2026-09-30T00:01:12.526Z",
+      "collectedAt": "2026-10-01T00:18:13.585Z",
       "companyType": "대기업",
       "focusKeywords": [
         "Vision AI",
@@ -3921,7 +7842,7 @@
         "GCP",
         "Go"
       ],
-      "collectedAt": "2026-09-30T00:01:12.526Z",
+      "collectedAt": "2026-10-01T00:18:13.585Z",
       "companyType": "대기업",
       "focusKeywords": [
         "LLM",
